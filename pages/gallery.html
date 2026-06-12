@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SERRES — Gallery</title>
+<meta name="description" content="SERRES Gallery — a car-by-car showroom of wraps, PPF, corrections and full builds shot in and around our Barcelona studio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,600;1,700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0a0a0b;--bg-2:#0e0e10;--panel:#141417;--panel-2:#191920;
+    --line:rgba(255,255,255,0.09);--line-strong:rgba(255,255,255,0.16);
+    --text:#f3f3f5;--muted:#9a9aa3;--muted-2:#6e6e77;
+    --chrome:linear-gradient(176deg,#fdfdfe 0%,#cfcfd6 32%,#8d8d97 52%,#f0f0f4 72%,#a6a6b0 100%);
+    --ease:cubic-bezier(.22,.61,.36,1);--maxw:1280px;--navh:62px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--text);font-family:"DM Sans",system-ui,sans-serif;
+    font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;min-height:100vh;
+    display:flex;flex-direction:column;overflow-x:hidden;
+    background-image:radial-gradient(90% 60% at 50% -8%,rgba(46,50,63,.24),transparent 64%);}
+  ::selection{background:#e7e7ec;color:#0a0a0b}
+  a{color:inherit;text-decoration:none}
+  img{display:block;max-width:100%}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 40px}
+
+  .display{font-family:"Barlow Condensed",sans-serif;font-weight:700;line-height:.92;
+    letter-spacing:.01em;text-transform:uppercase;}
+  .chrome-text{background:var(--chrome);-webkit-background-clip:text;background-clip:text;
+    color:transparent;-webkit-text-fill-color:transparent;}
+  .eyebrow{font-family:"Barlow Condensed",sans-serif;font-weight:600;text-transform:uppercase;
+    letter-spacing:.34em;font-size:13px;color:var(--muted);display:inline-flex;align-items:center;gap:14px;}
+  .eyebrow::before{content:"";width:30px;height:1px;background:linear-gradient(90deg,transparent,var(--line-strong));}
+
+  .btn{font-family:"Barlow Condensed",sans-serif;font-weight:600;text-transform:uppercase;
+    letter-spacing:.14em;font-size:15px;display:inline-flex;align-items:center;gap:11px;
+    padding:14px 26px;border:none;cursor:pointer;background:var(--chrome);color:#0a0a0b;
+    clip-path:polygon(0 0,100% 0,100% 100%,12px 100%,0 calc(100% - 12px));
+    transition:transform .3s var(--ease),filter .3s var(--ease);}
+  .btn:hover{transform:translateY(-2px);filter:brightness(1.08)}
+  .btn .arr{transition:transform .3s var(--ease)}
+  .btn:hover .arr{transform:translateX(4px)}
+
+  /* ---------- NAV ---------- */
+  header.nav{position:sticky;top:0;z-index:50;border-bottom:1px solid var(--line);
+    background:rgba(10,10,11,.82);backdrop-filter:blur(14px) saturate(120%);}
+  .nav-inner{max-width:var(--maxw);margin:0 auto;padding:18px 40px;display:flex;align-items:center;
+    justify-content:space-between;gap:30px;}
+  .nav-left{display:flex;align-items:center;gap:30px}
+  .logo{font-family:"Barlow Condensed",sans-serif;font-style:italic;font-weight:700;font-size:28px;
+    letter-spacing:.16em;text-transform:uppercase;padding:0 .28em 0 .04em;white-space:nowrap}
+  .back{font-family:"Barlow Condensed",sans-serif;font-weight:500;text-transform:uppercase;
+    letter-spacing:.16em;font-size:14px;color:var(--muted);display:inline-flex;align-items:center;gap:10px;
+    transition:color .25s var(--ease);}
+  .back:hover{color:var(--text)}
+  .nav-right{display:flex;align-items:center;gap:20px}
+
+  /* ---------- HERO ---------- */
+  .hero{padding:84px 0 30px;position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;left:50%;top:-20%;transform:translateX(-50%);
+    width:min(120vw,1500px);height:460px;z-index:0;pointer-events:none;
+    background:radial-gradient(46% 52% at 50% 50%,rgba(54,58,72,.28),rgba(10,10,11,0) 72%);}
+  .hero .wrap{position:relative;z-index:1}
+  .hero h1{font-size:clamp(54px,10.5vw,150px);margin:20px 0 0}
+  .hero h1 .ln{display:block;overflow:hidden;padding-bottom:.03em}
+  .hero h1 .ln span{display:block}
+  @keyframes rise{from{transform:translateY(108%)}to{transform:translateY(0)}}
+  .hero .lead{margin-top:24px;max-width:52ch;color:var(--muted);font-size:clamp(16px,1.5vw,19px)}
+  @keyframes fade{from{opacity:0}to{opacity:1}}
+  @media(prefers-reduced-motion:no-preference){
+    .hero h1 .ln span{transform:translateY(108%);animation:rise 1s var(--ease) .05s forwards}
+    .hero .eyebrow{opacity:0;animation:fade .9s var(--ease) .2s forwards}
+    .hero .lead{opacity:0;animation:fade .9s var(--ease) .42s forwards}
+    .dir{opacity:0;animation:fade .9s var(--ease) .55s forwards}
+  }
+
+  /* ---------- DIRECTORY (jump nav) ---------- */
+  .dir{display:flex;gap:10px;flex-wrap:wrap;margin-top:38px}
+  .dir a{font-family:"Barlow Condensed",sans-serif;font-weight:600;text-transform:uppercase;
+    letter-spacing:.16em;font-size:13.5px;color:var(--muted);background:transparent;
+    border:1px solid var(--line-strong);padding:10px 20px;border-radius:999px;
+    display:inline-flex;align-items:center;gap:9px;
+    transition:color .25s var(--ease),border-color .25s var(--ease),background .25s var(--ease);}
+  .dir a:hover{color:var(--text);border-color:#fff}
+  .dir a .n{font-size:11px;letter-spacing:.1em;color:var(--muted-2)}
+  .dir a.soon{opacity:.6}
+  .dir a.soon::after{content:"Soon";font-size:9px;letter-spacing:.14em;color:var(--muted-2);
+    border:1px solid var(--line);padding:2px 6px;border-radius:999px}
+
+  /* ---------- EXHIBIT ---------- */
+  .exhibits{padding:30px 0 40px}
+  .exhibit{padding:54px 0;border-top:1px solid var(--line);scroll-margin-top:calc(var(--navh) + 20px)}
+  .exhibit:first-child{border-top:0;padding-top:24px}
+  .ex-head{display:flex;align-items:flex-start;gap:26px;margin-bottom:30px}
+  .ex-id{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:clamp(40px,6vw,80px);
+    line-height:.78;letter-spacing:.01em;color:transparent;-webkit-text-stroke:1px var(--line-strong);
+    flex:none;padding-top:4px}
+  .ex-meta{flex:1;min-width:0}
+  .ex-meta h2{font-family:"Barlow Condensed",sans-serif;font-weight:700;text-transform:uppercase;
+    line-height:.94;letter-spacing:.012em;font-size:clamp(32px,4.6vw,58px);margin-top:12px;text-wrap:balance}
+  .ex-desc{margin-top:14px;color:var(--muted);font-size:15.5px;max-width:54ch;text-wrap:pretty}
+  .ex-tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+  .ex-tags span{font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.16em;
+    font-size:11px;color:var(--muted);border:1px solid var(--line);padding:6px 12px;border-radius:999px}
+  .ex-count{flex:none;text-align:right;font-family:"Barlow Condensed",sans-serif;line-height:1;
+    padding-top:6px}
+  .ex-count b{display:block;font-weight:700;font-size:34px;letter-spacing:.02em}
+  .ex-count small{font-weight:500;text-transform:uppercase;letter-spacing:.2em;font-size:10.5px;
+    color:var(--muted-2)}
+
+  .ex-gallery{display:grid;gap:14px}
+  .lay-mosaic{grid-template-columns:repeat(3,1fr);grid-auto-rows:clamp(148px,20vw,250px);grid-auto-flow:dense}
+  .lay-mosaic .feature{grid-column:span 2;grid-row:span 2}
+  .lay-trio{grid-template-columns:repeat(3,1fr);grid-auto-rows:clamp(300px,30vw,430px)}
+  .lay-duo{grid-template-columns:repeat(2,1fr);grid-auto-rows:clamp(320px,40vw,480px)}
+
+  .shot{position:relative;overflow:hidden;cursor:zoom-in;background:var(--panel);
+    border:1px solid var(--line);height:100%;
+    clip-path:polygon(0 0,100% 0,100% 100%,14px 100%,0 calc(100% - 14px));}
+  .shot img{width:100%;height:100%;object-fit:cover;transform:scale(1.015);
+    transition:transform 1.1s var(--ease),filter .6s var(--ease);
+    filter:brightness(.9) saturate(.95);}
+  .shot:hover img{transform:scale(1.06);filter:brightness(1) saturate(1)}
+  .shot figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 16px 14px;
+    display:flex;align-items:flex-end;justify-content:space-between;gap:12px;pointer-events:none;
+    background:linear-gradient(180deg,transparent,rgba(8,8,9,.8));
+    opacity:0;transform:translateY(8px);transition:opacity .4s var(--ease),transform .4s var(--ease);}
+  .shot:hover figcaption{opacity:1;transform:none}
+  .shot .cap-note{font-family:"Barlow Condensed",sans-serif;font-weight:600;text-transform:uppercase;
+    letter-spacing:.07em;font-size:15px;line-height:1.1}
+  .shot .cap-tag{flex:none;font-family:"Barlow Condensed",sans-serif;font-weight:600;text-transform:uppercase;
+    letter-spacing:.16em;font-size:10px;color:#fff;border:1px solid rgba(255,255,255,.3);
+    background:rgba(8,8,9,.5);backdrop-filter:blur(6px);padding:5px 10px;border-radius:999px}
+  .shot .zoom{position:absolute;top:12px;right:12px;width:34px;height:34px;display:grid;place-items:center;
+    border-radius:50%;background:rgba(8,8,9,.5);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.16);
+    color:#fff;opacity:0;transform:scale(.85);transition:opacity .35s var(--ease),transform .35s var(--ease)}
+  .shot:hover .zoom{opacity:1;transform:none}
+  .shot .zoom svg{width:16px;height:16px}
+
+  /* ---------- STANDBY ---------- */
+  .ex-standby{position:relative;border:1px solid var(--line-strong);min-height:300px;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;text-align:center;
+    padding:64px 26px;overflow:hidden;
+    clip-path:polygon(0 0,100% 0,100% 100%,16px 100%,0 calc(100% - 16px));
+    background:repeating-linear-gradient(135deg,rgba(255,255,255,.022) 0 12px,transparent 12px 26px),var(--panel);}
+  .ex-standby .sb-dot{display:flex;align-items:center;gap:11px;font-family:"Barlow Condensed",sans-serif;
+    text-transform:uppercase;letter-spacing:.26em;font-size:12px;color:var(--muted)}
+  .ex-standby .sb-dot i{width:7px;height:7px;border-radius:50%;background:#e7e7ec;
+    box-shadow:0 0 10px rgba(255,255,255,.6);animation:pulse 2s var(--ease) infinite}
+  @keyframes pulse{0%,100%{opacity:.3;transform:scale(.7)}50%{opacity:1;transform:scale(1)}}
+  .ex-standby h3{font-family:"Barlow Condensed",sans-serif;font-weight:700;text-transform:uppercase;
+    font-size:clamp(26px,3.4vw,40px);letter-spacing:.01em;line-height:1}
+  .ex-standby .sb-note{font-family:ui-monospace,"SF Mono",Menlo,monospace;font-size:12.5px;
+    letter-spacing:.04em;color:var(--muted-2);max-width:42ch}
+
+  /* ---------- LIGHTBOX ---------- */
+  .lb{position:fixed;inset:0;z-index:300;display:flex;flex-direction:column;
+    background:rgba(5,5,6,.96);backdrop-filter:blur(14px);
+    opacity:0;visibility:hidden;transition:opacity .35s var(--ease),visibility .35s var(--ease);}
+  .lb.open{opacity:1;visibility:visible}
+  .lb-bar{display:flex;align-items:center;justify-content:space-between;padding:18px 22px;flex:none}
+  .lb-meta{display:flex;flex-direction:column;gap:2px}
+  .lb-car{font-family:"Barlow Condensed",sans-serif;font-weight:600;text-transform:uppercase;
+    letter-spacing:.08em;font-size:16px}
+  .lb-count{font-family:"Barlow Condensed",sans-serif;font-weight:500;letter-spacing:.24em;
+    font-size:12px;color:var(--muted)}
+  .lb-close{width:46px;height:46px;display:grid;place-items:center;cursor:pointer;
+    border:1px solid var(--line-strong);background:rgba(255,255,255,.02);color:var(--text);
+    transition:border-color .25s var(--ease),transform .25s var(--ease);}
+  .lb-close:hover{border-color:#fff;transform:rotate(90deg)}
+  .lb-close svg{width:20px;height:20px}
+  .lb-stage{flex:1;display:flex;align-items:center;justify-content:center;min-height:0;
+    padding:0 74px;position:relative}
+  .lb-stage img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;
+    box-shadow:0 40px 90px -30px rgba(0,0,0,.9)}
+  .lb-nav{position:absolute;top:50%;transform:translateY(-50%);width:52px;height:52px;
+    display:grid;place-items:center;cursor:pointer;color:var(--text);
+    border:1px solid var(--line-strong);background:rgba(10,10,11,.6);backdrop-filter:blur(8px);
+    border-radius:50%;transition:border-color .25s var(--ease),background .25s var(--ease);}
+  .lb-nav:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+  .lb-nav svg{width:22px;height:22px}
+  .lb-prev{left:14px}.lb-next{right:14px}
+  .lb-cap{flex:none;text-align:center;padding:16px 22px 24px}
+  .lb-cap .c2{font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;
+    letter-spacing:.2em;font-size:11.5px;color:var(--muted)}
+
+  /* ---------- CTA ---------- */
+  .cta{position:relative;padding:96px 0;text-align:center;background:var(--bg-2)}
+  .cta::before,.cta::after{content:"";position:absolute;left:0;right:0;height:1px;background:var(--line)}
+  .cta::before{top:0}.cta::after{bottom:0}
+  .cta .eyebrow{justify-content:center}
+  .cta .eyebrow::after{content:"";width:30px;height:1px;background:linear-gradient(90deg,var(--line-strong),transparent)}
+  .cta h2{font-size:clamp(38px,6vw,82px);margin:20px auto 0;max-width:15ch}
+  .cta .actions{margin-top:36px;display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+
+  footer{padding:30px 40px;border-top:1px solid var(--line);color:var(--muted-2);font-size:13px;
+    letter-spacing:.04em;text-align:center}
+
+  /* reveal on scroll */
+  .reveal-up{opacity:0;transform:translateY(24px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+  .reveal-up.in{opacity:1;transform:none}
+
+  @media(max-width:980px){
+    .lay-mosaic{grid-auto-rows:clamp(130px,22vw,200px)}
+    .lay-trio{grid-template-columns:repeat(3,1fr);grid-auto-rows:clamp(220px,28vw,320px)}
+    .ex-count{display:none}
+  }
+  @media(max-width:600px){
+    .wrap,.nav-inner{padding-left:22px;padding-right:22px}
+    .nav-right .btn{display:none}
+    .back span.lbl{display:none}
+    .ex-head{flex-wrap:wrap;gap:14px}
+    .ex-id{font-size:38px}
+    .ex-gallery{grid-template-columns:1fr!important;grid-auto-rows:auto!important}
+    .shot{aspect-ratio:4/5}
+    .shot.feature{grid-column:auto!important;grid-row:auto!important}
+    .shot figcaption{opacity:1;transform:none}
+    .lb-stage{padding:0 12px}
+    .lb-nav{width:44px;height:44px}.lb-prev{left:8px}.lb-next{right:8px}
+  }
+  @media(prefers-reduced-motion:reduce){
+    *{animation:none!important}
+    .hero h1 .ln span{transform:none}
+    .hero .lead,.hero .eyebrow,.dir{opacity:1}
+    .reveal-up{opacity:1;transform:none}
+  }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <div class="nav-left">
+      <a href="../SERRES.html" class="logo chrome-text">SERRES</a>
+      <a href="../SERRES.html" class="back">← <span class="lbl">Back to site</span></a>
+    </div>
+    <div class="nav-right">
+      <a href="../SERRES.html#contact" class="btn">Get a Quote <span class="arr">→</span></a>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" data-screen-label="Gallery — Intro">
+  <div class="wrap">
+    <span class="eyebrow">The Showroom</span>
+    <h1 class="display">
+      <span class="ln"><span>The</span></span>
+      <span class="ln"><span class="chrome-text">Gallery</span></span>
+    </h1>
+    <p class="lead">Every car gets its own room. Shot in and around Barcelona — no stock photos, no rented cars. Pick a build below, or scroll the floor.</p>
+
+    <nav class="dir" aria-label="Jump to a car">
+      <a href="#porsche"><span class="n">01</span> Porsche 993 RWB</a>
+      <a href="#m2"><span class="n">02</span> BMW M2</a>
+      <a href="#supra"><span class="n">03</span> Toyota Supra</a>
+      <a href="#e92"><span class="n">04</span> BMW 335i</a>
+      <a href="#xm"><span class="n">05</span> BMW XM</a>
+    </nav>
+  </div>
+</section>
+
+<!-- ===================== EXHIBITS ===================== -->
+<div class="exhibits">
+  <div class="wrap">
+
+    <!-- 01 · PORSCHE 993 RWB -->
+    <section class="exhibit" id="porsche" data-screen-label="Gallery — Porsche RWB">
+      <div class="ex-head reveal-up">
+        <div class="ex-id">01</div>
+        <div class="ex-meta">
+          <span class="eyebrow">RAUH-Welt Begriff</span>
+          <h2>Porsche 993 <span class="chrome-text">RWB</span></h2>
+          <p class="ex-desc">A widebody RAUH-Welt 993 — riveted arches, race wing and a mirror-silver finish.</p>
+          <div class="ex-tags"><span>Studio</span><span>Detailing</span><span>Ceramic</span></div>
+        </div>
+        <div class="ex-count"><b>06</b><small>Frames</small></div>
+      </div>
+      <div class="ex-gallery lay-mosaic reveal-up" data-car="Porsche 993 RWB">
+        <figure class="shot feature" data-full="../assets/gallery/rwb-front.jpg" data-note="Front three-quarter · In the studio">
+          <img src="../assets/gallery/rwb-front-s.jpg" alt="RWB Porsche 993 front three-quarter under hexagon studio lights" loading="lazy">
+          <span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"></path></svg></span>
+          <figcaption><span class="cap-note">In the studio</span><span class="cap-tag">Studio</span></figcaption>
+        </figure>
+        <figure class="shot" data-full="../assets/gallery/rwb-top.jpg" data-note="From above · Mirror finish">
+          <img src="../assets/gallery/rwb-top-s.jpg" alt="RWB Porsche 993 from above with hexagon lights reflected in the paint" loading="lazy">
+          <span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"></path></svg></span>
+          <figcaption><span class="cap-note">Mirror finish</span><span class="cap-tag">Detailing</span></figcaption>
+        </figure>
+        <figure class="shot" data-full="../assets/gallery/rwb-doors.jpg" data-note="Doors open · Front">
+          <img src="../assets/gallery/rwb-doors-s.jpg" alt="RWB Porsche 993 front with both doors open under hexagon lights" loading="lazy">
+          <span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"></path></svg></span>
+          <figcaption><span class="cap-note">Doors open</span><span class="cap-tag">Studio</span></figcaption>
+        </figure>
+        <figure class="shot" data-full="../assets/gallery/rwb-side.jpg" data-note="Widebody profile">
+          <img src="../assets/gallery/rwb-side-s.jpg" alt="RWB Porsche 993 widebody side profile with doors open" loading="lazy">
+          <span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"></path></svg></span>
+          <figcaption><span class="cap-note">Widebody profile</span><span class="cap-tag">Studio</span></figcaption>
+        </figure>
+        <figure class="shot" data-full="../assets/gallery/rwb-profile.jpg" data-note="Side profile · Detail bay">
+          <img src="../assets/gallery/rwb-profile-s.jpg" alt="RWB Porsche 993 side profile under hexagon lights" loading="lazy">
+          <span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"></path></svg></span>
+          <figcaption><span class="cap-note">Detail bay</span><span class="cap-tag">Studio</span></figcaption>
+        </figure>
+        <figure class="shot" data-full="../assets/gallery/rwb-snow.jpg" data-note="Snow-dusted · The ramp">
+          <img src="../assets/gallery/rwb-snow-s.jpg" alt="RWB Porsche 993 dusted with snow on a concrete ramp" loading="lazy">
+          <span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"></path></svg></span>
+          <figcaption><span class="cap-note">Snow-dusted</span><span class="cap-tag">Winter</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 02 · BMW M2 -->
+    <section class="exhibit" id="m2" data-screen-label="Gallery — BMW M2">
+      <div class="ex-head reveal-up">
+        <div class="ex-id">02</div>
+        <div class="ex-meta">
+          <span class="eyebrow">G87 · Frozen Grey Wrap</span>
+          <h2>BMW <span class="chrome-text">M2</span></h2>
+          <p class="ex-desc">A new G87 M2 wrapped in a deep frozen grey, photographed on a Barcelona rooftop with the Collserola tower behind it. Matte body, gloss-black detailing, carbon accents.</p>
+          <div class="ex-tags"><span>Vinyl Wrap</span><span>PPF</span></div>
+        </div>
+        <div class="ex-count"><b>03</b><small>Frames</small></div>
+      </div>
+      <div class="ex-gallery lay-trio reveal-up" data-car="BMW M2">
+        <figure class="shot" data-full="../assets/gallery/m2-rooftop.jpg" data-note="Frozen grey · Rooftop">
+          <img src="../assets/gallery/m2-rooftop-s.jpg" alt="BMW M2 in frozen grey on a rooftop parking deck" loading="lazy">
+          <span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"></path></svg></span>
+          <figcaption><span class="cap-note">Rooftop</span><span class="cap-tag">Wrap</span></figcaption>
+        </figure>
+        <figure class="shot" data-full="../assets/gallery/m2-front.jpg" data-note="Front end · Collserola">
+          <img src="../assets/gallery/m2-front-s.jpg" alt="BMW M2 front end with Collserola tower behind" loading="lazy">
+          <span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"></path></svg></span>
+          <figcaption><span class="cap-note">Collserola</span><span class="cap-tag">Wrap</span></figcaption>
+        </figure>
+        <figure class="shot" data-full="../assets/gallery/m2-tower.jpg" data-note="Rear deck detail">
+          <img src="../assets/gallery/m2-tower-s.jpg" alt="BMW M2 rear deck with Collserola tower in the distance" loading="lazy">
+          <span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"></path></svg></span>
+          <figcaption><span class="cap-note">Rear detail</span><span class="cap-tag">Wrap</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 03 · TOYOTA SUPRA -->
+    <section class="exhibit" id="supra" data-screen-label="Gallery — Toyota Supra">
+      <div class="ex-head reveal-up">
+        <div class="ex-id">03</div>
+        <div class="ex-meta">
+          <span class="eyebrow">A90 · Pearl White</span>
+          <h2>Toyota <span class="chrome-text">GR Supra</span></h2>
+          <p class="ex-desc">A pearl-white GR Supra protected and sealed, then taken out into the Catalan countryside.</p>
+          <div class="ex-tags"><span>Ceramic</span><span>Paint Correction</span></div>
+        </div>
+        <div class="ex-count"><b>03</b><small>Frames</small></div>
+      </div>
+      <div class="ex-gallery lay-trio reveal-up" data-car="Toyota GR Supra">
+        <figure class="shot" data-full="../assets/gallery/supra-villa.jpg" data-note="Pearl white · Masia driveway">
+          <img src="../assets/gallery/supra-villa-s.jpg" alt="White Toyota GR Supra parked by a Catalan stone masia" loading="lazy">
+          <span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"></path></svg></span>
+          <figcaption><span class="cap-note">Masia driveway</span><span class="cap-tag">Ceramic</span></figcaption>
+        </figure>
+        <figure class="shot" data-full="../assets/gallery/supra-rear.jpg" data-note="Rear quarter · Mountain road">
+          <img src="../assets/gallery/supra-rear-s.jpg" alt="White Toyota GR Supra rear quarter on a tree-lined mountain road" loading="lazy">
+          <span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"></path></svg></span>
+          <figcaption><span class="cap-note">Mountain road</span><span class="cap-tag">Gloss</span></figcaption>
+        </figure>
+        <figure class="shot" data-full="../assets/gallery/supra-road.jpg" data-note="Rear three-quarter · Dappled light">
+          <img src="../assets/gallery/supra-road-s.jpg" alt="White Toyota GR Supra rear three-quarter parked under trees on a stone driveway" loading="lazy">
+          <span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"></path></svg></span>
+          <figcaption><span class="cap-note">Dappled light</span><span class="cap-tag">Ceramic</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 04 · BMW 335i -->
+    <section class="exhibit" id="e92" data-screen-label="Gallery — BMW 335i">
+      <div class="ex-head reveal-up">
+        <div class="ex-id">04</div>
+        <div class="ex-meta">
+          <span class="eyebrow">E92 · Gloss Black</span>
+          <h2>BMW <span class="chrome-text">335i</span></h2>
+          <p class="ex-desc">A lowered E92 335i in deep gloss black — caught rolling at speed on the motorway and parked up on a cypress-lined coast road. Paint correction and a slick protective finish.</p>
+          <div class="ex-tags"><span>Detailing</span><span>Paint Correction</span></div>
+        </div>
+        <div class="ex-count"><b>02</b><small>Frames</small></div>
+      </div>
+      <div class="ex-gallery lay-duo reveal-up" data-car="BMW 335i E92">
+        <figure class="shot" data-full="../assets/gallery/e92-rolling.jpg" data-note="Gloss black · Rolling shot">
+          <img src="../assets/gallery/e92-rolling-s.jpg" alt="Black BMW 335i E92 rolling shot on the highway" loading="lazy">
+          <span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"></path></svg></span>
+          <figcaption><span class="cap-note">Rolling shot</span><span class="cap-tag">On the road</span></figcaption>
+        </figure>
+        <figure class="shot" data-full="../assets/gallery/e92-coast.jpg" data-note="Gloss black · Coast road">
+          <img src="../assets/gallery/e92-coast-s.jpg" alt="Black BMW 335i E92 parked on a coastal road with cypress trees" loading="lazy">
+          <span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"></path></svg></span>
+          <figcaption><span class="cap-note">Coast road</span><span class="cap-tag">Gloss black</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 05 · BMW XM -->
+    <section class="exhibit" id="xm" data-screen-label="Gallery — BMW XM">
+      <div class="ex-head reveal-up">
+        <div class="ex-id">05</div>
+        <div class="ex-meta">
+          <span class="eyebrow">G09 · Matte Black</span>
+          <h2>BMW <span class="chrome-text">XM</span></h2>
+          <p class="ex-desc">A matte-black XM wrapped in full PPF and finished inside and out — illuminated kidney grille, Alcantara starlight headliner and quad exhaust, shot on a sun-broken Catalan back road.</p>
+          <div class="ex-tags"><span>PPF</span><span>Detailing</span><span>CAR WRAP</span></div>
+        </div>
+        <div class="ex-count"><b>05</b><small>Frames</small></div>
+      </div>
+      <div class="ex-gallery lay-mosaic reveal-up" data-car="BMW XM">
+        <figure class="shot feature" data-full="../assets/gallery/xm-front.jpg" data-note="Front three-quarter · Back road">
+          <img src="../assets/gallery/xm-front-s.jpg" alt="Matte black BMW XM front three-quarter on a tree-lined road" loading="lazy">
+          <span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"></path></svg></span>
+          <figcaption><span class="cap-note">Back road</span><span class="cap-tag">PPF</span></figcaption>
+        </figure>
+        <figure class="shot" data-full="../assets/gallery/xm-grille.jpg" data-note="Illuminated kidney grille">
+          <img src="../assets/gallery/xm-grille-s.jpg" alt="BMW XM front with illuminated kidney grille head-on" loading="lazy">
+          <span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"></path></svg></span>
+          <figcaption><span class="cap-note">Lit grille</span><span class="cap-tag">Detail</span></figcaption>
+        </figure>
+        <figure class="shot" data-full="../assets/gallery/xm-rear.jpg" data-note="Rear · Quad exhaust">
+          <img src="../assets/gallery/xm-rear-s.jpg" alt="Matte black BMW XM rear with stacked quad exhaust" loading="lazy">
+          <span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"></path></svg></span>
+          <figcaption><span class="cap-note">Quad exhaust</span><span class="cap-tag">PPF</span></figcaption>
+        </figure>
+        <figure class="shot" data-full="../assets/gallery/xm-headliner.jpg" data-note="Alcantara starlight headliner">
+          <img src="../assets/gallery/xm-headliner-s.jpg" alt="BMW XM Alcantara starlight headliner with blue ambient lighting" loading="lazy">
+          <span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"></path></svg></span>
+          <figcaption><span class="cap-note">Starlight headliner</span><span class="cap-tag">Interior</span></figcaption>
+        </figure>
+        <figure class="shot" data-full="../assets/gallery/xm-wheel.jpg" data-note="Cockpit · M steering wheel">
+          <img src="../assets/gallery/xm-wheel-s.jpg" alt="BMW XM cockpit and M steering wheel with woodland behind" loading="lazy">
+          <span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"></path></svg></span>
+          <figcaption><span class="cap-note">Cockpit</span><span class="cap-tag">Interior</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<!-- ===================== CTA ===================== -->
+<section class="cta" data-screen-label="Gallery — CTA">
+  <div class="wrap">
+    <span class="eyebrow">Your car next</span>
+    <h2 class="display">Earn your <span class="chrome-text">own room.</span></h2>
+    <div class="actions">
+      <a href="../SERRES.html#contact" class="btn">Get a Quote <span class="arr">→</span></a>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 SERRES. All rights reserved. &nbsp;·&nbsp; Shot on real client cars</footer>
+
+<!-- ===================== LIGHTBOX ===================== -->
+<div class="lb" id="lb" aria-hidden="true" role="dialog" aria-label="Image viewer">
+  <div class="lb-bar">
+    <div class="lb-meta"><span class="lb-car" id="lbCar"></span><span class="lb-count" id="lbCount"></span></div>
+    <button class="lb-close" id="lbClose" aria-label="Close viewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 5l14 14M19 5L5 19"></path></svg></button>
+  </div>
+  <div class="lb-stage">
+    <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous image"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 5l-7 7 7 7"></path></svg></button>
+    <img id="lbImg" alt="">
+    <button class="lb-nav lb-next" id="lbNext" aria-label="Next image"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 5l7 7-7 7"></path></svg></button>
+  </div>
+  <div class="lb-cap"><div class="c2" id="lbNote"></div></div>
+</div>
+
+<script>
+/* ---------- reveal on scroll ---------- */
+(function(){
+  var els=[].slice.call(document.querySelectorAll('.reveal-up'));
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in');});return;}
+  var io=new IntersectionObserver(function(ents){
+    ents.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+  },{threshold:.08,rootMargin:'0px 0px -6% 0px'});
+  els.forEach(function(e){io.observe(e);});
+})();
+</script>
+
+<script>
+/* ---------- lightbox, scoped to each car's section ---------- */
+(function(){
+  var lb=document.getElementById('lb');
+  var img=document.getElementById('lbImg');
+  var carEl=document.getElementById('lbCar');
+  var note=document.getElementById('lbNote');
+  var count=document.getElementById('lbCount');
+  var list=[],idx=0,carName='';
+
+  function pad(n){return String(n).padStart(2,'0');}
+  function T(s){return (window.SERRES_I18N&&window.SERRES_I18N.t)?window.SERRES_I18N.t(s):s;}
+  function show(i){
+    if(!list.length)return;
+    idx=(i+list.length)%list.length;
+    var s=list[idx];
+    img.src=s.dataset.full;
+    img.alt=s.querySelector('img').alt;
+    note.textContent=T(s.dataset.note);
+    carEl.textContent=carName;
+    count.textContent=pad(idx+1)+' / '+pad(list.length);
+  }
+  function open(shot){
+    var gal=shot.closest('.ex-gallery');
+    carName=gal?gal.dataset.car:'';
+    list=[].slice.call(gal.querySelectorAll('.shot'));
+    show(list.indexOf(shot));
+    lb.classList.add('open');
+    lb.setAttribute('aria-hidden','false');
+    document.documentElement.style.overflow='hidden';
+  }
+  function close(){
+    lb.classList.remove('open');
+    lb.setAttribute('aria-hidden','true');
+    document.documentElement.style.overflow='';
+  }
+  document.querySelectorAll('.shot').forEach(function(s){
+    s.addEventListener('click',function(){open(s);});
+  });
+  document.getElementById('lbClose').addEventListener('click',close);
+  document.getElementById('lbPrev').addEventListener('click',function(){show(idx-1);});
+  document.getElementById('lbNext').addEventListener('click',function(){show(idx+1);});
+  lb.addEventListener('click',function(e){if(e.target===lb)close();});
+  document.addEventListener('keydown',function(e){
+    if(!lb.classList.contains('open'))return;
+    if(e.key==='Escape')close();
+    else if(e.key==='ArrowLeft')show(idx-1);
+    else if(e.key==='ArrowRight')show(idx+1);
+  });
+  var x0=null;
+  lb.addEventListener('touchstart',function(e){x0=e.touches[0].clientX;},{passive:true});
+  lb.addEventListener('touchend',function(e){
+    if(x0===null)return;
+    var dx=e.changedTouches[0].clientX-x0;
+    if(Math.abs(dx)>48){if(dx<0)show(idx+1);else show(idx-1);}
+    x0=null;
+  },{passive:true});
+})();
+</script>
+
+<script src="../assets/serres-enhance.js" defer></script>
+
+</body>
+</html>

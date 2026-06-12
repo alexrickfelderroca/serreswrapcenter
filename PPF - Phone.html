@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SERRES PPF — Phone Preview</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{
+    background:#0a0a0b;
+    font-family:-apple-system,system-ui,sans-serif;
+    display:flex;align-items:center;justify-content:center;
+    min-height:100vh;padding:32px 20px;overflow:hidden;
+    background-image:radial-gradient(80% 60% at 50% 0%,rgba(46,50,63,.35),transparent 70%);
+  }
+
+  /* Phone bezel — fixed-thickness frame, sized to the scaled screen.
+     The scale lives on the IFRAME ITSELF (see #screen iframe), not on a
+     wrapper, so the embedded page paints correctly. */
+  .phone{
+    position:relative;
+    padding:13px;
+    background:#000;
+    border-radius:56px;
+    box-shadow:
+      0 0 0 2px #2a2a2e,
+      0 0 0 3px #050506,
+      0 40px 90px -30px rgba(0,0,0,.9),
+      inset 0 0 2px rgba(255,255,255,.15);
+  }
+  .screen{
+    position:relative;
+    overflow:hidden;
+    border-radius:44px;
+    background:#0a0a0b;
+  }
+  .screen iframe{
+    border:0;display:block;background:#0a0a0b;
+    transform-origin:top left;
+  }
+  /* Dynamic island */
+  .island{
+    position:absolute;top:11px;left:50%;transform:translateX(-50%);
+    width:104px;height:30px;background:#000;border-radius:16px;z-index:5;
+    pointer-events:none;
+  }
+  /* Home indicator */
+  .home-ind{
+    position:absolute;bottom:8px;left:50%;transform:translateX(-50%);
+    width:120px;height:5px;border-radius:3px;background:rgba(255,255,255,.55);z-index:5;
+    pointer-events:none;
+  }
+</style>
+</head>
+<body>
+  <div class="phone" id="phone">
+    <div class="screen" id="screen">
+      <iframe id="frame" src="services/ppf.html" title="SERRES PPF mobile" scrolling="yes"></iframe>
+      <div class="island"></div>
+      <div class="home-ind"></div>
+    </div>
+  </div>
+
+<script>
+  // Logical phone resolution (iPhone-class). The page renders at this width
+  // so its mobile breakpoints engage, then we scale it down to fit.
+  var LW = 390, LH = 844;
+  var phone = document.getElementById('phone');
+  var screen = document.getElementById('screen');
+  var frame = document.getElementById('frame');
+
+  function fit(){
+    var marginV = 64, marginH = 40;
+    var s = Math.min(
+      1,
+      (window.innerHeight - marginV) / LH,
+      (window.innerWidth - marginH) / LW
+    );
+    // iframe rendered at logical size, scaled by transform on itself
+    frame.style.width = LW + 'px';
+    frame.style.height = LH + 'px';
+    frame.style.transform = 'scale(' + s + ')';
+    // screen shows the scaled footprint
+    screen.style.width = (LW * s) + 'px';
+    screen.style.height = (LH * s) + 'px';
+    screen.style.borderRadius = (44 * s) + 'px';
+    phone.style.borderRadius = (44 * s + 13) + 'px';
+  }
+  window.addEventListener('resize', fit);
+  fit();
+
+  // Logo inside the page should return to the framed phone home page.
+  frame.addEventListener('load', function(){
+    try{
+      var doc = frame.contentDocument;
+      var logo = doc && doc.querySelector('.logo');
+      if(logo){
+        logo.style.cursor = 'pointer';
+        logo.addEventListener('click', function(ev){
+          ev.preventDefault();
+          window.location.href = 'SERRES - Phone.html';
+        });
+      }
+    }catch(e){/* cross-origin guard */}
+  });
+</script>
+</body>
+</html>

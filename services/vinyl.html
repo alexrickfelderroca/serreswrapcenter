@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SERRES — Car Wrap / Vinyl</title>
+<meta name="description" content="SERRES Vinyl — full and partial colour-change wraps in the 3M Wrap Film Series 1080 range. Matte, satin, gloss, metallic and colour-flip finishes, precision-fit to every panel.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,600;1,700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0a0a0b;--bg-2:#0e0e10;--panel:#141417;--panel-2:#191920;
+    --line:rgba(255,255,255,0.09);--line-strong:rgba(255,255,255,0.16);
+    --text:#f3f3f5;--muted:#9a9aa3;--muted-2:#6e6e77;
+    --chrome:linear-gradient(176deg,#fdfdfe 0%,#cfcfd6 32%,#8d8d97 52%,#f0f0f4 72%,#a6a6b0 100%);
+    --ease:cubic-bezier(.22,.61,.36,1);--maxw:1280px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--text);font-family:"DM Sans",system-ui,sans-serif;
+    font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;min-height:100vh;
+    display:flex;flex-direction:column;overflow-x:hidden;
+    background-image:radial-gradient(90% 60% at 50% -8%,rgba(46,50,63,.26),transparent 66%);}
+  ::selection{background:#e7e7ec;color:#0a0a0b}
+  a{color:inherit;text-decoration:none}
+  img{display:block;max-width:100%}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 40px}
+
+  .display{font-family:"Barlow Condensed",sans-serif;font-weight:700;line-height:.92;
+    letter-spacing:.01em;text-transform:uppercase;}
+  .chrome-text{background:var(--chrome);-webkit-background-clip:text;background-clip:text;
+    color:transparent;-webkit-text-fill-color:transparent;}
+  .eyebrow{font-family:"Barlow Condensed",sans-serif;font-weight:600;text-transform:uppercase;
+    letter-spacing:.34em;font-size:13px;color:var(--muted);display:inline-flex;align-items:center;gap:14px;}
+  .eyebrow::before{content:"";width:30px;height:1px;background:linear-gradient(90deg,transparent,var(--line-strong));}
+
+  .btn{font-family:"Barlow Condensed",sans-serif;font-weight:600;text-transform:uppercase;
+    letter-spacing:.14em;font-size:15px;display:inline-flex;align-items:center;gap:11px;
+    padding:14px 26px;border:none;cursor:pointer;background:var(--chrome);color:#0a0a0b;
+    clip-path:polygon(0 0,100% 0,100% 100%,12px 100%,0 calc(100% - 12px));
+    transition:transform .3s var(--ease),filter .3s var(--ease);}
+  .btn:hover{transform:translateY(-2px);filter:brightness(1.08)}
+  .btn .arr{transition:transform .3s var(--ease)}
+  .btn:hover .arr{transform:translateX(4px)}
+  .btn.ghost{background:transparent;color:var(--text);border:1px solid var(--line-strong);
+    clip-path:none;padding:13px 26px;}
+  .btn.ghost:hover{border-color:#fff;background:rgba(255,255,255,.04)}
+
+  /* ---------- NAV ---------- */
+  header.nav{position:sticky;top:0;z-index:50;border-bottom:1px solid var(--line);
+    background:rgba(10,10,11,.82);backdrop-filter:blur(14px) saturate(120%);}
+  .nav-inner{max-width:var(--maxw);margin:0 auto;padding:18px 40px;display:flex;align-items:center;
+    justify-content:space-between;gap:30px;}
+  .nav-left{display:flex;align-items:center;gap:30px}
+  .logo{font-family:"Barlow Condensed",sans-serif;font-style:italic;font-weight:700;font-size:28px;
+    letter-spacing:.16em;text-transform:uppercase;padding:0 .28em 0 .04em;white-space:nowrap}
+  .back{font-family:"Barlow Condensed",sans-serif;font-weight:500;text-transform:uppercase;
+    letter-spacing:.16em;font-size:14px;color:var(--muted);display:inline-flex;align-items:center;gap:10px;
+    transition:color .25s var(--ease);}
+  .back:hover{color:var(--text)}
+  .nav-right{display:flex;align-items:center;gap:20px}
+
+  /* ---------- HERO / INTRO ---------- */
+  .hero{position:relative;padding:96px 0 60px;overflow:hidden}
+  .hero::after{content:"";position:absolute;left:50%;top:-14%;transform:translateX(-50%);
+    width:min(120vw,1500px);height:560px;z-index:0;pointer-events:none;
+    background:radial-gradient(46% 52% at 50% 50%,rgba(54,58,72,.34),rgba(10,10,11,0) 72%);}
+  .hero .wrap{position:relative;z-index:1}
+  /* film surface as hero background (toggled via Tweaks) */
+  .hero-film-canvas{position:absolute;inset:0;width:100%;height:100%;z-index:0;display:block;
+    opacity:0;transition:opacity .6s var(--ease);pointer-events:none}
+  .hero.film-on .hero-film-canvas{opacity:1}
+  .hero-film-veil{position:absolute;inset:0;z-index:0;pointer-events:none;opacity:0;
+    transition:opacity .6s var(--ease);
+    background:linear-gradient(180deg,rgba(10,10,11,calc(var(--veil,.55)*.62)) 0%,
+      rgba(10,10,11,var(--veil,.55)) 64%,#0a0a0b 100%)}
+  .hero.film-on .hero-film-veil{opacity:1}
+  .hero.film-on::after{opacity:.42}
+  .hero-top{display:flex;align-items:flex-end;justify-content:space-between;gap:40px;flex-wrap:wrap}
+  .hero h1{font-size:clamp(56px,11.5vw,168px);margin:20px 0 0}
+  .hero h1 .ln{display:block;overflow:hidden;padding-bottom:.03em}
+  .hero h1 .ln span{display:block}
+  @keyframes rise{from{transform:translateY(108%)}to{transform:translateY(0)}}
+  .hero .lead{margin-top:26px;max-width:50ch;color:var(--muted);font-size:clamp(16px,1.5vw,19px)}
+  @keyframes fade{from{opacity:0}to{opacity:1}}
+  .hero-stats{display:flex;gap:46px;flex-wrap:wrap;margin-bottom:8px}
+  .hstat{display:flex;flex-direction:column;gap:3px}
+  .hstat b{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:40px;line-height:1;
+    letter-spacing:.01em}
+  .hstat span{font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.2em;
+    font-size:11.5px;color:var(--muted-2)}
+  @media(prefers-reduced-motion:no-preference){
+    .hero h1 .ln span{transform:translateY(108%);animation:rise 1s var(--ease) .05s forwards}
+    .hero h1 .ln:nth-child(2) span{animation-delay:.16s}
+    .hero .eyebrow{opacity:0;animation:fade .9s var(--ease) .2s forwards}
+    .hero .lead{opacity:0;animation:fade .9s var(--ease) .42s forwards}
+    .hero-stats{opacity:0;animation:fade .9s var(--ease) .55s forwards}
+  }
+
+  /* ---------- WRAP FILM RIPPLE BANNER ---------- */
+  .wrap-ripple{position:relative;width:100vw;left:50%;margin-left:-50vw;
+    height:clamp(300px,46vh,540px);background:#000;overflow:hidden;
+    border-top:1px solid var(--line);border-bottom:1px solid var(--line);cursor:crosshair}
+  .wrap-ripple canvas{position:absolute;inset:0;width:100%;height:100%;display:block;z-index:0}
+  .wrap-ripple .wr-overlay{position:absolute;inset:0;z-index:2;pointer-events:none;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;
+    background:radial-gradient(82% 54% at 50% 46%,rgba(4,4,7,.9) 0%,rgba(4,4,7,.64) 38%,rgba(4,4,7,.2) 66%,rgba(4,4,7,0) 88%)}
+  .wr-overlay .eyebrow{justify-content:center;color:#d6d6db}
+  .wr-overlay .eyebrow::after{content:"";width:30px;height:1px;
+    background:linear-gradient(90deg,var(--line-strong),transparent)}
+  .wr-overlay h2{font-family:"Barlow Condensed",sans-serif;font-weight:700;text-transform:uppercase;
+    line-height:.9;letter-spacing:.02em;font-size:clamp(34px,5.6vw,86px);margin:18px 0 0;
+    white-space:nowrap;
+    background:none;-webkit-text-fill-color:#eef0f3;color:#eef0f3;
+    text-shadow:0 2px 30px rgba(0,0,0,.6),0 1px 2px rgba(0,0,0,.5)}
+  .wr-hint{position:absolute;left:50%;bottom:clamp(18px,4vh,30px);transform:translateX(-50%);z-index:2;
+    pointer-events:none;font-family:"Barlow Condensed",sans-serif;font-weight:500;text-transform:uppercase;
+    letter-spacing:.3em;font-size:11.5px;color:var(--muted);display:flex;align-items:center;gap:12px;
+    transition:opacity .5s var(--ease)}
+  .wr-hint .dot{width:5px;height:5px;border-radius:50%;background:#e7e7ec;
+    box-shadow:0 0 10px rgba(255,255,255,.6)}
+  .wrap-ripple.touched .wr-hint{opacity:0}
+  @media(prefers-reduced-motion:reduce){.wrap-ripple{cursor:default}}
+
+  /* ---------- SECTION SHELL ---------- */
+  .section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;flex-wrap:wrap}
+  .section-head h2{font-family:"Barlow Condensed",sans-serif;font-weight:700;text-transform:uppercase;
+    line-height:.94;letter-spacing:.012em;font-size:clamp(34px,5vw,64px);margin-top:16px;text-wrap:balance}
+  .section-head .sh-note{color:var(--muted);font-size:15px;max-width:34ch;margin-top:14px}
+
+  /* ---------- PALETTE / SCROLL ---------- */
+  .palette{padding:64px 0 30px;position:relative}
+  .pal-controls{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;
+    margin-top:38px}
+  .filters{display:flex;gap:10px;flex-wrap:wrap}
+  .chip{font-family:"Barlow Condensed",sans-serif;font-weight:600;text-transform:uppercase;
+    letter-spacing:.14em;font-size:13px;color:var(--muted);background:transparent;cursor:pointer;
+    border:1px solid var(--line);padding:9px 17px;border-radius:999px;
+    transition:color .25s var(--ease),border-color .25s var(--ease),background .25s var(--ease)}
+  .chip:hover{color:var(--text);border-color:var(--line-strong)}
+  .chip.active{color:#0a0a0b;background:var(--chrome);border-color:transparent}
+  .chip .ct{opacity:.55;margin-left:6px;font-size:11px}
+  .chip.active .ct{opacity:.6}
+
+  .scroll-tools{display:flex;align-items:center;gap:16px}
+  .scroll-hint{font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.26em;
+    font-size:12px;color:var(--muted-2);display:inline-flex;align-items:center;gap:12px}
+  .scroll-hint .hbar{width:38px;height:1px;background:var(--muted-2);position:relative;overflow:hidden}
+  .scroll-hint .hbar::after{content:"";position:absolute;inset:0;background:#fff;transform:translateX(-100%);
+    animation:hslide 2.4s var(--ease) infinite}
+  @keyframes hslide{0%{transform:translateX(-100%)}55%{transform:translateX(100%)}100%{transform:translateX(100%)}}
+  .arrows{display:flex;gap:8px}
+  .arrow{width:46px;height:46px;border:1px solid var(--line-strong);background:transparent;color:var(--text);
+    cursor:pointer;display:grid;place-items:center;border-radius:50%;
+    transition:background .25s var(--ease),border-color .25s var(--ease),opacity .25s var(--ease)}
+  .arrow:hover{background:rgba(255,255,255,.06);border-color:#fff}
+  .arrow:disabled{opacity:.3;cursor:default;border-color:var(--line)}
+  .arrow svg{width:18px;height:18px}
+
+  .pal-viewport{margin-top:30px;position:relative}
+
+  .pal-track{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x proximity;
+    padding:4px 40px 22px;margin:0 -40px;cursor:grab;
+    scrollbar-width:none;-ms-overflow-style:none}
+  .pal-track::-webkit-scrollbar{display:none}
+  .pal-track.dragging{cursor:grabbing;scroll-snap-type:none}
+  .pal-track.dragging .swatch{pointer-events:none}
+
+  .swatch{flex:0 0 auto;width:212px;scroll-snap-align:start;
+    background:var(--panel);border:1px solid var(--line);
+    transition:transform .4s var(--ease),border-color .4s var(--ease),box-shadow .4s var(--ease);
+    will-change:transform}
+  .swatch:hover{transform:translateY(-7px);border-color:var(--line-strong);
+    box-shadow:0 26px 50px -28px rgba(0,0,0,.9)}
+  .sw-chip{position:relative;height:188px;overflow:hidden;background:var(--c)}
+  .sw-chip::after{content:"";position:absolute;inset:0}
+  /* finish surface treatments */
+  .swatch[data-finish="Gloss"] .sw-chip::after{
+    background:linear-gradient(132deg,rgba(255,255,255,.34) 0%,rgba(255,255,255,.04) 30%,
+      rgba(255,255,255,0) 52%,rgba(0,0,0,.10) 78%,rgba(0,0,0,.26) 100%);}
+  .swatch[data-finish="Satin"] .sw-chip::after{
+    background:linear-gradient(150deg,rgba(255,255,255,.16) 0%,rgba(255,255,255,.02) 40%,
+      rgba(0,0,0,.06) 72%,rgba(0,0,0,.16) 100%);}
+  .swatch[data-finish="Matte"] .sw-chip::after{
+    background:linear-gradient(180deg,rgba(255,255,255,.05) 0%,rgba(255,255,255,0) 26%,
+      rgba(0,0,0,.07) 100%);}
+  .swatch[data-finish="Color Flip"] .sw-chip{background:var(--c)}
+  .swatch[data-finish="Color Flip"] .sw-chip::after{
+    background:linear-gradient(125deg,rgba(255,255,255,.30) 0%,rgba(255,255,255,0) 34%,
+      rgba(0,0,0,.18) 100%);}
+  .sw-chip .flip-flag{position:absolute;left:12px;top:12px;z-index:2;
+    font-family:"Barlow Condensed",sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.18em;
+    font-size:10.5px;color:#fff;background:rgba(0,0,0,.32);backdrop-filter:blur(4px);
+    border:1px solid rgba(255,255,255,.28);padding:4px 9px;border-radius:999px;display:none}
+  .swatch[data-finish="Color Flip"] .flip-flag{display:inline-block}
+  .sw-meta{padding:15px 16px 17px;display:flex;flex-direction:column;gap:3px}
+  .sw-name{font-family:"Barlow Condensed",sans-serif;font-weight:600;text-transform:uppercase;
+    letter-spacing:.04em;font-size:18px;line-height:1.05}
+  .sw-sub{display:flex;align-items:center;gap:8px;margin-top:5px}
+  .sw-code{font-family:"Barlow Condensed",sans-serif;letter-spacing:.14em;font-size:12px;color:var(--muted-2);
+    text-transform:uppercase}
+  .sw-fin{margin-left:auto;font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;
+    letter-spacing:.16em;font-size:11px;color:var(--muted);border:1px solid var(--line);
+    padding:2px 9px;border-radius:999px}
+
+  .pal-progress{height:2px;background:rgba(255,255,255,.10);position:relative;margin:6px 0 0;overflow:hidden}
+  .pal-progress i{position:absolute;left:0;top:0;height:100%;width:18%;background:var(--chrome);
+    box-shadow:0 0 12px rgba(255,255,255,.5)}
+
+  /* ---------- TRANSFORMATION + TEXT ---------- */
+  .xform{padding:80px 0 30px}
+  .xform-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:54px;align-items:center;margin-top:8px}
+  .xtext h2{font-family:"Barlow Condensed",sans-serif;font-weight:700;text-transform:uppercase;
+    line-height:.94;letter-spacing:.012em;font-size:clamp(36px,4.4vw,64px);margin:18px 0 0;text-wrap:balance}
+  .xtext p{margin-top:22px;color:var(--muted);font-size:17px;max-width:42ch;text-wrap:pretty}
+  .xspecs{margin-top:30px;display:flex;flex-direction:column;border-top:1px solid var(--line)}
+  .xspecs .row{display:flex;gap:18px;padding:13px 0;border-bottom:1px solid var(--line)}
+  .xspecs .k{font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.2em;
+    font-size:12.5px;color:var(--muted-2);width:128px;flex:none;padding-top:2px}
+  .xspecs .v{color:var(--text);font-size:15.5px}
+
+  .compare{position:relative;width:100%;aspect-ratio:16/10;overflow:hidden;
+    border:1px solid var(--line-strong);background:#000;user-select:none;touch-action:pan-y;
+    clip-path:polygon(0 0,100% 0,100% 100%,20px 100%,0 calc(100% - 20px))}
+  .compare img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 58%;
+    pointer-events:none}
+  .compare .after{z-index:1}
+  .compare .before{z-index:2;clip-path:inset(0 50% 0 0)}
+  .cmp-tag{position:absolute;bottom:16px;z-index:4;font-family:"Barlow Condensed",sans-serif;
+    font-weight:600;text-transform:uppercase;letter-spacing:.18em;font-size:12px;color:#fff;
+    background:rgba(8,8,9,.6);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.18);
+    padding:7px 13px;display:flex;flex-direction:column;gap:1px;line-height:1.2;
+    transition:opacity .3s var(--ease)}
+  .cmp-tag small{font-weight:500;letter-spacing:.14em;font-size:10px;color:var(--muted)}
+  .cmp-tag.bef{left:16px}
+  .cmp-tag.aft{right:16px;text-align:right;align-items:flex-end}
+  .cmp-divider{position:absolute;top:0;bottom:0;z-index:5;width:2px;left:50%;margin-left:-1px;
+    background:linear-gradient(180deg,transparent,rgba(255,255,255,.85) 12%,rgba(255,255,255,.85) 88%,transparent);
+    box-shadow:0 0 16px rgba(255,255,255,.4)}
+  .cmp-handle{position:absolute;top:50%;left:50%;z-index:6;width:52px;height:52px;margin:-26px 0 0 -26px;
+    border-radius:50%;background:var(--chrome);color:#0a0a0b;display:grid;place-items:center;
+    cursor:ew-resize;box-shadow:0 10px 30px rgba(0,0,0,.55);transition:transform .25s var(--ease)}
+  .compare:hover .cmp-handle{transform:scale(1.06)}
+  .cmp-handle svg{width:24px;height:24px}
+  .cmp-hint{position:absolute;left:50%;top:16px;transform:translateX(-50%);z-index:4;
+    font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.24em;font-size:11px;
+    color:#fff;background:rgba(8,8,9,.55);backdrop-filter:blur(6px);padding:6px 13px;border-radius:999px;
+    border:1px solid rgba(255,255,255,.16);transition:opacity .4s var(--ease)}
+  .compare.touched .cmp-hint{opacity:0}
+
+  /* ---------- CTA ---------- */
+  .cta{position:relative;margin-top:70px;padding:104px 0;text-align:center;background:var(--bg-2)}
+  .cta::before,.cta::after{content:"";position:absolute;left:0;right:0;height:1px;background:var(--line)}
+  .cta::before{top:0}.cta::after{bottom:0}
+  .cta .eyebrow{justify-content:center}
+  .cta h2{font-size:clamp(38px,6vw,82px);margin:20px auto 0;max-width:15ch}
+  .cta .actions{margin-top:36px;display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+  .cta .phone{margin-top:28px;font-family:"Barlow Condensed",sans-serif;letter-spacing:.2em;
+    text-transform:uppercase;font-size:14px;color:var(--muted)}
+  .cta .phone strong{color:var(--text);font-weight:600}
+
+  footer{padding:30px 40px;border-top:1px solid var(--line);color:var(--muted-2);font-size:13px;
+    letter-spacing:.04em;text-align:center}
+
+  /* reveal-on-scroll */
+  .reveal-up{opacity:0;transform:translateY(26px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+  .reveal-up.in{opacity:1;transform:none}
+
+  @media(max-width:980px){
+    .xform-grid{grid-template-columns:1fr;gap:34px}
+    .xtext p{max-width:100%}
+  }
+  @media(max-width:760px){
+    .wrap,.nav-inner{padding-left:22px;padding-right:22px}
+    .pal-track{padding-left:22px;padding-right:22px;margin:0 -22px}
+    .pal-viewport::before,.pal-viewport::after{width:42px}
+    .nav-right .btn{display:none}
+    .back span.lbl{display:none}
+    .hero-top{align-items:flex-start}
+    .hero-stats{gap:30px}
+    .scroll-hint{display:none}
+    .swatch{width:166px}
+    .sw-chip{height:150px}
+  }
+  @media(prefers-reduced-motion:reduce){
+    *{animation:none!important}
+    .hero h1 .ln span{transform:none}
+    .hero .lead,.hero-stats,.hero .eyebrow{opacity:1}
+    .reveal-up{opacity:1;transform:none}
+  }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <div class="nav-left">
+      <a href="../SERRES.html" class="logo chrome-text">SERRES</a>
+      <a href="../SERRES.html#services" class="back">← <span class="lbl">All services</span></a>
+    </div>
+    <div class="nav-right">
+      <a href="../SERRES.html#contact" class="btn">Get a Quote <span class="arr">→</span></a>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== HERO / INTRO ===================== -->
+<section class="hero" data-screen-label="Vinyl — Intro">
+  <div class="wrap">
+    <div class="hero-top">
+      <div>
+        <span class="eyebrow">Service 01 · Vinyl</span>
+        <h1 class="display">
+          <span class="ln"><span>Car</span></span>
+          <span class="ln"><span class="chrome-text">Wrap</span></span>
+        </h1>
+      </div>
+      <div class="hero-stats">
+        <div class="hstat"><b class="chrome-text">60+</b><span>Film Colours</span></div>
+        <div class="hstat"><b class="chrome-text">5</b><span>Finish Families</span></div>
+        <div class="hstat"><b class="chrome-text">3M</b><span>1080 Series</span></div>
+      </div>
+    </div>
+    <p class="lead">Full and partial colour-change wraps in the 3M&trade; Wrap Film Series 1080 range — matte, satin, gloss, metallic and colour-flip finishes, precision-fit and heat-sealed to every panel, edge and recess.</p>
+  </div>
+</section>
+
+<!-- ===================== PALETTE / SCROLL ===================== -->
+<section class="palette" data-screen-label="Palette">
+  <div class="wrap">
+    <div class="section-head reveal-up">
+      <div>
+        <span class="eyebrow">The Palette</span>
+        <h2>Every colour we<br>can put on your car</h2>
+      </div>
+      <p class="sh-note">The full 3M&trade; Wrap Film Series 1080 spectrum. Filter by finish, then drag or scroll to explore.</p>
+    </div>
+
+    <div class="pal-controls reveal-up">
+      <div class="filters" id="filters" data-i18n-skip></div>
+      <div class="scroll-tools">
+        <span class="scroll-hint"><span class="hbar"></span> Scroll</span>
+        <div class="arrows">
+          <button class="arrow" id="prev" aria-label="Scroll left">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          <button class="arrow" id="next" aria-label="Scroll right">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 6l6 6-6 6"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="pal-viewport" id="viewport" data-at-start>
+      <div class="pal-track" id="track" data-i18n-skip></div>
+    </div>
+    <div class="pal-progress"><i id="palFill"></i></div>
+  </div>
+</section>
+
+<!-- ===================== TRANSFORMATION + TEXT ===================== -->
+<section class="xform" data-screen-label="Transformation">
+  <div class="wrap">
+    <div class="section-head reveal-up">
+      <div>
+        <span class="eyebrow">The Transformation</span>
+      </div>
+    </div>
+    <div class="xform-grid">
+      <div class="xtext reveal-up">
+        <h2>One panel at<br>a time.</h2>
+        <p>This BMW XM arrived in factory gloss black. We stripped it back, decontaminated every surface and re-skinned it in a deep satin-black film — bumper to roofline, mirror caps to door shuts.</p>
+        <p>Drag the slider to see the change. No paint touched, fully reversible, and protecting the original finish underneath.</p>
+        <div class="xspecs">
+          <div class="row"><span class="k">Vehicle</span><span class="v">BMW XM</span></div>
+          <div class="row"><span class="k">Finish</span><span class="v">3M&trade; 1080 Satin Black</span></div>
+          <div class="row"><span class="k">Coverage</span><span class="v">Full body colour change</span></div>
+          <div class="row"><span class="k">Turnaround</span><span class="v">5–7 days</span></div>
+        </div>
+      </div>
+
+      <div class="reveal-up">
+        <div class="compare touched" id="compare">
+          <img class="after" src="../assets/vinyl/xm-after.jpg" alt="BMW XM after — SERRES satin black wrap" draggable="false">
+          <img class="before" id="beforeImg" src="../assets/vinyl/xm-before.jpg" alt="BMW XM before — factory gloss black" draggable="false">
+          <div class="cmp-tag bef" id="tagBef"><small>Before</small>Factory Gloss</div>
+          <div class="cmp-tag aft" id="tagAft"><small>After</small>SERRES Satin Wrap</div>
+          <div class="cmp-divider" id="divider"></div>
+          <button class="cmp-handle" id="handle" aria-label="Drag to compare before and after">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 7l-5 5 5 5M15 7l5 5-5 5"/></svg>
+          </button>
+          <div class="cmp-hint">Drag to reveal</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CTA ===================== -->
+<section class="cta" data-screen-label="CTA">
+  <div class="wrap">
+    <span class="eyebrow">Book your wrap</span>
+    <h2 class="display">Found your <span class="chrome-text">colour?</span></h2>
+    <div class="actions">
+      <a href="../SERRES.html#contact" class="btn">Get a Quote <span class="arr">→</span></a>
+      <a href="../pages/gallery.html" class="btn ghost">See the Gallery</a>
+    </div>
+    <p class="phone">Sant Cugat del Vallès, Barcelona &nbsp;·&nbsp; <strong>+34 621 24 44 69</strong></p>
+  </div>
+</section>
+
+<footer>© 2026 SERRES. All rights reserved. &nbsp;·&nbsp; 3M&trade; Wrap Film Series 1080</footer>
+
+<script>
+/* ---------- Nav scrolled shadow already baked; reveal-on-scroll ---------- */
+(function(){
+  const els=[...document.querySelectorAll('.reveal-up')];
+  if(!('IntersectionObserver' in window)){els.forEach(e=>e.classList.add('in'));return;}
+  const io=new IntersectionObserver((ents)=>{
+    ents.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+  },{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+  els.forEach(e=>io.observe(e));
+})();
+</script>
+
+<script>
+/* ---------- 3M Wrap Film Series 1080 — curated palette ---------- */
+const COLORS=[
+  // GLOSS
+  {n:"White",c:"G10",f:"Gloss",h:"#eef0ef"},
+  {n:"Light Ivory",c:"G79",f:"Gloss",h:"#e3dbc2"},
+  {n:"Gold Metallic",c:"G241",f:"Gloss",h:"#b69243"},
+  {n:"Sky Blue",c:"G77",f:"Gloss",h:"#73bfe0"},
+  {n:"Atomic Teal",c:"G356",f:"Gloss",h:"#129b97"},
+  {n:"Kelly Green",c:"G46",f:"Gloss",h:"#2f9b43"},
+  {n:"Green Envy",c:"G336",f:"Gloss",h:"#1c7a39"},
+  {n:"Bright Yellow",c:"G15",f:"Gloss",h:"#f4c20d"},
+  {n:"Sunflower",c:"G25",f:"Gloss",h:"#f1a30c"},
+  {n:"Bright Orange",c:"G54",f:"Gloss",h:"#e85f24"},
+  {n:"Fiery Orange",c:"G364",f:"Gloss",h:"#e0451c"},
+  {n:"Hot Rod Red",c:"G13",f:"Gloss",h:"#c11a1f"},
+  {n:"Dragon Fire Red",c:"G363",f:"Gloss",h:"#c2152b"},
+  {n:"Dark Red",c:"G83",f:"Gloss",h:"#831317"},
+  {n:"Hot Pink",c:"G103",f:"Gloss",h:"#e83a8b"},
+  {n:"Fierce Fuchsia",c:"G348",f:"Gloss",h:"#bd1f68"},
+  {n:"Plum Explosion",c:"GP258",f:"Gloss",h:"#4f1c44"},
+  {n:"Blue Raspberry",c:"G378",f:"Gloss",h:"#1f5ab8"},
+  {n:"Cosmic Blue",c:"G377",f:"Gloss",h:"#1a4fa3"},
+  {n:"Intense Blue",c:"G47",f:"Gloss",h:"#143aa6"},
+  {n:"Blue Fire",c:"G337",f:"Gloss",h:"#1577c4"},
+  {n:"Boat Blue",c:"G127",f:"Gloss",h:"#16386a"},
+  {n:"Midnight Blue",c:"GP272",f:"Gloss",h:"#15233f"},
+  {n:"Wicked",c:"GP298",f:"Gloss",h:"#2a1640"},
+  {n:"Sterling Silver",c:"G251",f:"Gloss",h:"#b6babe"},
+  {n:"Storm Gray",c:"G31",f:"Gloss",h:"#6a6e72"},
+  {n:"Anthracite",c:"G201",f:"Gloss",h:"#383b40"},
+  {n:"Galaxy Black",c:"GP292",f:"Gloss",h:"#141619"},
+  {n:"Black",c:"G12",f:"Gloss",h:"#0b0c0e"},
+  // SATIN
+  {n:"Pearl White",c:"SP10",f:"Satin",h:"#e7e7e4"},
+  {n:"Frozen Vanilla",c:"SP240",f:"Satin",h:"#dbd4c2"},
+  {n:"Key West",c:"S57",f:"Satin",h:"#46a097"},
+  {n:"Apple Green",c:"S196",f:"Satin",h:"#688c3a"},
+  {n:"Bitter Yellow",c:"S335",f:"Satin",h:"#c79f37"},
+  {n:"Canyon Copper",c:"S344",f:"Satin",h:"#a65838"},
+  {n:"Vampire Red",c:"SP273",f:"Satin",h:"#8c1d22"},
+  {n:"Perfect Blue",c:"S347",f:"Satin",h:"#28488a"},
+  {n:"Ocean Shimmer",c:"S327",f:"Satin",h:"#57879b"},
+  {n:"Battleship Gray",c:"S51",f:"Satin",h:"#585e64"},
+  {n:"Dark Gray",c:"S261",f:"Satin",h:"#3c3f44"},
+  {n:"Gold Dust Black",c:"SP242",f:"Satin",h:"#2c2822"},
+  // MATTE
+  {n:"White",c:"M10",f:"Matte",h:"#e5e5e2"},
+  {n:"Red",c:"M13",f:"Matte",h:"#cf4034"},
+  {n:"Orange",c:"M54",f:"Matte",h:"#d2661d"},
+  {n:"Military Green",c:"M26",f:"Matte",h:"#485035"},
+  {n:"Pine Green Metallic",c:"M206",f:"Matte",h:"#294636"},
+  {n:"Riviera Blue",c:"M67",f:"Matte",h:"#2d568a"},
+  {n:"Indigo",c:"M27",f:"Matte",h:"#263250"},
+  {n:"Silver",c:"M21",f:"Matte",h:"#adb0b3"},
+  {n:"Charcoal Metallic",c:"M211",f:"Matte",h:"#313439"},
+  {n:"Brown Metallic",c:"M209",f:"Matte",h:"#46372c"},
+  {n:"Deep Black",c:"M22",f:"Matte",h:"#191a1c"},
+  {n:"Dead Matte Black",c:"DM12",f:"Matte",h:"#121315"},
+  // COLOR FLIP
+  {n:"Ghost Pearl",c:"SP280",f:"Color Flip",h:"#cfd2d6",h2:"#b3a4bf"},
+  {n:"Volcanic Flare",c:"SP236",f:"Color Flip",h:"#c25a2a",h2:"#3a2a55"},
+  {n:"Deep Space",c:"GP278",f:"Color Flip",h:"#1d6e74",h2:"#3a2a6a"},
+  {n:"Electric Wave",c:"GP287",f:"Color Flip",h:"#1a6fa0",h2:"#1f7a55"},
+  {n:"Glacial Frost",c:"SP277",f:"Color Flip",h:"#aebfc8",h2:"#6d7e9a"},
+  {n:"Caribbean Shimmer",c:"SP276",f:"Color Flip",h:"#2f9aa0",h2:"#246a8a"},
+  {n:"Psychedelic",c:"GP281",f:"Color Flip",h:"#b03a6a",h2:"#2a6ab0"}
+];
+const FINISHES=["All","Gloss","Satin","Matte","Color Flip"];
+
+const track=document.getElementById('track');
+const filtersEl=document.getElementById('filters');
+function T(s){return (window.SERRES_I18N&&window.SERRES_I18N.t)?window.SERRES_I18N.t(s):s;}
+let activeFinish="All";
+
+function chipBg(col){
+  if(col.f==="Color Flip") return "linear-gradient(125deg,"+col.h+" 0%,"+col.h2+" 100%)";
+  return col.h;
+}
+function render(){
+  const list=COLORS.filter(c=>activeFinish==="All"||c.f===activeFinish);
+  track.innerHTML=list.map(col=>`
+    <article class="swatch" data-finish="${col.f}">
+      <div class="sw-chip" style="--c:${chipBg(col)}">
+        <span class="flip-flag">${T('Flip')}</span>
+      </div>
+      <div class="sw-meta">
+        <div class="sw-name">${col.n}</div>
+        <div class="sw-sub">
+          <span class="sw-code">${col.c}</span>
+          <span class="sw-fin">${T(col.f)}</span>
+        </div>
+      </div>
+    </article>`).join('');
+  track.scrollLeft=0;
+  updateScrollState();
+}
+function buildFilters(){
+  filtersEl.innerHTML=FINISHES.map(f=>{
+    const count=f==="All"?COLORS.length:COLORS.filter(c=>c.f===f).length;
+    return `<button class="chip${f===activeFinish?' active':''}" data-f="${f}">${T(f)}<span class="ct">${count}</span></button>`;
+  }).join('');
+}
+window.addEventListener('serres:langchange',function(){buildFilters();render();});
+filtersEl.addEventListener('click',e=>{
+  const b=e.target.closest('.chip'); if(!b) return;
+  activeFinish=b.dataset.f;
+  [...filtersEl.children].forEach(c=>c.classList.toggle('active',c.dataset.f===activeFinish));
+  render();
+});
+
+/* ---------- scroll: arrows, drag, progress, edge fades ---------- */
+const viewport=document.getElementById('viewport');
+const fill=document.getElementById('palFill');
+const prev=document.getElementById('prev');
+const next=document.getElementById('next');
+
+function updateScrollState(){
+  const max=track.scrollWidth-track.clientWidth;
+  const sl=track.scrollLeft;
+  const p=max>0?sl/max:0;
+  const visible=track.clientWidth/track.scrollWidth;
+  fill.style.width=Math.max(6,visible*100).toFixed(1)+'%';
+  fill.style.left=(p*(100-Math.max(6,visible*100))).toFixed(2)+'%';
+  viewport.toggleAttribute('data-at-start',sl<=2);
+  viewport.toggleAttribute('data-at-end',sl>=max-2);
+  prev.disabled=sl<=2;
+  next.disabled=sl>=max-2;
+}
+track.addEventListener('scroll',()=>{requestAnimationFrame(updateScrollState);},{passive:true});
+window.addEventListener('resize',updateScrollState);
+
+function step(dir){
+  const card=track.querySelector('.swatch');
+  const w=card?card.getBoundingClientRect().width+20:240;
+  track.scrollBy({left:dir*w*Math.max(1,Math.floor(track.clientWidth/w/1.4)),behavior:'smooth'});
+}
+prev.addEventListener('click',()=>step(-1));
+next.addEventListener('click',()=>step(1));
+
+// horizontal wheel
+track.addEventListener('wheel',e=>{
+  if(Math.abs(e.deltaY)>Math.abs(e.deltaX)){track.scrollLeft+=e.deltaY;e.preventDefault();}
+},{passive:false});
+
+// drag to scroll
+let down=false,startX=0,startScroll=0,moved=0;
+track.addEventListener('pointerdown',e=>{
+  if(e.pointerType==='mouse'&&e.button!==0)return;
+  down=true;moved=0;startX=e.clientX;startScroll=track.scrollLeft;
+  track.setPointerCapture(e.pointerId);
+});
+track.addEventListener('pointermove',e=>{
+  if(!down)return;
+  const dx=e.clientX-startX;
+  if(Math.abs(dx)>4){track.classList.add('dragging');moved=dx;}
+  track.scrollLeft=startScroll-dx;
+});
+function endDrag(e){
+  if(!down)return;down=false;
+  track.classList.remove('dragging');
+  try{track.releasePointerCapture(e.pointerId);}catch(_){}}
+track.addEventListener('pointerup',endDrag);
+track.addEventListener('pointercancel',endDrag);
+
+// initial paint (after all consts + functions are defined)
+buildFilters();
+render();
+updateScrollState();
+</script>
+
+<script>
+/* ---------- Before / After comparison slider ---------- */
+(function(){
+  const box=document.getElementById('compare');
+  const before=document.getElementById('beforeImg');
+  const divider=document.getElementById('divider');
+  const handle=document.getElementById('handle');
+  const tagBef=document.getElementById('tagBef');
+  const tagAft=document.getElementById('tagAft');
+  if(!box)return;
+  let pos=50,dragging=false;
+  function set(p){
+    pos=Math.max(0,Math.min(100,p));
+    before.style.clipPath='inset(0 '+(100-pos)+'% 0 0)';
+    divider.style.left=pos+'%';
+    handle.style.left=pos+'%';
+    tagBef.style.opacity=pos<14?'0':'1';
+    tagAft.style.opacity=pos>86?'0':'1';
+  }
+  function fromEvent(e){
+    const r=box.getBoundingClientRect();
+    const x=(e.touches?e.touches[0].clientX:e.clientX)-r.left;
+    set(x/r.width*100);
+  }
+  function start(e){dragging=true;box.classList.add('touched');fromEvent(e);
+    if(e.cancelable)e.preventDefault();}
+  function move(e){if(!dragging)return;fromEvent(e);if(e.cancelable&&e.touches)e.preventDefault();}
+  function end(){dragging=false;}
+  handle.addEventListener('mousedown',start);
+  box.addEventListener('mousedown',start);
+  window.addEventListener('mousemove',move);
+  window.addEventListener('mouseup',end);
+  handle.addEventListener('touchstart',start,{passive:false});
+  box.addEventListener('touchstart',start,{passive:false});
+  window.addEventListener('touchmove',move,{passive:false});
+  window.addEventListener('touchend',end);
+  // keyboard
+  handle.addEventListener('keydown',e=>{
+    if(e.key==='ArrowLeft')set(pos-3);
+    else if(e.key==='ArrowRight')set(pos+3);
+  });
+  set(50);
+  // gentle auto-peek on first view
+  if(!matchMedia('(prefers-reduced-motion:reduce)').matches){
+    const io=new IntersectionObserver((ents)=>{
+      ents.forEach(en=>{
+        if(en.isIntersecting){
+          io.disconnect();
+          let t=0;const seq=[50,62,38,50];let i=0;
+          const iv=setInterval(()=>{i++;if(i>=seq.length){clearInterval(iv);return;}
+            animate(pos,seq[i]);},520);
+        }
+      });
+    },{threshold:.4});
+    io.observe(box);
+  }
+  function animate(from,to){
+    const t0=performance.now(),dur=440;
+    function fr(t){const k=Math.min(1,(t-t0)/dur);const e=k*k*(3-2*k);
+      set(from+(to-from)*e);if(k<1)requestAnimationFrame(fr);}
+    requestAnimationFrame(fr);
+  }
+})();
+</script>
+
+<script>
+/* ---------- Wrap-film ripple: reusable WebGL engine ----------
+   Concentric ripples emanate from the pointer (eased in/out), over a slow ambient
+   drift, sampling the wrap texture with a cover fit + cinematic grade so it sits in
+   the page. FilmRipple.create(section, canvas) wires one instance; the same engine
+   drives both the standalone banner and (when enabled) the hero background.
+   Returns { setStrength, destroy }. Falls back to a static cover draw without WebGL. */
+window.FilmRipple=(function(){
+  const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  const TEX='../assets/vinyl/wrap-texture.png';
+
+  function create(section,canvas){
+    const gl=canvas.getContext('webgl',{antialias:true,premultipliedAlpha:false})
+          || canvas.getContext('experimental-webgl');
+    const img=new Image(); img.crossOrigin='anonymous'; img.src=TEX;
+
+    // graceful fallback if WebGL is unavailable
+    if(!gl){
+      const apply=()=>{section.style.backgroundImage='linear-gradient(rgba(6,6,9,.34),rgba(6,6,9,.34)),url('+TEX+')';
+        section.style.backgroundSize='cover';section.style.backgroundPosition='center';};
+      if(img.complete&&img.naturalWidth)apply(); else img.onload=apply;
+      return {setStrength(){},destroy(){}};
+    }
+
+    const VS=`
+      attribute vec2 a_pos; varying vec2 v_uv;
+      void main(){ v_uv=vec2(a_pos.x*0.5+0.5, 1.0-(a_pos.y*0.5+0.5)); gl_Position=vec4(a_pos,0.0,1.0); }`;
+    const FS=`
+      precision highp float;
+      uniform sampler2D u_tex; uniform vec2 u_res; uniform vec2 u_mouse;
+      uniform float u_time; uniform float u_hover; uniform float u_imgAspect; uniform float u_strength;
+      varying vec2 v_uv;
+      void main(){
+        float ca=u_res.x/u_res.y, ia=u_imgAspect;
+        vec2 scale = ca>ia ? vec2(1.0, ia/ca) : vec2(ca/ia, 1.0);   /* cover fit */
+        vec2 ar=vec2(ca,1.0);
+        vec2 diff=(v_uv-u_mouse)*ar;
+        float dist=length(diff);
+        /* cursor ripple — concentric, decaying with distance, eased by hover + strength */
+        float ripple=sin(dist*34.0 - u_time*4.6)*exp(-dist*6.5)*0.020*u_hover*u_strength;
+        /* slow ambient drift so the film breathes */
+        float amb=(sin(v_uv.x*5.0+u_time*0.34)*0.0016 + cos(v_uv.y*6.0-u_time*0.27)*0.0016)*u_strength;
+        vec2 dir=diff/(dist+1e-4);
+        vec2 tuv=(v_uv-0.5)*scale+0.5 + dir*ripple + vec2(amb,amb);
+        vec3 col=texture2D(u_tex,tuv).rgb;
+        /* light catching the ripple crests, like flex in the vinyl */
+        col += ripple*9.0*vec3(0.58,0.63,0.74);
+        /* cinematic grade to seat it in the page */
+        col=(col-0.5)*1.10+0.5;
+        col*=vec3(0.92,0.95,1.0)*0.78;
+        /* soften top & bottom edges toward black to blend into the seams */
+        float vy=smoothstep(0.0,0.16,v_uv.y)*smoothstep(0.0,0.16,1.0-v_uv.y);
+        col*=mix(0.62,1.0,vy);
+        gl_FragColor=vec4(col,1.0);
+      }`;
+
+    function sh(type,src){const s=gl.createShader(type);gl.shaderSource(s,src);gl.compileShader(s);return s;}
+    const prog=gl.createProgram();
+    gl.attachShader(prog,sh(gl.VERTEX_SHADER,VS));
+    gl.attachShader(prog,sh(gl.FRAGMENT_SHADER,FS));
+    gl.linkProgram(prog); gl.useProgram(prog);
+
+    const buf=gl.createBuffer();
+    gl.bindBuffer(gl.ARRAY_BUFFER,buf);
+    gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1, 1,-1, -1,1, -1,1, 1,-1, 1,1]),gl.STATIC_DRAW);
+    const loc=gl.getAttribLocation(prog,'a_pos');
+    gl.enableVertexAttribArray(loc);
+    gl.vertexAttribPointer(loc,2,gl.FLOAT,false,0,0);
+
+    const U={res:gl.getUniformLocation(prog,'u_res'),mouse:gl.getUniformLocation(prog,'u_mouse'),
+      time:gl.getUniformLocation(prog,'u_time'),hover:gl.getUniformLocation(prog,'u_hover'),
+      imgAspect:gl.getUniformLocation(prog,'u_imgAspect'),strength:gl.getUniformLocation(prog,'u_strength')};
+
+    let imgAspect=1, ready=false, strength=1, running=true, raf=0;
+    let W=0,H=0,dpr=1;
+    const mouse={x:0.5,y:0.5};
+    let hover=0, hoverTarget=0;
+    const t0=performance.now();
+
+    function draw(){
+      if(!ready||!running) return;
+      const t=(performance.now()-t0)/1000;
+      gl.uniform2f(U.res,W,H);
+      gl.uniform2f(U.mouse,mouse.x,mouse.y);
+      gl.uniform1f(U.time,reduce?0:t);
+      gl.uniform1f(U.hover,reduce?0:hover);
+      gl.uniform1f(U.imgAspect,imgAspect);
+      gl.uniform1f(U.strength,strength);
+      gl.drawArrays(gl.TRIANGLES,0,6);
+    }
+    function resize(){
+      dpr=Math.min(window.devicePixelRatio||1,2);
+      const r=section.getBoundingClientRect();
+      W=Math.max(1,Math.round(r.width*dpr));
+      H=Math.max(1,Math.round(r.height*dpr));
+      canvas.width=W; canvas.height=H;
+      gl.viewport(0,0,W,H);
+      draw();
+    }
+    const onResize=()=>resize();
+    window.addEventListener('resize',onResize,{passive:true});
+
+    function loadTex(){
+      const tex=gl.createTexture();
+      gl.bindTexture(gl.TEXTURE_2D,tex);
+      gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE);
+      gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);
+      gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.LINEAR);
+      gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.LINEAR);
+      gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL,false);
+      gl.texImage2D(gl.TEXTURE_2D,0,gl.RGB,gl.RGB,gl.UNSIGNED_BYTE,img);
+      imgAspect=img.naturalWidth/img.naturalHeight;
+      ready=true; resize();
+    }
+    if(img.complete && img.naturalWidth) loadTex(); else img.onload=loadTex;
+
+    const onMove=e=>{
+      const r=section.getBoundingClientRect();
+      mouse.x=(e.clientX-r.left)/r.width;
+      mouse.y=(e.clientY-r.top)/r.height;
+      section.classList.add('touched');
+      draw();
+    };
+    const onEnter=()=>{hoverTarget=1;};
+    const onLeave=()=>{hoverTarget=0;};
+    section.addEventListener('pointermove',onMove);
+    section.addEventListener('pointerenter',onEnter);
+    section.addEventListener('pointerleave',onLeave);
+
+    function frame(){
+      if(!running) return;
+      hover+=(hoverTarget-hover)*0.08;
+      draw();
+      raf=requestAnimationFrame(frame);
+    }
+    raf=requestAnimationFrame(frame);
+    resize();
+
+    return {
+      setStrength(v){strength=v;draw();},
+      destroy(){
+        running=false; cancelAnimationFrame(raf);
+        window.removeEventListener('resize',onResize);
+        section.removeEventListener('pointermove',onMove);
+        section.removeEventListener('pointerenter',onEnter);
+        section.removeEventListener('pointerleave',onLeave);
+        const ext=gl.getExtension('WEBGL_lose_context'); if(ext)ext.loseContext();
+      }
+    };
+  }
+  return {create};
+})();
+</script>
+
+<script>
+/* ---------- Film tweak bridge: drives the banner + (optional) hero background ---------- */
+(function(){
+  let strengthMult=1;
+  const banner=document.getElementById('filmRipple');
+  const bannerCanvas=document.getElementById('rippleCanvas');
+  const bannerFilm=(banner&&bannerCanvas)?FilmRipple.create(banner,bannerCanvas):null;
+
+  const hero=document.querySelector('.hero');
+  let heroFilm=null, heroCanvas=null, heroVeil=null;
+
+  function ensureHeroEls(){
+    if(heroCanvas||!hero) return;
+    heroVeil=document.createElement('div'); heroVeil.className='hero-film-veil';
+    heroCanvas=document.createElement('canvas'); heroCanvas.className='hero-film-canvas';
+    hero.insertBefore(heroVeil,hero.firstChild);
+    hero.insertBefore(heroCanvas,hero.firstChild);
+  }
+
+  window.__vinylFilm={
+    heroFilm(on){
+      if(!hero) return;
+      hero.classList.toggle('film-on',!!on);
+      if(on){
+        ensureHeroEls();
+        if(!heroFilm){ heroFilm=FilmRipple.create(hero,heroCanvas); heroFilm.setStrength(strengthMult); }
+      }else if(heroFilm){
+        heroFilm.destroy(); heroFilm=null;
+      }
+    },
+    veil(v){ if(hero) hero.style.setProperty('--veil',v); },
+    strength(m){ strengthMult=m; if(bannerFilm)bannerFilm.setStrength(m); if(heroFilm)heroFilm.setStrength(m); },
+    banner(show){ if(banner) banner.style.display=show?'':'none'; }
+  };
+})();
+</script>
+
+<!-- ===================== TWEAKS ===================== -->
+<div id="tweaks-root"></div>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script type="text/babel" src="../tweaks-panel.jsx"></script>
+<script type="text/babel">
+const VINYL_TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+  "heroFilm": true,
+  "heroDarkness": 85,
+  "rippleStrength": 2.5
+}/*EDITMODE-END*/;
+
+function VinylTweaks(){
+  const [t,setTweak]=useTweaks(VINYL_TWEAK_DEFAULTS);
+  React.useEffect(()=>{ window.__vinylFilm && window.__vinylFilm.heroFilm(t.heroFilm); },[t.heroFilm]);
+  React.useEffect(()=>{ window.__vinylFilm && window.__vinylFilm.veil(t.heroDarkness/100); },[t.heroDarkness]);
+  React.useEffect(()=>{ window.__vinylFilm && window.__vinylFilm.strength(t.rippleStrength); },[t.rippleStrength]);
+  return (
+    <TweaksPanel>
+      <TweakSection label="Film surface" />
+      <TweakToggle label="Film behind hero" value={t.heroFilm}
+                   onChange={(v)=>setTweak('heroFilm',v)} />
+      <TweakSlider label="Hero darkness" value={t.heroDarkness} min={20} max={85} step={1} unit="%"
+                   onChange={(v)=>setTweak('heroDarkness',v)} />
+      <TweakSlider label="Ripple strength" value={t.rippleStrength} min={0} max={2.5} step={0.1} unit="×"
+                   onChange={(v)=>setTweak('rippleStrength',v)} />
+    </TweaksPanel>
+  );
+}
+ReactDOM.createRoot(document.getElementById('tweaks-root')).render(<VinylTweaks />);
+</script>
+
+
+<script src="../assets/serres-enhance.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<style>
+  html,body{margin:0;height:100%;background:#000;overflow:hidden}
+  #c{position:fixed;inset:0;width:100vw;height:100vh;display:block;background:#000}
+  video{display:none}
+</style></head>
+<body>
+<canvas id="c"></canvas>
+<video id="v" muted playsinline preload="auto"></video>
+<script>
+const v=document.getElementById('v'), c=document.getElementById('c'), ctx=c.getContext('2d');
+let times=[];
+function sizeCanvas(){ c.width=window.innerWidth; c.height=window.innerHeight; }
+sizeCanvas();
+function draw(){
+  const W=c.width,H=c.height;
+  ctx.fillStyle='#000'; ctx.fillRect(0,0,W,H);
+  const iw=v.videoWidth, ih=v.videoHeight; if(!iw) return;
+  const s=Math.min(W/iw,H/ih);
+  const dw=iw*s, dh=ih*s;
+  ctx.drawImage(v,(W-dw)/2,(H-dh)/2,dw,dh);
+}
+v.onseeked=draw;
+window.initVid=async function(n){
+  const N=n||72;
+  const base=location.href.replace(/scraps\/.*$/,'')+'uploads/hf_20260607_172701_b937235f-0a04-4748-bcca-292651a6b85d.mp4';
+  const resp=await fetch(base); const blob=await resp.blob();
+  v.src=URL.createObjectURL(blob); v.load();
+  await new Promise(res=>{let d=false;const f=()=>{if(!d){d=true;res();}};v.addEventListener('loadeddata',f);v.addEventListener('loadedmetadata',f);setTimeout(f,12000);});
+  times=[]; for(let i=0;i<N;i++) times.push((i/(N-1))*(v.duration-0.06));
+  sizeCanvas();
+  return JSON.stringify({w:v.videoWidth,h:v.videoHeight,dur:v.duration,vw:window.innerWidth,vh:window.innerHeight,N});
+};
+window.drawAt=function(i){ v.currentTime=times[i]; };
+</script>
+</body></html>
