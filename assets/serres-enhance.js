@@ -22,9 +22,9 @@
   var path = location.pathname;
   var nested = /\/(services|pages)\//.test(path);
   var base = nested ? "../" : "";
-  var onHome = !nested; // root-level SERRES.html
+  var onHome = !nested; // root-level index.html
 
-  function homeLink(hash){ return onHome ? hash : base + "SERRES.html" + hash; }
+  function homeLink(hash){ return onHome ? hash : base + "index.html" + hash; }
 
   var MENU = [
     { label: "Services",   href: homeLink("#services") },
