@@ -1,10 +1,14 @@
 /* =====================================================================
    SERRES — site-wide language switcher (EN / ES / CA)
    ---------------------------------------------------------------------
-   • Reversibly translates static DOM text nodes + a few attributes
-     against a curated EN→{es,ca} dictionary. Anything not in the
-     dictionary is left untouched (graceful — car names, 3M film names,
-     codes, place names, PPF/SiO₂/3M, units, etc. stay as-is).
+   • The static HTML ships in SPANISH (SEO base language). This script
+     reversibly translates static DOM text nodes + a few attributes
+     against a curated EN→{es,ca} dictionary, matched in reverse via an
+     inverted ES→EN index (INV). Anything not in the dictionary is left
+     untouched (graceful — car names, 3M film names, codes, place
+     names, PPF/SiO₂/3M, units, etc. stay as-is).
+   • Elements with data-en="English key" render tr(key) as their text —
+     used for fragments whose Spanish rendition is empty ("").
    • Injects a segmented EN/ES/CA switcher into the desktop nav and the
      mobile overlay menu, styled to match the chrome / dark aesthetic.
    • Persists the choice in localStorage and re-applies on every page.
@@ -51,7 +55,7 @@
 
     /* ---------- HOME ---------- */
     "SERRES — Premium Paint Protection, Wraps & Detailing":
-      ["SERRES — Protección de pintura, vinilos y detailing premium", "SERRES — Protecció de pintura, vinils i detailing premium"],
+      ["SERRES — PPF, Vinilado y Detailing Premium en Barcelona", "SERRES — PPF, Vinilat i Detailing Premium a Barcelona"],
     "Premium Detailing & Customization":
       ["Detailing y personalización premium", "Detailing i personalització premium"],
     "Elevate": ["Eleva", "Eleva"],
@@ -91,7 +95,7 @@
     "Call SERRES": ["Llamar a SERRES", "Truca a SERRES"],
 
     /* ---------- GALLERY ---------- */
-    "SERRES — Gallery": ["SERRES — Galería", "SERRES — Galeria"],
+    "SERRES — Gallery": ["Galería de Trabajos — SERRES Barcelona", "Galeria de Treballs — SERRES Barcelona"],
     "The Showroom": ["El showroom", "El showroom"],
     "The": ["La", "La"],
     "Every car gets its own room. Shot in and around Barcelona — no stock photos, no rented cars. Pick a build below, or scroll the floor.":
@@ -110,7 +114,7 @@
     "Vinyl Wrap": ["Vinilo", "Vinil"],
     "A90 · Pearl White": ["A90 · Blanco perla", "A90 · Blanc perla"],
     "A pearl-white GR Supra protected and sealed, then taken out into the Catalan countryside.":
-      ["Un GR Supra blanco perla protegido y sellado, llevado después al campo catalán ",
+      ["Un GR Supra blanco perla protegido y sellado, llevado después al campo catalán.",
        "Un GR Supra blanc perla protegit i segellat, portat després al camp català."],
     "E92 · Gloss Black": ["E92 · Negro brillo", "E92 · Negre brillant"],
     "A lowered E92 335i in deep gloss black — caught rolling at speed on the motorway and parked up on a cypress-lined coast road. Paint correction and a slick protective finish.":
@@ -175,7 +179,7 @@
     "Jump to a car": ["Ir a un coche", "Ves a un cotxe"],
 
     /* ---------- PRICES (static chrome only; tiers handled in-page) ---------- */
-    "SERRES — Prices": ["SERRES — Precios", "SERRES — Preus"],
+    "SERRES — Prices": ["Precios — PPF, Vinilado, Cerámico y Detailing | SERRES", "Preus — PPF, Vinilat, Ceràmic i Detailing | SERRES"],
     "Transparent Pricing": ["Precios transparentes", "Preus transparents"],
     "Pick your": ["Elige tu", "Tria el teu"],
     "level.": ["nivel.", "nivell."],
@@ -198,7 +202,7 @@
        "© 2026 SERRES. Tots els drets reservats. \u00A0·\u00A0 Preus orientatius en EUR, IVA inclòs"],
 
     /* ---------- PROJECTS / COMMISSION ---------- */
-    "SERRES — The Commission": ["SERRES — La Commission", "SERRES — La Commission"],
+    "SERRES — The Commission": ["Proyectos SERRES — Transformaciones Completas", "Projectes SERRES — Transformacions Completes"],
     "The Commission": ["La Commission", "La Commission"],
     "One car.": ["Un coche.", "Un cotxe."],
     "Everything.": ["Todo.", "Tot."],
@@ -264,7 +268,7 @@
        "© 2026 SERRES. Tots els drets reservats. \u00A0·\u00A0 La Commission — projectes complets limitats"],
 
     /* ---------- WHY SERRES (static; testimonials in-page) ---------- */
-    "SERRES — Why SERRES": ["SERRES — Por qué SERRES", "SERRES — Per què SERRES"],
+    "SERRES — Why SERRES": ["Por Qué SERRES — Estudio Premium en Sant Cugat", "Per Què SERRES — Estudi Premium a Sant Cugat"],
     "Why": ["Por qué", "Per què"],
     "Cars Transformed": ["Coches transformados", "Cotxes transformats"],
     "Average Rating": ["Valoración media", "Valoració mitjana"],
@@ -337,14 +341,14 @@
     "Fitment": ["Encaje", "Encaix"],
 
     /* ---------- SERVICE: PPF ---------- */
-    "SERRES — Paint Protection Film (PPF)": ["SERRES — Paint Protection Film (PPF)", "SERRES — Paint Protection Film (PPF)"],
+    "SERRES — Paint Protection Film (PPF)": ["PPF en Barcelona — Protección de Pintura 3M | SERRES", "PPF a Barcelona — Protecció de Pintura 3M | SERRES"],
     "Service 03 · Paint Protection Film": ["Servicio 03 · Paint Protection Film", "Servei 03 · Paint Protection Film"],
     "Paint": ["Paint", "Paint"],
     "Armour": ["Armour", "Armour"],
     "An invisible urethane skin over your factory paint — absorbing stone chips, swirls, bug acid... So the finish underneath stays exactly as it left the studio. Available clear, gloss, satin and full colour-shift.":
       ["Una piel de uretano invisible sobre tu pintura de fábrica — absorbe impactos de piedra, micro-arañazos, ácido de insectos...Para que el acabado de debajo siga exactamente como salió del taller. Disponible en transparente, brillo, satinado y colour-shift completo.",
        "Una pell d'uretà invisible sobre la teva pintura de fàbrica — absorbeix impactes de pedra, micro-ratllades, àcid d'insectes... Perquè l'acabat de sota segueixi exactament com va sortir del taller. Disponible en transparent, brillant, setinat i colour-shift complet."],
-    "Self-healing": ["Autorreparable", "Autoreparable"],
+    "Self-Healing": ["Autorreparable", "Autoreparable"],
     "Film Colours": ["Colores de film", "Colors de film"],
     "Gloss in.": ["Entra en brillo.", "Entra en brillant."],
     "Satin out.": ["Sale en satinado.", "Surt en setinat."],
@@ -416,7 +420,7 @@
        "© 2026 SERRES. Tots els drets reservats. \u00A0·\u00A0 3M\u2122 Paint Protection Film"],
 
     /* ---------- SERVICE: CERAMIC ---------- */
-    "SERRES — Ceramic Coating": ["SERRES — Recubrimiento cerámico", "SERRES — Recobriment ceràmic"],
+    "SERRES — Ceramic Coating": ["Tratamiento Cerámico para Coche en Barcelona | SERRES", "Tractament Ceràmic per a Cotxe a Barcelona | SERRES"],
     "Service 02 · Ceramic Coating": ["Servicio 02 · Recubrimiento cerámico", "Servei 02 · Recobriment ceràmic"],
     "Liquid": ["Cristal", "Vidre"],
     "Glass": ["líquido", "líquid"],
@@ -476,7 +480,7 @@
        "© 2026 SERRES. Tots els drets reservats. \u00A0·\u00A0 Recobriment ceràmic SiO₂"],
 
     /* ---------- SERVICE: DETAILING ---------- */
-    "SERRES — Detailing": ["SERRES — Detailing", "SERRES — Detailing"],
+    "SERRES — Detailing": ["Detailing y Limpieza Interior de Coche en Barcelona | SERRES", "Detailing i Neteja Interior de Cotxe a Barcelona | SERRES"],
     "Service 05 · Detailing": ["Servicio 05 · Detailing", "Servei 05 · Detailing"],
     "Showroom": ["Como recién", "Com acabat"],
     "Fresh": ["entregado", "de lliurar"],
@@ -530,7 +534,7 @@
        "© 2026 SERRES. Tots els drets reservats. \u00A0·\u00A0 Detailing d'interior i exterior"],
 
     /* ---------- SERVICE: PAINT CORRECTION ---------- */
-    "SERRES — Paint Correction": ["SERRES — Corrección de pintura", "SERRES — Correcció de pintura"],
+    "SERRES — Paint Correction": ["Pulido y Corrección de Pintura de Coche en Barcelona | SERRES", "Polit i Correcció de Pintura de Cotxe a Barcelona | SERRES"],
     "Service 04 · Paint Correction": ["Servicio 04 · Corrección de pintura", "Servei 04 · Correcció de pintura"],
     "Mirror": ["Acabado", "Acabat"],
     "Stage Polish": ["Pulido por etapas", "Polit per etapes"],
@@ -588,7 +592,7 @@
        "© 2026 SERRES. Tots els drets reservats. \u00A0·\u00A0 Polit a màquina multietapa"],
 
     /* ---------- SERVICE: VINYL ---------- */
-    "SERRES — Car Wrap / Vinyl": ["SERRES — Vinilo / Car Wrap", "SERRES — Vinil / Car Wrap"],
+    "SERRES — Car Wrap / Vinyl": ["Car Wrapping en Barcelona — Vinilar Coche | SERRES", "Car Wrapping a Barcelona — Vinilar Cotxe | SERRES"],
     "Service 01 · Vinyl": ["Servicio 01 · Vinilo", "Servei 01 · Vinil"],
     "Car": ["Car", "Car"],
     "Film Colours ": ["Colores de film ", "Colors de film "],
@@ -624,7 +628,7 @@
        "© 2026 SERRES. Tots els drets reservats. \u00A0·\u00A0 3M\u2122 Wrap Film Series 1080"],
 
     /* ---------- SERVICE: BODY KITS ---------- */
-    "SERRES — Body Kits": ["SERRES — Body Kits", "SERRES — Body Kits"],
+    "SERRES — Body Kits": ["Montaje de Body Kits en Barcelona | SERRES", "Muntatge de Body Kits a Barcelona | SERRES"],
     "Service 06 · Body Kits": ["Servicio 06 · Body Kits", "Servei 06 · Body Kits"],
     "Built for": ["Hecho para", "Fet per a"],
     "Presence": ["impactar", "impactar"],
@@ -910,8 +914,97 @@
     "Matte": ["Mate", "Mat"],
     "Color Flip": ["Camaleón", "Camaleó"],
     "Colour Shift": ["Camaleón", "Camaleó"],
-    "Flip": ["Camaleón", "Camaleó"]
+    "Flip": ["Camaleón", "Camaleó"],
+
+    /* ---------- STRINGS BAKED IN SPANISH (added when the HTML source
+       was converted to Spanish; EN key = original English text) ---------- */
+    "PPF · Wraps · Paint Correction": ["PPF · Vinilos · Corrección de pintura", "PPF · Vinils · Correcció de pintura"],
+    "Detailing Studio": ["Estudio de detailing", "Estudi de detailing"],
+    "SERRES Wrap Center on Google Maps": ["SERRES Wrap Center en Google Maps", "SERRES Wrap Center a Google Maps"],
+    "Factory Gloss": ["Brillo de fábrica", "Brillant de fàbrica"],
+    "SERRES Satin Wrap": ["Vinilo satinado SERRES", "Vinil setinat SERRES"],
+    "Water Sheets Flat": ["El agua queda plana", "L'aigua queda plana"],
+    "Beads & Rolls Off": ["Forma gotas y resbala", "Forma gotes i llisca"],
+    "yr": ["años", "anys"],
+    "Swirled & Hazy": ["Micro-arañazos y turbidez", "Micro-ratllades i tèrbolesa"],
+    "Corrected Gloss": ["Brillo corregido", "Brillantor corregida"],
+    "Factory Rear": ["Trasera de serie", "Part posterior de sèrie"],
+    "Full Aero Kit": ["Kit aero completo", "Kit aero complet"],
+    "Choose a service": ["Elige un servicio", "Tria un servei"],
+    "The Studio": ["El estudio", "L'estudi"],
+    "Land Rover · Satin Black Wrap": ["Land Rover · Vinilo negro satinado", "Land Rover · Vinil negre setinat"],
+    "A Range Rover Sport taken from factory gloss to a deep satin-black vinyl wrap — every panel, mirror and pillar colour-matched, then shot under the hexagon lights so the new finish does the talking.":
+      ["Un Range Rover Sport llevado del brillo de fábrica a un vinilo negro satinado profundo — cada panel, retrovisor y pilar igualado en color, fotografiado después bajo las luces hexagonales para que el nuevo acabado hable por sí solo.",
+       "Un Range Rover Sport portat del brillant de fàbrica a un vinil negre setinat profund — cada panell, retrovisor i pilar igualat en color, fotografiat després sota les llums hexagonals perquè el nou acabat parli per si sol."],
+    "Satin Black": ["Negro satinado", "Negre setinat"],
+    "Front three-quarter": ["Tres cuartos delantero", "Tres quarts davanter"],
+    "Satin Wrap": ["Vinilo satinado", "Vinil setinat"],
+    "Head-on": ["De frente", "De front"],
+    "Image viewer": ["Visor de imágenes", "Visor d'imatges"],
+    "Close viewer": ["Cerrar visor", "Tanca el visor"],
+    "Previous image": ["Imagen anterior", "Imatge anterior"],
+    "Next image": ["Imagen siguiente", "Imatge següent"],
+    "Satin black · Front three-quarter": ["Negro satinado · Tres cuartos delantero", "Negre setinat · Tres quarts davanter"],
+    "Head-on · Satin black finish": ["De frente · Acabado negro satinado", "De front · Acabat negre setinat"],
+
+    /* ---------- SEO META DESCRIPTIONS (baked in Spanish in the HTML;
+       EN key = legacy English description shown when switching to EN) ---------- */
+    "SERRES — premium automotive detailing & customization. PPF, vinyl wraps, body kits, custom rims, paint correction, interior & exterior deep cleaning.":
+      ["Estudio premium en Sant Cugat del Vallès: PPF 3M, car wrapping, tratamiento cerámico, pulido y detailing. Presupuesto por WhatsApp.",
+       "Estudi premium a Sant Cugat del Vallès: PPF 3M, car wrapping, tractament ceràmic, polit i detailing. Pressupost per WhatsApp."],
+    "SERRES PPF — self-healing paint protection film that shields high-impact areas from stone chips, swirls and the road. Available clear, gloss, satin and colour-shift finishes.":
+      ["Instalación de PPF 3M autorregenerable con hasta 10 años de garantía en Sant Cugat, Barcelona. Packs frontal y coche completo desde 890 €.",
+       "Instal·lació de PPF 3M autoregenerable amb fins a 10 anys de garantia a Sant Cugat, Barcelona. Packs frontal i cotxe complet des de 890 €."],
+    "SERRES Vinyl — full and partial colour-change wraps in the 3M Wrap Film Series 1080 range. Matte, satin, gloss, metallic and colour-flip finishes, precision-fit to every panel.":
+      ["Cambio de color con films 3M y Avery Dennison, más de 100 colores. Coche completo desde 1.490 €. Sant Cugat del Vallès.",
+       "Canvi de color amb films 3M i Avery Dennison, més de 100 colors. Cotxe complet des de 1.490 €. Sant Cugat del Vallès."],
+    "SERRES Ceramic Coating — a liquid-glass SiO₂ layer that bonds to your paint for years of hydrophobic, high-gloss, swirl-resistant protection.":
+      ["Cerámico SiO2 de dureza 9H con hasta 5 años de protección. Corrección de pintura incluida. Packs desde 340 €.",
+       "Ceràmic SiO2 de duresa 9H amb fins a 5 anys de protecció. Correcció de pintura inclosa. Packs des de 340 €."],
+    "SERRES Paint Correction — multi-stage machine polishing that removes swirls, holograms and oxidation to restore true, mirror-clear depth to your paint.":
+      ["Pulido multietapa a máquina: adiós a arañazos, remolinos y hologramas. Brillo verificado con medidor. Sant Cugat, Barcelona.",
+       "Polit multietapa a màquina: adéu a esgarrapades, remolins i hologrames. Brillantor verificada amb mesurador. Sant Cugat, Barcelona."],
+    "SERRES Detailing — deep interior steam-cleaning and exterior decontamination that takes your car from neglected to showroom-fresh, inside and out.":
+      ["Limpieza integral: vapor, tapicería, cuero y motor. Deep Clean desde 150 €, Showroom Reset desde 490 €. Estudio premium en Sant Cugat.",
+       "Neteja integral: vapor, tapisseria, cuir i motor. Deep Clean des de 150 €, Showroom Reset des de 490 €. Estudi premium a Sant Cugat."],
+    "SERRES Body Kits — aggressive aero, custom rims and exhaust tips fitted to factory standards. We install all types of body kits to transform stance and presence.":
+      ["Instalación y pintura de body kits, spoilers y widebody con ajuste OEM. Desde 450 €. Sant Cugat del Vallès.",
+       "Instal·lació i pintura de body kits, spoilers i widebody amb ajust OEM. Des de 450 €. Sant Cugat del Vallès."],
+    "SERRES pricing — transparent guide prices for wraps, PPF, ceramic coating, paint correction, detailing and body kits. Three levels per service, from essential to concours.":
+      ["Precios orientativos con IVA de todos los servicios SERRES: PPF, car wrapping, cerámico, pulido, detailing y body kits.",
+       "Preus orientatius amb IVA de tots els serveis SERRES: PPF, car wrapping, ceràmic, polit, detailing i body kits."],
+    "Why SERRES — obsessive prep, measured results and premium materials under one roof. The standards behind every car that leaves our Barcelona studio.":
+      ["Un solo estudio, sin subcontratas: materiales certificados, resultados medidos y un 98% de clientes recomendados.",
+       "Un sol estudi, sense subcontractes: materials certificats, resultats mesurats i un 98% de clients que ens recomanen."],
+    "SERRES Gallery — a car-by-car showroom of wraps, PPF, corrections and full builds shot in and around our Barcelona studio.":
+      ["Coches transformados en SERRES: PPF, vinilado, cerámico y detailing. Fotos reales de nuestro estudio.",
+       "Cotxes transformats a SERRES: PPF, vinilat, ceràmic i detailing. Fotos reals del nostre estudi."],
+    "The SERRES Commission — our limited full-build programme. PPF, wrap, correction, ceramic, interior and body work on one car, under one vision. A handful of builds per year.":
+      ["Proyectos de transformación completa: The Commission. Un coche, una visión.",
+       "Projectes de transformació completa: The Commission. Un cotxe, una visió."]
   };
+
+  /* ===================================================================
+     INVERTED INDEX — Spanish rendition → English dictionary key.
+     The HTML source is authored in Spanish, so bindings are discovered
+     by looking the (trimmed) Spanish text up here; the stored binding
+     key stays English so tr()/t() keep working unchanged.
+     =================================================================== */
+  var INV = {};
+  (function () {
+    for (var k in DICT) {
+      if (!DICT.hasOwnProperty(k)) continue;
+      var v = (DICT[k][0] || "").replace(/^\s+|\s+$/g, "");
+      if (v && !INV.hasOwnProperty(v)) INV[v] = k;
+    }
+  })();
+
+  /* resolve a DOM text core (EN or ES) to its English dictionary key */
+  function enKeyOf(core) {
+    if (DICT.hasOwnProperty(core)) return core;
+    if (INV.hasOwnProperty(core)) return INV[core];
+    return null;
+  }
 
   /* ===================================================================
      ENGINE
@@ -948,6 +1041,7 @@
 
   var textBindings = [];   // {node, lead, core, trail}
   var attrBindings = [];   // {el, attr, lead, core, trail}
+  var keyBindings = [];    // {el, lead, core, trail} — explicit [data-en] elements
   var seenText = (typeof WeakSet !== "undefined") ? new WeakSet() : null;
   var ATTRS = ["aria-label", "title"];
 
@@ -965,10 +1059,12 @@
     var tag = p.nodeName;
     if (tag === "SCRIPT" || tag === "STYLE" || tag === "TEXTAREA") return;
     if (inSkip(tn)) return;
+    if (p.nodeType === 1 && p.hasAttribute && p.hasAttribute("data-en")) return;
     var a = affix(raw);
-    if (!DICT.hasOwnProperty(a.core)) return;
+    var key = enKeyOf(a.core);
+    if (key == null) return;
     if (seenText) seenText.add(tn);
-    var b = { node: tn, lead: a.lead, core: a.core, trail: a.trail };
+    var b = { node: tn, lead: a.lead, core: key, trail: a.trail };
     textBindings.push(b);
     applyText(b);
   }
@@ -986,11 +1082,12 @@
       var raw = el.getAttribute(attr);
       if (!raw || !raw.trim()) continue;
       var a = affix(raw);
-      if (!DICT.hasOwnProperty(a.core)) continue;
+      var enKey = enKeyOf(a.core);
+      if (enKey == null) continue;
       var key = "__i18n_" + attr;
       if (el[key]) continue;            // already bound
       el[key] = true;
-      var b = { el: el, attr: attr, lead: a.lead, core: a.core, trail: a.trail };
+      var b = { el: el, attr: attr, lead: a.lead, core: enKey, trail: a.trail };
       attrBindings.push(b);
       applyAttr(b);
     }
@@ -998,6 +1095,26 @@
 
   function applyAttr(b) {
     b.el.setAttribute(b.attr, b.lead + tr(b.core) + b.trail);
+  }
+
+  /* explicit keyed elements: <span data-en="a reality"></span> */
+  function bindKeyed(el) {
+    if (!el.getAttribute || inSkip(el)) return;
+    if (el.__i18n_keyed) return;
+    var raw = el.getAttribute("data-en");
+    if (!raw) return;
+    var a = affix(raw);
+    if (!DICT.hasOwnProperty(a.core)) return;
+    el.__i18n_keyed = true;
+    var b = { el: el, lead: a.lead, core: a.core, trail: a.trail };
+    keyBindings.push(b);
+    applyKeyed(b);
+  }
+
+  function applyKeyed(b) {
+    var v = tr(b.core);
+    var out = v ? b.lead + v + b.trail : "";
+    if (b.el.textContent !== out) b.el.textContent = out;
   }
 
   function walk(root) {
@@ -1014,17 +1131,21 @@
     bindAttrs(root);
     var els = root.querySelectorAll("[aria-label],[title]");
     for (var i = 0; i < els.length; i++) bindAttrs(els[i]);
+    // explicit keyed fragments (self + descendants)
+    bindKeyed(root);
+    var kd = root.querySelectorAll("[data-en]");
+    for (var k = 0; k < kd.length; k++) bindKeyed(kd[k]);
   }
 
   /* meta: <title> + description */
   var titleBind = null, descBind = null;
   function bindMeta() {
-    var t = (document.title || "").trim();
-    if (DICT.hasOwnProperty(t)) titleBind = t;
+    var t = enKeyOf((document.title || "").trim());
+    if (t != null) titleBind = t;
     var md = document.querySelector('meta[name="description"]');
     if (md) {
-      var c = (md.getAttribute("content") || "").trim();
-      if (DICT.hasOwnProperty(c)) descBind = { el: md, core: c };
+      var c = enKeyOf((md.getAttribute("content") || "").trim());
+      if (c != null) descBind = { el: md, core: c };
     }
   }
   function applyMeta() {
@@ -1036,6 +1157,7 @@
     document.documentElement.setAttribute("lang", current);
     for (var i = 0; i < textBindings.length; i++) applyText(textBindings[i]);
     for (var j = 0; j < attrBindings.length; j++) applyAttr(attrBindings[j]);
+    for (var k = 0; k < keyBindings.length; k++) applyKeyed(keyBindings[k]);
     applyMeta();
   }
 
