@@ -431,7 +431,7 @@ function render(key){
       var label=(typeof v==='string')?T(r[0])+' — '+T(v):T(r[0]);
       return '<li class="'+(on?'':'off')+'">'+(on?OK:NO)+'<span>'+label+'</span></li>';
     }).join('');
-    var msg=encodeURIComponent("Hi SERRES, I'd like a quote for the "+t.name+' '+s.label+' package for my car.');
+    var msg=encodeURIComponent("Hola SERRES, quería presupuesto del pack "+T(t.name)+" de "+T(s.label)+" para mi coche.");
     return '<article class="tier'+(t.pop?' popular':'')+'">'+
       (t.pop?'<span class="pop-tag">'+T('Most chosen')+'</span>':'')+
       '<h3>'+T(t.name)+'</h3>'+

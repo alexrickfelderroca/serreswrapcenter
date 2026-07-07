@@ -12,7 +12,7 @@
 
   /* ---- contact constants ---- */
   var WA_DIGITS = "34621244469";                 // +34 621 24 44 69
-  var WA_TEXT   = encodeURIComponent("Hi SERRES, I'd like to ask about a quote for my car.");
+  var WA_TEXT   = encodeURIComponent("Hola SERRES, quería pedir presupuesto para mi coche.");
   var WA_URL    = "https://wa.me/" + WA_DIGITS + "?text=" + WA_TEXT;
   var IG_URL    = "https://www.instagram.com/serres.wrap.center/";
   var TEL_HREF  = "tel:+" + WA_DIGITS;
