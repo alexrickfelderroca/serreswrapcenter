@@ -919,7 +919,7 @@
   function getLang() {
     var l;
     try { l = localStorage.getItem(STORE); } catch (e) {}
-    return LANGS.indexOf(l) >= 0 ? l : "en";
+    return LANGS.indexOf(l) >= 0 ? l : "es";
   }
   var current = getLang();
 
