@@ -6,6 +6,19 @@
 <title>Detailing y Limpieza Interior de Coche en Barcelona | SERRES</title>
 <meta name="description" content="Limpieza integral: vapor, tapicería, cuero y motor. Deep Clean desde 150 €, Showroom Reset desde 490 €. Estudio premium en Sant Cugat.">
 <link rel="canonical" href="https://serreswrapcenter.es/services/detailing.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SERRES Wrap Center">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="Detailing y Limpieza Interior de Coche en Barcelona | SERRES">
+<meta property="og:description" content="Limpieza integral: vapor, tapicería, cuero y motor. Deep Clean desde 150 €, Showroom Reset desde 490 €. Estudio premium en Sant Cugat.">
+<meta property="og:url" content="https://serreswrapcenter.es/services/detailing.html">
+<meta property="og:image" content="https://serreswrapcenter.es/assets/og/detailing.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Detailing y Limpieza Interior de Coche en Barcelona | SERRES">
+<meta name="twitter:description" content="Limpieza integral: vapor, tapicería, cuero y motor. Deep Clean desde 150 €, Showroom Reset desde 490 €. Estudio premium en Sant Cugat.">
+<meta name="twitter:image" content="https://serreswrapcenter.es/assets/og/detailing.jpg">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
@@ -86,6 +99,9 @@
   .hero h1 .ln{display:block;overflow:hidden;padding-bottom:.03em}
   .hero h1 .ln span{display:block}
   @keyframes rise{from{transform:translateY(108%)}to{transform:translateY(0)}}
+  .hero h1 .ln-kw{margin-top:20px}
+  .hero h1 .h1-kw{display:inline-block;font-weight:500;font-size:clamp(12px,1.35vw,16px);
+    letter-spacing:.22em;color:var(--muted);background:none;-webkit-text-fill-color:currentColor}
   .hero .lead{margin-top:26px;max-width:52ch;color:var(--muted);font-size:clamp(16px,1.5vw,19px)}
   @keyframes fade{from{opacity:0}to{opacity:1}}
   .hero-stats{display:flex;gap:46px;flex-wrap:wrap;margin-bottom:8px}
@@ -96,6 +112,7 @@
   @media(prefers-reduced-motion:no-preference){
     .hero h1 .ln span{transform:translateY(108%);animation:rise 1s var(--ease) .05s forwards}
     .hero h1 .ln:nth-child(2) span{animation-delay:.16s}
+    .hero h1 .ln:nth-child(3) span{animation-delay:.27s}
     .hero .eyebrow{opacity:0;animation:fade .9s var(--ease) .2s forwards}
     .hero .lead{opacity:0;animation:fade .9s var(--ease) .42s forwards}
     .hero-stats{opacity:0;animation:fade .9s var(--ease) .55s forwards}
@@ -209,6 +226,41 @@
   .reveal-up{opacity:0;transform:translateY(26px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
   .reveal-up.in{opacity:1;transform:none}
 
+  /* ---------- BREADCRUMBS ---------- */
+  .crumbs{background:var(--bg);border-bottom:1px solid var(--line)}
+  .crumbs .wrap{display:flex;align-items:center;gap:12px;flex-wrap:wrap;
+    padding-top:12px;padding-bottom:12px;
+    font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;
+    letter-spacing:.18em;font-size:12px;color:var(--muted-2)}
+  .crumbs a{color:var(--muted);transition:color .25s var(--ease)}
+  .crumbs a:hover{color:var(--text)}
+  .crumbs .c-sep{color:var(--muted-2)}
+  .crumbs [aria-current]{color:var(--text)}
+
+  /* ---------- RELATED SERVICES ---------- */
+  .rel-links{margin-top:34px;display:flex;align-items:baseline;gap:18px;flex-wrap:wrap;
+    font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.16em;font-size:14px}
+  .rel-links .rl-label{color:var(--muted-2);letter-spacing:.22em;font-size:12px}
+  .rel-links a{color:var(--muted);border-bottom:1px solid var(--line-strong);padding-bottom:3px;
+    transition:color .25s var(--ease),border-color .25s var(--ease)}
+  .rel-links a:hover{color:var(--text);border-color:#fff}
+  .rel-links .rl-dot{color:var(--muted-2)}
+
+  /* ---------- FAQ ---------- */
+  .faq{padding:96px 0 30px}
+  .faq-list{margin-top:46px;border-top:1px solid var(--line)}
+  .faq-item{border-bottom:1px solid var(--line)}
+  .faq-item summary{list-style:none;cursor:pointer;display:flex;align-items:baseline;
+    justify-content:space-between;gap:24px;padding:24px 0;
+    font-family:"Barlow Condensed",sans-serif;font-weight:600;text-transform:uppercase;
+    letter-spacing:.04em;font-size:22px;line-height:1.1;transition:color .25s var(--ease)}
+  .faq-item summary::-webkit-details-marker{display:none}
+  .faq-item summary:hover{color:#fff}
+  .faq-item summary .fq-ico{flex:none;font-weight:400;color:var(--muted-2);
+    transition:transform .3s var(--ease)}
+  .faq-item[open] summary .fq-ico{transform:rotate(45deg);color:var(--text)}
+  .faq-item .fq-a{padding:0 0 26px;color:var(--muted);font-size:15.5px;max-width:72ch;text-wrap:pretty}
+
   @media(max-width:980px){
     .xform-grid{grid-template-columns:1fr;gap:34px;max-width:520px}
     .xtext p{max-width:100%}
@@ -231,6 +283,21 @@
     .gbar .gb-fill{transition:none}
   }
 </style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+  {"@type":"ListItem","position":1,"name":"Inicio","item":"https://serreswrapcenter.es/"},
+  {"@type":"ListItem","position":2,"name":"Servicios","item":"https://serreswrapcenter.es/#services"},
+  {"@type":"ListItem","position":3,"name":"Detailing","item":"https://serreswrapcenter.es/services/detailing.html"}
+]}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1K6FYZ99GN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-1K6FYZ99GN');
+</script>
 </head>
 <body>
 
@@ -246,6 +313,12 @@
   </div>
 </header>
 
+<nav class="crumbs" aria-label="Migas de pan">
+  <div class="wrap">
+    <a href="../index.html">Inicio</a><span class="c-sep">/</span><a href="../index.html#services">Servicios</a><span class="c-sep">/</span><span aria-current="page">Detailing</span>
+  </div>
+</nav>
+
 <!-- ===================== HERO ===================== -->
 <section class="hero" data-screen-label="Detailing — Intro">
   <video autoplay muted loop playsinline preload="metadata" poster="../assets/detailing/poster-opt.jpg">
@@ -260,6 +333,7 @@
         <h1 class="display">
           <span class="ln"><span>Como recién</span></span>
           <span class="ln"><span class="chrome-text">entregado</span></span>
+          <span class="ln ln-kw"><span class="h1-kw">Detailing de coche en Barcelona</span></span>
         </h1>
       </div>
       <div class="hero-stats">
@@ -268,7 +342,7 @@
         <div class="hstat"><b class="chrome-text">0</b><span>Atajos</span></div>
       </div>
     </div>
-    <p class="lead">Un reinicio completo para tu coche — limpiado a vapor, descontaminado y acabado a mano desde los pies hasta la pintura. Devolvemos esa sensación de recién entregado, por dentro y por fuera.</p>
+    <p class="lead">Detailing de coche en Barcelona: limpieza a vapor, descontaminación y acabado a mano, por dentro y por fuera, en nuestro estudio de Sant Cugat del Vallès. Deep Clean desde 150 €.</p>
   </div>
   <div class="scroll-cue"><span class="bar"></span> Desliza</div>
 </section>
@@ -285,11 +359,11 @@
     </div>
     <div class="duo reveal-up">
       <div class="duo-cell bef">
-        <img src="../assets/detailing/int-before.jpg" alt="Interior de un Audi SQ7 antes — polvo y suciedad en la zona de los pies" draggable="false">
+        <img src="../assets/detailing/int-before.webp" alt="Interior de un Audi SQ7 antes — polvo y suciedad en la zona de los pies" width="1290" height="2300" loading="lazy" decoding="async" draggable="false">
         <div class="duo-tag"><small>Antes</small>Polvo y suciedad</div>
       </div>
       <div class="duo-cell aft">
-        <img src="../assets/detailing/int-after.jpg" alt="Interior de un Audi SQ7 después — habitáculo limpiado a vapor y acondicionado" draggable="false">
+        <img src="../assets/detailing/int-after.webp" alt="Interior de un Audi SQ7 después — habitáculo limpiado a vapor y acondicionado" width="1290" height="2256" loading="lazy" decoding="async" draggable="false">
         <div class="duo-tag"><small>Después</small>Limpio a vapor</div>
       </div>
     </div>
@@ -308,11 +382,11 @@
     </div>
     <div class="duo reveal-up">
       <div class="duo-cell bef">
-        <img src="../assets/detailing/ext-before.jpg" alt="Exterior de un Audi SQ7 antes — pintura polvorienta y apagada" draggable="false">
+        <img src="../assets/detailing/ext-before.webp" alt="Exterior de un Audi SQ7 antes — pintura polvorienta y apagada" width="1290" height="1997" loading="lazy" decoding="async" draggable="false">
         <div class="duo-tag"><small>Antes</small>Sucio y apagado</div>
       </div>
       <div class="duo-cell aft">
-        <img src="../assets/detailing/ext-after.jpg" alt="Exterior de un Audi SQ7 después — brillo profundo y reflectante" draggable="false">
+        <img src="../assets/detailing/ext-after.webp" alt="Exterior de un Audi SQ7 después — brillo profundo y reflectante" width="1290" height="1693" loading="lazy" decoding="async" draggable="false">
         <div class="duo-tag"><small>Después</small>Brillo profundo</div>
       </div>
     </div>
@@ -350,6 +424,60 @@
         <p>La pintura se sella para brillo y repelencia, los plásticos y el cuero se acondicionan y protegen de los UV, y los cristales reciben un tratamiento antilluvia y quedan sin marcas.</p>
       </div>
     </div>
+
+    <div class="rel-links reveal-up">
+      <span class="rl-label">Combínalo con:</span>
+      <a href="ppf.html">Protección de pintura PPF</a>
+      <span class="rl-dot">·</span>
+      <a href="ceramic.html">Ceramic Coating SiO₂</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section class="faq" data-screen-label="Detailing — FAQ" id="faq">
+  <div class="wrap">
+    <div class="section-head reveal-up">
+      <div>
+        <span class="eyebrow">Preguntas frecuentes</span>
+        <h2>Antes de reservar.</h2>
+      </div>
+      <p class="sh-note">Lo que nos preguntan antes de un detailing — precios, tiempos y cómo trabajamos en Sant Cugat.</p>
+    </div>
+
+    <div class="faq-list reveal-up">
+
+      <details class="faq-item">
+        <summary>¿Cuánto cuesta un detailing completo? <span class="fq-ico">+</span></summary>
+        <p class="fq-a">Trabajamos con tres niveles cerrados, IVA incluido: Refresh desde 35 €, Deep Clean con limpieza interior a vapor desde 150 € y Showroom Reset — el reinicio completo por dentro y por fuera — desde 490 €. El precio exacto depende del tamaño del vehículo y su estado; lo confirmamos antes de empezar, sin sorpresas al recoger.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>¿Cuánto tiempo tarda el servicio? <span class="fq-ico">+</span></summary>
+        <p class="fq-a">Un Refresh se resuelve en 1–2 horas y un Deep Clean con vapor y extracción de tapicería suele ocupar media jornada. El Showroom Reset requiere una jornada completa, porque cada panel, costura y superficie se trata a mano. Te damos la hora de entrega al confirmar la cita y la cumplimos.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>¿Qué incluye la limpieza interior a vapor? <span class="fq-ico">+</span></summary>
+        <p class="fq-a">Tratamos a vapor cada panel, rejilla y costura del habitáculo, extraemos alfombras y tapicería y limpiamos y acondicionamos el cuero con protección UV. El vapor desinfecta sin químicos agresivos y elimina olores en origen, no los enmascara. Está incluido desde el nivel Deep Clean (desde 150 €).</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>¿Elimináis manchas de tapicería y cuero? <span class="fq-ico">+</span></summary>
+        <p class="fq-a">Sí, es parte central del Deep Clean: extracción en tejidos y limpieza específica de cuero con acondicionado posterior. Eliminamos la gran mayoría de manchas de uso — café, marcas de asiento, suciedad incrustada — y te decimos con honestidad si alguna mancha antigua ha dañado la fibra y no saldrá al 100%.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>¿El resultado está garantizado? ¿Cómo lo controláis? <span class="fq-ico">+</span></summary>
+        <p class="fq-a">No trabajamos a ojo: revisamos el acabado panel a panel bajo iluminación hexagonal controlada, en nuestro taller de Sant Cugat del Vallès. Si algo no cumple nuestro estándar, se repite antes de la entrega. Es la razón de nuestra valoración de 4,9 y de que el 98% de los clientes nos recomiende.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>¿Cómo reservo cita y dónde estáis? <span class="fq-ico">+</span></summary>
+        <p class="fq-a">Trabajamos solo con cita previa, de lunes a sábado, en Av. Can Fatjó dels Aurons 15, Sant Cugat del Vallès (Barcelona). Escríbenos por WhatsApp o llama al +34 621 24 44 69 con el modelo y el estado del coche y te confirmamos precio cerrado y fecha, normalmente el mismo día.</p>
+      </details>
+
+    </div>
   </div>
 </section>
 
@@ -382,68 +510,154 @@
 
 
 
+<script src="../assets/serres-enhance.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Cuánto cuesta un detailing completo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Trabajamos con tres niveles cerrados, IVA incluido: Refresh desde 35 €, Deep Clean con limpieza interior a vapor desde 150 € y Showroom Reset — el reinicio completo por dentro y por fuera — desde 490 €. El precio exacto depende del tamaño del vehículo y su estado; lo confirmamos antes de empezar, sin sorpresas al recoger."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto tiempo tarda el servicio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Un Refresh se resuelve en 1–2 horas y un Deep Clean con vapor y extracción de tapicería suele ocupar media jornada. El Showroom Reset requiere una jornada completa, porque cada panel, costura y superficie se trata a mano. Te damos la hora de entrega al confirmar la cita y la cumplimos."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué incluye la limpieza interior a vapor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tratamos a vapor cada panel, rejilla y costura del habitáculo, extraemos alfombras y tapicería y limpiamos y acondicionamos el cuero con protección UV. El vapor desinfecta sin químicos agresivos y elimina olores en origen, no los enmascara. Está incluido desde el nivel Deep Clean (desde 150 €)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Elimináis manchas de tapicería y cuero?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, es parte central del Deep Clean: extracción en tejidos y limpieza específica de cuero con acondicionado posterior. Eliminamos la gran mayoría de manchas de uso — café, marcas de asiento, suciedad incrustada — y te decimos con honestidad si alguna mancha antigua ha dañado la fibra y no saldrá al 100%."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿El resultado está garantizado? ¿Cómo lo controláis?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No trabajamos a ojo: revisamos el acabado panel a panel bajo iluminación hexagonal controlada, en nuestro taller de Sant Cugat del Vallès. Si algo no cumple nuestro estándar, se repite antes de la entrega. Es la razón de nuestra valoración de 4,9 y de que el 98% de los clientes nos recomiende."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo reservo cita y dónde estáis?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Trabajamos solo con cita previa, de lunes a sábado, en Av. Can Fatjó dels Aurons 15, Sant Cugat del Vallès (Barcelona). Escríbenos por WhatsApp o llama al +34 621 24 44 69 con el modelo y el estado del coche y te confirmamos precio cerrado y fecha, normalmente el mismo día."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://serreswrapcenter.es/services/detailing.html#service",
+  "name": "Detailing y limpieza interior de coche",
+  "serviceType": "Car detailing",
+  "description": "Detailing premium de interior y exterior: limpieza a vapor del habitáculo, extracción de tapicería, cuidado de cuero, descontaminación de pintura y protección. Tres niveles: Refresh, Deep Clean y Showroom Reset.",
+  "url": "https://serreswrapcenter.es/services/detailing.html",
+  "provider": {
+    "@type": "AutoDetailing",
+    "name": "SERRES Wrap Center",
+    "url": "https://serreswrapcenter.es/",
+    "telephone": "+34621244469",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Can Fatjó dels Aurons 15",
+      "postalCode": "08174",
+      "addressLocality": "Sant Cugat del Vallès",
+      "addressRegion": "Barcelona",
+      "addressCountry": "ES"
+    }
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Sant Cugat del Vallès" },
+    { "@type": "City", "name": "Barcelona" }
+  ],
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Detailing Refresh",
+      "price": "35",
+      "priceCurrency": "EUR",
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "price": "35",
+        "priceCurrency": "EUR",
+        "valueAddedTaxIncluded": true,
+        "minPrice": "35"
+      },
+      "availability": "https://schema.org/InStock",
+      "url": "https://serreswrapcenter.es/services/detailing.html"
+    },
+    {
+      "@type": "Offer",
+      "name": "Detailing Deep Clean — limpieza interior a vapor",
+      "price": "150",
+      "priceCurrency": "EUR",
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "price": "150",
+        "priceCurrency": "EUR",
+        "valueAddedTaxIncluded": true,
+        "minPrice": "150"
+      },
+      "availability": "https://schema.org/InStock",
+      "url": "https://serreswrapcenter.es/services/detailing.html"
+    },
+    {
+      "@type": "Offer",
+      "name": "Detailing Showroom Reset — interior y exterior completo",
+      "price": "490",
+      "priceCurrency": "EUR",
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "price": "490",
+        "priceCurrency": "EUR",
+        "valueAddedTaxIncluded": true,
+        "minPrice": "490"
+      },
+      "availability": "https://schema.org/InStock",
+      "url": "https://serreswrapcenter.es/services/detailing.html"
+    }
+  ]
+}
+</script>
 <script>
-/* ---------- Before / After comparison slider ---------- */
-(function(){
-  const box=document.getElementById('compare');
-  const before=document.getElementById('beforeImg');
-  const divider=document.getElementById('divider');
-  const handle=document.getElementById('handle');
-  const tagBef=document.getElementById('tagBef');
-  const tagAft=document.getElementById('tagAft');
-  if(!box)return;
-  let pos=50,dragging=false;
-  function set(p){
-    pos=Math.max(0,Math.min(100,p));
-    before.style.clipPath='inset(0 '+(100-pos)+'% 0 0)';
-    divider.style.left=pos+'%';
-    handle.style.left=pos+'%';
-    tagBef.style.opacity=pos<14?'0':'1';
-    tagAft.style.opacity=pos>86?'0':'1';
+(function () {
+  function track(name, params) {
+    if (typeof gtag === 'function') gtag('event', name, params || {});
   }
-  function fromEvent(e){
-    const r=box.getBoundingClientRect();
-    const x=(e.touches?e.touches[0].clientX:e.clientX)-r.left;
-    set(x/r.width*100);
-  }
-  function start(e){dragging=true;box.classList.add('touched');fromEvent(e);if(e.cancelable)e.preventDefault();}
-  function move(e){if(!dragging)return;fromEvent(e);if(e.cancelable&&e.touches)e.preventDefault();}
-  function end(){dragging=false;}
-  handle.addEventListener('mousedown',start);
-  box.addEventListener('mousedown',start);
-  window.addEventListener('mousemove',move);
-  window.addEventListener('mouseup',end);
-  handle.addEventListener('touchstart',start,{passive:false});
-  box.addEventListener('touchstart',start,{passive:false});
-  window.addEventListener('touchmove',move,{passive:false});
-  window.addEventListener('touchend',end);
-  handle.addEventListener('keydown',e=>{
-    if(e.key==='ArrowLeft')set(pos-3);
-    else if(e.key==='ArrowRight')set(pos+3);
-  });
-  set(50);
-  if(!matchMedia('(prefers-reduced-motion:reduce)').matches){
-    const io=new IntersectionObserver((ents)=>{
-      ents.forEach(en=>{
-        if(en.isIntersecting){
-          io.disconnect();
-          const seq=[50,66,34,50];let i=0;
-          const iv=setInterval(()=>{i++;if(i>=seq.length){clearInterval(iv);return;}animate(pos,seq[i]);},560);
-        }
-      });
-    },{threshold:.4});
-    io.observe(box);
-  }
-  function animate(from,to){
-    const t0=performance.now(),dur=460;
-    function fr(t){const k=Math.min(1,(t-t0)/dur);const e=k*k*(3-2*k);
-      set(from+(to-from)*e);if(k<1)requestAnimationFrame(fr);}
-    requestAnimationFrame(fr);
-  }
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest ? e.target.closest('a') : null;
+    if (!a || !a.href) return;
+    if (a.href.indexOf('wa.me') !== -1 || a.href.indexOf('api.whatsapp.com') !== -1) {
+      track('whatsapp_click', { link_url: a.href, page_path: location.pathname });
+    } else if (a.href.indexOf('tel:') === 0) {
+      track('phone_click', { link_url: a.href, page_path: location.pathname });
+    }
+  }, true);
 })();
 </script>
-
-
-<script src="../assets/serres-enhance.js" defer></script>
 </body>
 </html>

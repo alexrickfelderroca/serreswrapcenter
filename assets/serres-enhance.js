@@ -20,7 +20,7 @@
 
   /* ---- relative-path base (root vs services/ & pages/) ---- */
   var path = location.pathname;
-  var nested = /\/(services|pages)\//.test(path);
+  var nested = /\/(services|pages|blog)\//.test(path);
   var base = nested ? "../" : "";
   var onHome = !nested; // root-level index.html
 
@@ -32,6 +32,7 @@
     { label: "Exclusive",  href: base + "pages/projects.html", gold: true },
     { label: "Prices",     href: base + "pages/prices.html" },
     { label: "Why SERRES", href: base + "pages/why-serres.html" },
+    { label: "Blog",       href: base + "blog/index.html" },
     { label: "Contact",    href: homeLink("#contact") }
   ];
 

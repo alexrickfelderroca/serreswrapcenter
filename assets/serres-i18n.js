@@ -54,15 +54,15 @@
     "Close menu": ["Cerrar menú", "Tanca el menú"],
 
     /* ---------- HOME ---------- */
-    "SERRES — Premium Paint Protection, Wraps & Detailing":
-      ["SERRES — PPF, Car Wrap y Detailing Premium en Barcelona", "SERRES — PPF, Car Wrap i Detailing Premium a Barcelona"],
+    "PPF, Car Wrap & Detailing in Barcelona | SERRES":
+      ["PPF, Car Wrap y Detailing en Barcelona | SERRES", "PPF, Car Wrap i Detailing a Barcelona | SERRES"],
     "Premium Detailing & Customization":
       ["Detailing y personalización premium", "Detailing i personalització premium"],
     "Elevate": ["Eleva", "Eleva"],
     "your dream": ["tu sueño", "el teu somni"],
-    "Paint protection, custom wraps, and concours-level detailing — engineered for the cars you build your life around. One workshop. Obsessive standards.":
-      ["Protección de pintura, Car Wrap a medida y detailing de nivel concours, pensados para los coches alrededor de los que construyes tu vida. Un taller. Estándares obsesivos.",
-       "Protecció de pintura, Car Wrap a mida i detailing de nivell concours, pensats per als cotxes al voltant dels quals construeixes la teva vida. Un taller. Estàndards obsessius."],
+    "PPF, custom Car Wrap and concours-level detailing in Barcelona (Sant Cugat del Vallès) — engineered for the cars you build your life around. One workshop. Obsessive standards.":
+      ["PPF, Car Wrap a medida y detailing de nivel concours en Barcelona (Sant Cugat del Vallès), pensados para los coches alrededor de los que construyes tu vida. Un taller. Estándares obsesivos.",
+       "PPF, Car Wrap a mida i detailing de nivell concours a Barcelona (Sant Cugat del Vallès), pensats per als cotxes al voltant dels quals construeixes la teva vida. Un taller. Estàndards obsessius."],
     "The SERRES Build": ["La transformación SERRES", "La transformació SERRES"],
     "Our services": ["Nuestros servicios", "Els nostres serveis"],
     "Choose where to begin.": ["Elige por dónde empezar.", "Tria per on començar."],
@@ -104,13 +104,13 @@
     "Call SERRES": ["Llamar a SERRES", "Truca a SERRES"],
 
     /* ---------- GALLERY ---------- */
-    "SERRES — Gallery": ["Proyectos — SERRES Barcelona", "Projectes — SERRES Barcelona"],
+    "Projects & Work Gallery — PPF, Car Wrap & Detailing | SERRES": ["Proyectos y Galería de Trabajos — PPF, Car Wrap y Detailing | SERRES", "Projectes i Galeria de Treballs — PPF, Car Wrap i Detailing | SERRES"],
     "Our": ["Nuestros", "Els nostres"],
     "The Showroom": ["El showroom", "El showroom"],
     "The": ["La", "La"],
-    "Every car gets its own room. Shot in and around Barcelona — no stock photos, no rented cars. Pick a build below, or scroll the floor.":
-      ["Cada coche tiene su propia sala. Fotografiado en Barcelona y alrededores — sin fotos de stock ni coches de alquiler. Elige un proyecto abajo o recorre la planta.",
-       "Cada cotxe té la seva pròpia sala. Fotografiat a Barcelona i rodalies — sense fotos d'estoc ni cotxes de lloguer. Tria un projecte a sota o recorre la planta."],
+    "Every car gets its own room in this gallery of work. Shot in and around Barcelona — no stock photos, no rented cars. Pick a build below, or scroll the floor.":
+      ["Cada coche tiene su propia sala en esta galería de trabajos. Fotografiado en Barcelona y alrededores — sin fotos de stock ni coches de alquiler. Elige un proyecto abajo o recorre la planta.",
+       "Cada cotxe té la seva pròpia sala en aquesta galeria de treballs. Fotografiat a Barcelona i rodalies — sense fotos d'estoc ni cotxes de lloguer. Tria un projecte a sota o recorre la planta."],
     "RAUH-Welt Begriff": ["RAUH-Welt Begriff", "RAUH-Welt Begriff"],
     "A widebody RAUH-Welt 993 — riveted arches, race wing and a mirror-silver finish.":
       ["Un RAUH-Welt 993 widebody — pasos de rueda remachados, alerón de competición y un acabado plata espejo.",
@@ -205,9 +205,9 @@
     "Transparent Pricing": ["Precios transparentes", "Preus transparents"],
     "Pick your": ["Elige tu", "Tria el teu"],
     "level.": ["nivel.", "nivell."],
-    "Three levels for every service — from a clean essential package to a no-compromise concours finish. Guide prices below; every car is confirmed with an exact quote in person.":
-      ["Tres niveles para cada servicio — desde un paquete esencial impecable hasta un acabado concours sin concesiones. Precios orientativos abajo; cada coche se confirma con un presupuesto exacto en persona.",
-       "Tres nivells per a cada servei — des d'un paquet essencial impecable fins a un acabat concours sense concessions. Preus orientatius a sota; cada cotxe es confirma amb un pressupost exacte en persona."],
+    "PPF (from €890), Car Wrap (from €250), Ceramic Coating (from €340) and detailing (from €35), VAT included. Three levels per service; every car is confirmed with an exact quote in person.":
+      ["Precios de PPF (desde 890 €), Car Wrap (desde 250 €), Ceramic Coating (desde 340 €) y detailing (desde 35 €), IVA incluido. Tres niveles por servicio; cada coche se confirma con un presupuesto exacto en persona.",
+       "Preus de PPF (des de 890 €), Car Wrap (des de 250 €), Ceramic Coating (des de 340 €) i detailing (des de 35 €), IVA inclòs. Tres nivells per servei; cada cotxe es confirma amb un pressupost exacte en persona."],
     "Guide prices · final quote depends on vehicle size, condition & film choice · no maintenance kit included":
       ["Precios orientativos · el presupuesto final depende del tamaño del vehículo, su estado y la elección de film · no incluyen kit de mantenimiento",
        "Preus orientatius · el pressupost final depèn de la mida del vehicle, el seu estat i l'elecció de film · no inclouen kit de manteniment"],
@@ -224,16 +224,16 @@
        "© 2026 SERRES. Tots els drets reservats. \u00A0·\u00A0 Preus orientatius en EUR, IVA inclòs"],
 
     /* ---------- PROJECTS / EXCLUSIVO ---------- */
-    "SERRES — Exclusive": ["Exclusivo SERRES — Transformación Completa", "Exclusiu SERRES — Transformació Completa"],
+    "Exclusive — Car Transformation Projects in Barcelona | SERRES": ["Exclusivo — Proyectos de Transformación en Barcelona | SERRES", "Exclusiu — Projectes de Transformació a Barcelona | SERRES"],
     "Exclusive": ["Exclusivo", "Exclusiu"],
     "One car.": ["Un coche.", "Un cotxe."],
     "Everything.": ["Todo.", "Tot."],
     "Builds a year": ["Exclusivos al año", "Exclusius l'any"],
     "Car at a time": ["Coche a la vez", "Cotxe alhora"],
     "Bespoke": ["A medida", "A mida"],
-    "For owners who don't want a service — they want the car reimagined. Correction, protection, colour, interior, body work: every discipline we have, applied to one car as a single project.":
-      ["Para propietarios que no quieren un servicio — quieren reimaginar el coche. Corrección, protección, color, interior, carrocería: cada disciplina que tenemos, aplicada a un coche como un único proyecto.",
-       "Per a propietaris que no volen un servei — volen reimaginar el cotxe. Correcció, protecció, color, interior, carrosseria: cada disciplina que tenim, aplicada a un cotxe com un únic projecte."],
+    "The Exclusive is our complete car transformation project in Barcelona: paint correction, colour change, PPF, Ceramic Coating, body work and interior — every discipline we have, applied to one car as a single project.":
+      ["Exclusivo es nuestro proyecto de transformación completa de coches en Barcelona: corrección de pintura, cambio de color, PPF, Ceramic Coating, carrocería e interior — cada disciplina que tenemos, aplicada a un coche como un único proyecto.",
+       "L'Exclusiu és el nostre projecte de transformació completa de cotxes a Barcelona: correcció de pintura, canvi de color, PPF, Ceramic Coating, carrosseria i interior — cada disciplina que tenim, aplicada a un cotxe com un únic projecte."],
     "The Scope": ["El alcance", "L'abast"],
     "Every discipline.": ["Cada disciplina.", "Cada disciplina."],
     "One vision.": ["Una visión.", "Una visió."],
@@ -288,14 +288,14 @@
        "© 2026 SERRES. Tots els drets reservats. \u00A0·\u00A0 Exclusiu — projectes complets limitats"],
 
     /* ---------- WHY SERRES (static; testimonials in-page) ---------- */
-    "SERRES — Why SERRES": ["Por Qué SERRES — Estudio Premium en Sant Cugat", "Per Què SERRES — Estudi Premium a Sant Cugat"],
+    "Detailing Studio in Sant Cugat — Why SERRES": ["Estudio de Detailing en Sant Cugat — Por Qué SERRES", "Estudi de Detailing a Sant Cugat — Per Què SERRES"],
     "Why": ["Por qué", "Per què"],
     "Cars Transformed": ["Coches transformados", "Cotxes transformats"],
     "Average Rating": ["Valoración media", "Valoració mitjana"],
     "Workshop": ["Taller", "Taller"],
-    "One studio in Sant Cugat with one obsession: doing it properly. No shortcuts, no \u201Cgood enough\u201D — meticulous prep, premium materials and the same standards applied to a daily driver and a hypercar alike.":
-      ["Somos un taller en Sant Cugat con una obsesión: hacerlo bien. Sin atajos, sin \u201Cya vale\u201D — solo preparación meticulosa, materiales premium y los mismos estándares aplicados a un coche diario y a un hiperdeportivo por igual.",
-       "Som un taller a Sant Cugat amb una obsessió: fer-ho bé. Sense dreceres, sense \u201Cja n'hi ha prou\u201D — només preparació meticulosa, materials premium i els mateixos estàndards aplicats a un cotxe diari i a un hiperesportiu per igual."],
+    "We are a detailing studio in Sant Cugat del Vallès with one obsession: doing it properly. No shortcuts, no “good enough” — meticulous prep, premium materials and the same standards applied to a daily driver and a hypercar alike.":
+      ["Somos un estudio de detailing en Sant Cugat del Vallès con una obsesión: hacerlo bien. Sin atajos, sin “ya vale” — solo preparación meticulosa, materiales premium y los mismos estándares aplicados a un coche diario y a un hiperdeportivo por igual.",
+       "Som un estudi de detailing a Sant Cugat del Vallès amb una obsessió: fer-ho bé. Sense dreceres, sense “ja n'hi ha prou” — només preparació meticulosa, materials premium i els mateixos estàndards aplicats a un cotxe diari i a un hiperesportiu per igual."],
     "The Difference": ["La diferencia", "La diferència"],
     "Standards you": ["Estándares que", "Estàndards que"],
     "can measure.": ["puedes medir.", "pots mesurar."],
@@ -365,9 +365,9 @@
     "Service 03 · Paint Protection Film": ["Servicio 03 · Paint Protection Film", "Servei 03 · Paint Protection Film"],
     "Paint": ["Paint", "Paint"],
     "Armour": ["Armour", "Armour"],
-    "An invisible urethane skin over your factory paint — absorbing stone chips, swirls, bug acid... So the finish underneath stays exactly as it left the studio. Available clear, gloss, satin and full colour-shift.":
-      ["Una piel de uretano invisible sobre tu pintura de fábrica — absorbe impactos de piedra, micro-arañazos, ácido de insectos...Para que el acabado de debajo siga exactamente como salió del taller. Disponible en transparente, brillo, satinado y colour-shift completo.",
-       "Una pell d'uretà invisible sobre la teva pintura de fàbrica — absorbeix impactes de pedra, micro-ratllades, àcid d'insectes... Perquè l'acabat de sota segueixi exactament com va sortir del taller. Disponible en transparent, brillant, setinat i colour-shift complet."],
+    "We install PPF in Barcelona, at our workshop in Sant Cugat del Vallès: an invisible urethane skin over your factory paint that absorbs stone chips, swirls and bug acid. Self-healing film with a 3-year warranty, from 890 €. Available clear, gloss, satin and full colour-shift.":
+      ["Instalamos PPF en Barcelona, en nuestro taller de Sant Cugat del Vallès: una piel de uretano invisible sobre tu pintura de fábrica que absorbe impactos de piedra, micro-arañazos y ácido de insectos. Film autorregenerable con 3 años de garantía, desde 890 €. Disponible en transparente, brillo, satinado y colour-shift completo.",
+       "Instal·lem PPF a Barcelona, al nostre taller de Sant Cugat del Vallès: una pell d'uretà invisible sobre la teva pintura de fàbrica que absorbeix impactes de pedra, micro-ratllades i àcid d'insectes. Film autoregenerable amb 3 anys de garantia, des de 890 €. Disponible en transparent, brillant, setinat i colour-shift complet."],
     "Self-Healing": ["Autorreparable", "Autoreparable"],
     "Film Colours": ["Colores de film", "Colors de film"],
     "Gloss in.": ["Entra en brillo.", "Entra en brillant."],
@@ -446,9 +446,9 @@
     "Surface Hardness": ["Dureza superficial", "Duresa superficial"],
     "Protection": ["Protección", "Protecció"],
     "Water Contact": ["Contacto del agua", "Contacte de l'aigua"],
-    "A SiO₂ Ceramic Coating that chemically bonds to the paint — sealing the gloss with a slick, hydrophobic layer that repels water, grime and UV for years.":
-      ["Un tratamiento Ceramic Coating de SiO₂ que se adhiere químicamente a la pintura — sella el brillo con una capa hidrófoba y deslizante que repele agua, suciedad y UV durante años.",
-       "Un tractament Ceramic Coating de SiO₂ que s'adhereix químicament a la pintura — segella la brillantor amb una capa hidròfoba i lliscant que repel·leix aigua, brutícia i UV durant anys."],
+    "The SERRES ceramic coating for cars in Barcelona: a SiO₂ coating that chemically bonds to the paint — sealing the gloss with a slick, hydrophobic layer that repels water, grime and UV for years.":
+      ["El tratamiento cerámico para coche en Barcelona de SERRES: un recubrimiento SiO₂ que se adhiere químicamente a la pintura — sella el brillo con una capa hidrófoba y deslizante que repele agua, suciedad y UV durante años.",
+       "El tractament ceràmic per a cotxe a Barcelona de SERRES: un recobriment SiO₂ que s'adhereix químicament a la pintura — segella la brillantor amb una capa hidròfoba i lliscant que repel·leix aigua, brutícia i UV durant anys."],
     "Water just": ["El agua", "L'aigua"],
     "lets go.": ["se suelta.", "es deixa anar."],
     "Same hood, same hex light. Drag the slider to watch flat, clinging water snap into tight beads that roll straight off.":
@@ -506,9 +506,9 @@
     "In & Out": ["Dentro y fuera", "Dins i fora"],
     "Hand Finished": ["Acabado a mano", "Acabat a mà"],
     "Cut Corners": ["Atajos", "Dreceres"],
-    "A full reset for your car — steam-cleaned, decontaminated and hand-finished from the footwells to the paint. We bring back that just-delivered feeling, inside and out.":
-      ["Un reinicio completo para tu coche — limpiado a vapor, descontaminado y acabado a mano desde los pies hasta la pintura. Devolvemos esa sensación de recién entregado, por dentro y por fuera.",
-       "Un reinici complet per al teu cotxe — netejat a vapor, descontaminat i acabat a mà des dels peus fins a la pintura. Tornem aquella sensació d'acabat de lliurar, per dins i per fora."],
+    "Car detailing in Barcelona: steam cleaning, decontamination and hand finishing, inside and out, at our Sant Cugat del Vallès studio. Deep Clean from €150.":
+      ["Detailing de coche en Barcelona: limpieza a vapor, descontaminación y acabado a mano, por dentro y por fuera, en nuestro estudio de Sant Cugat del Vallès. Deep Clean desde 150 €.",
+       "Detailing de cotxe a Barcelona: neteja al vapor, descontaminació i acabat a mà, per dins i per fora, al nostre estudi de Sant Cugat del Vallès. Deep Clean des de 150 €."],
     "Interior Detailing": ["Detailing de interior", "Detailing d'interior"],
     "Lived-in": ["De usado", "De fet servir"],
     "to like-new.": ["a como nuevo.", "a com nou."],
@@ -560,9 +560,9 @@
     "Stage Polish": ["Pulido por etapas", "Polit per etapes"],
     "Defect Removal": ["Eliminación de defectos", "Eliminació de defectes"],
     "Holograms": ["Hologramas", "Hologrames"],
-    "Multi-stage machine polishing that levels swirls, holograms and oxidation built up over years — restoring the true depth, gloss and clarity hiding under the surface of your paint.":
-      ["Pulido a máquina multietapa que elimina micro-arañazos, hologramas y oxidación acumulados durante años — devolviendo la profundidad, el brillo y la claridad reales que se escondían bajo la superficie de tu pintura.",
-       "Polit a màquina multietapa que elimina micro-ratllades, hologrames i oxidació acumulats durant anys — tornant la profunditat, la brillantor i la claredat reals que s'amagaven sota la superfície de la teva pintura."],
+    "SERRES car polishing in Barcelona is a multi-stage machine paint correction that removes micro-scratches, holograms and oxidation, restoring the true gloss and depth of your paint. We work in Sant Cugat del Vallès, 20 minutes from Barcelona.":
+      ["El pulido de coche en Barcelona de SERRES es una corrección multietapa a máquina que elimina micro-arañazos, hologramas y oxidación, devolviendo el brillo y la profundidad reales a tu pintura. Trabajamos en Sant Cugat del Vallès, a 20 minutos de Barcelona.",
+       "El polit de cotxe a Barcelona de SERRES és una correcció multietapa a màquina que elimina micro-ratllades, hologrames i oxidació, tornant la brillantor i la profunditat reals a la teva pintura. Treballem a Sant Cugat del Vallès, a 20 minuts de Barcelona."],
     "From hazy": ["De turbio", "De tèrbol"],
     "to mirror.": ["a espejo.", "a mirall."],
     "Same panel, same light. Drag the slider to see swirls and dullness give way to a flawless, reflective finish.":
@@ -598,9 +598,9 @@
        "La tèrbolesa i les micro-marques que deixa el tall es refinen, recuperant claredat i elevant la brillantor a tot el panell."],
     "Stage 3 · Finish": ["Etapa 3 · Acabado", "Etapa 3 · Acabat"],
     "Finishing pad · fine polish": ["Boina de acabado · pulido fino", "Boina d'acabat · polit fi"],
-    "The final jewelling pass eliminates holograms and brings paint to a true, defect-free mirror before it's sealed in.":
-      ["La pasada final de jewelling elimina hologramas y lleva la pintura a un espejo real y sin defectos antes de sellarla.",
-       "La passada final de jewelling elimina hologrames i porta la pintura a un mirall real i sense defectes abans de segellar-la."],
+    "The final mirror-finish (jewelling) pass eliminates holograms and brings the paint to a true, defect-free gloss before it's sealed in.":
+      ["La pasada final de acabado espejo (jewelling) elimina hologramas y lleva la pintura a un brillo real y sin defectos antes de sellarla.",
+       "La passada final d'acabat mirall (jewelling) elimina hologrames i porta la pintura a una brillantor real i sense defectes abans de segellar-la."],
     "The numbers,": ["Los números,", "Els números,"],
     "not just the shine.": ["no solo el brillo.", "no només la brillantor."],
     "Gloss is expressed in GU (gloss units): the higher the number, the deeper and sharper the reflection. Typical results on neglected paint:":
@@ -624,12 +624,12 @@
     "Reversible": ["Reversible", "Reversible"],
     "Film layers": ["Capas de film", "Capes de film"],
     "Layers": ["Capas", "Capes"],
-    "Full or partial colour-change Car Wrap with films from several professional brands — matte, satin, gloss, metallic and colour-flip finishes, precision-fit and heat-sealed to every panel, edge and recess.":
-      ["Car Wrap de cambio de color total o parcial con films de varias marcas profesionales — acabados mate, satinado, brillo, metalizado y colour-flip, ajustados con precisión y termosellados a cada panel, borde y recoveco.",
-       "Car Wrap de canvi de color total o parcial amb films de diverses marques professionals — acabats mat, setinat, brillant, metal·litzat i colour-flip, ajustats amb precisió i termosegellats a cada panell, vora i racó."],
+    "Car wrapping in Barcelona: we wrap your car with a full or partial colour change using 3M, Avery Dennison and Inozetek films — over 150 colours in matte, satin, gloss, metallic and colour-flip. Full car from €1,490, fully reversible, at our workshop in Sant Cugat del Vallès.":
+      ["Car wrapping en Barcelona: vinilamos tu coche con cambio de color total o parcial usando films 3M, Avery Dennison e Inozetek — más de 150 colores en mate, satinado, brillo, metalizado y colour-flip. Coche completo desde 1.490 €, totalmente reversible, en nuestro taller de Sant Cugat del Vallès.",
+       "Car wrapping a Barcelona: vinilem el teu cotxe amb canvi de color total o parcial amb films 3M, Avery Dennison i Inozetek — més de 150 colors en mat, setinat, brillant, metal·litzat i colour-flip. Cotxe complet des de 1.490 €, totalment reversible, al nostre taller de Sant Cugat del Vallès."],
     "The Palette": ["La paleta", "La paleta"],
-    "Every colour we": ["Todos los colores que", "Tots els colors que"],
-    "can put on your car": ["podemos poner en tu coche", "podem posar al teu cotxe"],
+    "Every colour to": ["Todos los colores para", "Tots els colors per a"],
+    "wrap your car": ["vinilar tu coche", "vinilar el teu cotxe"],
     "We work with several professional brands. Pick the brand, filter by colour family and drag to explore.":
       ["Trabajamos con varias marcas profesionales. Elige la marca, filtra por familia de color y desliza para explorar.",
        "Treballem amb diverses marques professionals. Tria la marca, filtra per família de color i llisca per explorar."],
@@ -660,9 +660,9 @@
     "Presence": ["impactar", "impactar"],
     "Kit Types": ["Tipos de kit", "Tipus de kit"],
     "Transformation": ["Transformación", "Transformació"],
-    "Aero, stance and sound — engineered to look factory and hit harder. We fit all types of body kits, custom rims and exhaust tips to completely change how your car sits and reads on the road.":
-      ["Aero, stance y sonido — diseñado para parecer de fábrica y pegar más fuerte. Montamos todo tipo de body kits, llantas a medida y colas de escape para cambiar por completo cómo se planta y se lee tu coche en la carretera.",
-       "Aero, stance i so — dissenyat per semblar de fàbrica i pegar més fort. Muntem tot tipus de body kits, llandes a mida i sortides d'escapament per canviar del tot com es planta i es llegeix el teu cotxe a la carretera."],
+    "We fit body kits in Barcelona (workshop in Sant Cugat del Vallès): installation, painting and OEM-level fitment of lips, diffusers, spoilers and widebody conversions, from €450. Custom rims and exhaust tips too, to completely transform your car.":
+      ["Realizamos el montaje de body kits en Barcelona (taller en Sant Cugat del Vallès): instalación, pintura y ajuste a nivel OEM de labios, difusores, alerones y conversiones widebody, desde 450 €. También llantas a medida y colas de escape para transformar por completo tu coche.",
+       "Fem el muntatge de body kits a Barcelona (taller a Sant Cugat del Vallès): instal·lació, pintura i ajust a nivell OEM de llavis, difusors, alerons i conversions widebody, des de 450 €. També llandes a mida i sortides d'escapament per transformar del tot el teu cotxe."],
     "Stock to": ["De serie a", "De sèrie a"],
     "street weapon.": ["arma de calle.", "arma de carrer."],
     "Same Golf GTI, same spot. Drag the slider to watch a factory rear turn into full aero — diffuser, spoiler, splitters and blacked-out tips.":
@@ -690,15 +690,15 @@
        "Llavis davanters, splitters, faldons laterals, difusors posteriors, alerons i conversions widebody completes — muntats en sec, igualats en color i fixats a estàndards de fàbrica."],
     "Custom Rims": ["Llantas a medida", "Llandes a mida"],
     "Sizing · finishes · fitment": ["Medidas · acabados · encaje", "Mides · acabats · encaix"],
-    "The right wheel changes everything. We spec diameter, offset and finish to fill the arches and lock in the stance — then fit and balance them properly.":
-      ["La llanta correcta lo cambia todo. Definimos diámetro, offset y acabado para llenar los pasos de rueda y fijar el stance — luego las montamos y equilibramos como toca.",
-       "La llanda correcta ho canvia tot. Definim diàmetre, offset i acabat per omplir els passos de roda i fixar el stance — després les muntem i equilibrem com cal."],
+    "The right wheel changes everything. We spec diameter, ET (offset) and finish to fill the arches and lock in the stance — then fit and balance them properly.":
+      ["La llanta correcta lo cambia todo. Definimos diámetro, ET (offset) y acabado para llenar los pasos de rueda y fijar el stance — luego las montamos y equilibramos como toca.",
+       "La llanda correcta ho canvia tot. Definim diàmetre, ET (offset) i acabat per omplir els passos de roda i fixar el stance — després les muntem i equilibrem com cal."],
     "Exhaust Tips": ["Colas de escape", "Sortides d'escapament"],
     "Gloss black · chrome · carbon": ["Negro brillo · cromo · carbono", "Negre brillant · crom · carboni"],
     "The finishing detail at the rear — blacked-out, polished or carbon tips, sized and aligned to sit clean against the bumper and diffuser.":
       ["El detalle final en la trasera — colas en negro, pulidas o de carbono, dimensionadas y alineadas para quedar limpias contra el paragolpes y el difusor.",
        "El detall final a la part posterior — sortides en negre, polides o de carboni, dimensionades i alineades per quedar netes contra el para-xocs i el difusor."],
-    "Change the stance": ["Cambia el stance", "Canvia el stance"],
+    "Change the stance": ["Cambia la postura", "Canvia la postura"],
     "Give it real": ["Dale presencia", "Dona-li presència"],
     "presence.": ["de verdad.", "de veritat."],
     "© 2026 SERRES. All rights reserved. \u00A0·\u00A0 Body Kits · Custom Rims · Exhaust Tips":
@@ -970,9 +970,9 @@
 
     /* ---------- SEO META DESCRIPTIONS (baked in Spanish in the HTML;
        EN key = legacy English description shown when switching to EN) ---------- */
-    "SERRES — premium automotive detailing & customization. PPF, vinyl wraps, body kits, custom rims, paint correction, interior & exterior deep cleaning.":
-      ["Estudio premium en Sant Cugat del Vallès: PPF, Car Wrap, Ceramic Coating, pulido por etapas y detailing. Presupuesto por WhatsApp.",
-       "Estudi premium a Sant Cugat del Vallès: PPF, Car Wrap, Ceramic Coating, polit per etapes i detailing. Pressupost per WhatsApp."],
+    "PPF, Car Wrap and detailing studio in Barcelona (Sant Cugat del Vallès): Ceramic Coating, multi-stage polishing and body kits. Get a quote on WhatsApp.":
+      ["Estudio de PPF, Car Wrap y detailing en Barcelona (Sant Cugat del Vallès): Ceramic Coating, pulido por etapas y body kits. Pide presupuesto por WhatsApp.",
+       "Estudi de PPF, Car Wrap i detailing a Barcelona (Sant Cugat del Vallès): Ceramic Coating, polit per etapes i body kits. Demana pressupost per WhatsApp."],
     "SERRES PPF — self-healing paint protection film that shields high-impact areas from stone chips, swirls and the road. Available clear, gloss, satin and colour-shift finishes.":
       ["Instalación de PPF autorreparable con más de 50 colores de varias marcas profesionales. Packs frontal y coche completo desde 890 €. Sant Cugat, Barcelona.",
        "Instal·lació de PPF autoreparable amb més de 50 colors de diverses marques professionals. Packs frontal i cotxe complet des de 890 €. Sant Cugat, Barcelona."],
@@ -991,18 +991,157 @@
     "SERRES Body Kits — aggressive aero, custom rims and exhaust tips fitted to factory standards. We install all types of body kits to transform stance and presence.":
       ["Instalación y pintura de body kits, spoilers y widebody con ajuste OEM. Desde 450 €. Sant Cugat del Vallès.",
        "Instal·lació i pintura de body kits, spoilers i widebody amb ajust OEM. Des de 450 €. Sant Cugat del Vallès."],
-    "SERRES pricing — transparent guide prices for wraps, PPF, ceramic coating, paint correction, detailing and body kits. Three levels per service, from essential to concours.":
-      ["Precios orientativos con IVA de todos los servicios SERRES: PPF, Car Wrap, Ceramic Coating, pulido por etapas, detailing y body kits.",
-       "Preus orientatius amb IVA de tots els serveis SERRES: PPF, Car Wrap, Ceramic Coating, polit per etapes, detailing i body kits."],
-    "Why SERRES — obsessive prep, measured results and premium materials under one roof. The standards behind every car that leaves our Barcelona studio.":
-      ["Un estudio premium en Sant Cugat: materiales certificados, preparación meticulosa y un 98% de clientes que nos recomiendan.",
-       "Un estudi premium a Sant Cugat: materials certificats, preparació meticulosa i un 98% de clients que ens recomanen."],
-    "SERRES Gallery — a car-by-car showroom of wraps, PPF, corrections and full builds shot in and around our Barcelona studio.":
-      ["Coches transformados en SERRES: PPF, Car Wrap, Ceramic Coating y detailing. Fotos reales de nuestro estudio.",
-       "Cotxes transformats a SERRES: PPF, Car Wrap, Ceramic Coating i detailing. Fotos reals del nostre estudi."],
-    "The SERRES Exclusive — our limited full-build programme. PPF, wrap, correction, ceramic, interior and body work on one car, under one vision. A handful of builds per year.":
-      ["Exclusivo SERRES: la transformación completa. Un coche, una visión.",
-       "Exclusiu SERRES: la transformació completa. Un cotxe, una visió."]
+    "PPF from €890, Car Wrap from €250, Ceramic Coating from €340 and detailing from €35, VAT included. Ask SERRES for your exact quote.":
+      ["Precios de PPF desde 890 €, Car Wrap desde 250 €, Ceramic Coating desde 340 € y detailing desde 35 €, IVA incluido. Pide tu presupuesto exacto en SERRES.",
+       "Preus de PPF des de 890 €, Car Wrap des de 250 €, Ceramic Coating des de 340 € i detailing des de 35 €, IVA inclòs. Demana el teu pressupost exacte a SERRES."],
+    "Detailing studio in Sant Cugat del Vallès: PPF, Car Wrap and paint correction with certified materials and 98% of clients who recommend us.":
+      ["Estudio de detailing en Sant Cugat del Vallès: PPF, Car Wrap y corrección de pintura con materiales certificados y un 98% de clientes que nos recomiendan.",
+       "Estudi de detailing a Sant Cugat del Vallès: PPF, Car Wrap i correcció de pintura amb materials certificats i un 98% de clients que ens recomanen."],
+    "SERRES projects in Barcelona: a gallery of real PPF, Car Wrap, Ceramic Coating and detailing work on Porsche, BMW, Toyota and Range Rover.":
+      ["Proyectos de SERRES en Barcelona: galería de trabajos reales de PPF, Car Wrap, Ceramic Coating y detailing en Porsche, BMW, Toyota y Range Rover.",
+       "Projectes de SERRES a Barcelona: galeria de treballs reals de PPF, Car Wrap, Ceramic Coating i detailing en Porsche, BMW, Toyota i Range Rover."],
+    "SERRES Exclusive: complete car transformation projects in Barcelona. Correction, colour change, PPF, Ceramic Coating and interior. Only 6 a year.":
+      ["Exclusivo SERRES: proyectos de transformación completa de coches en Barcelona. Corrección, cambio de color, PPF, Ceramic Coating e interior. Solo 6 al año.",
+       "Exclusiu SERRES: projectes de transformació completa de cotxes a Barcelona. Correcció, canvi de color, PPF, Ceramic Coating i interior. Només 6 a l'any."],
+
+    /* ---------- SEO package 2026-07-09: FAQ, keyword lines, blog ---------- */
+    "Home": ["Inicio", "Inici"],
+    "Complete transformation projects in Barcelona": ["Proyectos de transformación completa en Barcelona", "Projectes de transformació completa a Barcelona"],
+    "All articles": ["Todos los artículos", "Tots els articles"],
+    "How much does it cost to wrap a car": ["Cuánto cuesta vinilar un coche", "Quant costa vinilar un cotxe"],
+    "Contents": ["Contenido", "Contingut"],
+    "Keep reading": ["Sigue leyendo", "Continua llegint"],
+    "Related articles": ["Artículos relacionados", "Articles relacionats"],
+    "Detailing studio in Sant Cugat del Vallès": ["Estudio de detailing en Sant Cugat del Vallès", "Estudi de detailing a Sant Cugat del Vallès"],
+    "Professional detailing in Sant Cugat": ["Detailing profesional en Sant Cugat", "Detailing professional a Sant Cugat"],
+    "PPF protection for your paint": ["Protección PPF para tu pintura", "Protecció PPF per a la teva pintura"],
+    "PPF, Car Wrap & Detailing in Barcelona": ["PPF, Car Wrap y Detailing en Barcelona", "PPF, Car Wrap i Detailing a Barcelona"],
+    "Workshop in Barcelona": ["Taller en Barcelona", "Taller a Barcelona"],
+    "PPF, Car Wrap and detailing in Barcelona": ["PPF, Car Wrap y detailing en Barcelona", "PPF, Car Wrap i detailing a Barcelona"],
+    "SERRES is a PPF, Car Wrap and detailing workshop in Sant Cugat del Vallès, minutes from Barcelona. We work with films from several professional brands: PPF in more than 50 colours and 3M, Avery Dennison and Inozetek vinyls with more than 150 colours for colour changes.": ["SERRES es un taller de PPF, Car Wrap y detailing en Sant Cugat del Vallès, a pocos minutos de Barcelona. Trabajamos con films de varias marcas profesionales: PPF con más de 50 colores y vinilos 3M, Avery Dennison e Inozetek con más de 150 colores para el cambio de color.", "SERRES és un taller de PPF, Car Wrap i detailing a Sant Cugat del Vallès, a pocs minuts de Barcelona. Treballem amb films de diverses marques professionals: PPF amb més de 50 colors i vinils 3M, Avery Dennison i Inozetek amb més de 150 colors per al canvi de color."],
+    "Every project is booked by appointment and inspected panel by panel under controlled hexagonal lighting; if anything falls short of our standard, it is redone before delivery. We complete the range with Ceramic Coating, multi-stage polishing, detailing and body kits, with published guide prices, VAT included.": ["Cada proyecto se trabaja con cita previa y se revisa panel a panel bajo iluminación hexagonal controlada; si algo no cumple nuestro estándar, se repite antes de la entrega. Completamos la gama con Ceramic Coating, pulido por etapas, detailing y body kits, con precios orientativos publicados e IVA incluido.", "Cada projecte es treballa amb cita prèvia i es revisa panell a panell sota il·luminació hexagonal controlada; si alguna cosa no compleix el nostre estàndard, es repeteix abans del lliurament. Completem la gamma amb Ceramic Coating, polit per etapes, detailing i body kits, amb preus orientatius publicats i IVA inclòs."],
+    "How much does PPF installation cost in Barcelona?": ["¿Cuánto cuesta instalar PPF en Barcelona?", "Quant costa instal·lar PPF a Barcelona?"],
+    "The front-end PPF pack starts at 890 € and the full car at 2,390 €, with a 3-year film warranty and VAT included. Message us on WhatsApp with your car's model and we'll send you an exact quote.": ["El pack frontal de PPF parte de 890 € y el coche completo de 2.390 €, con 3 años de garantía del film e IVA incluido. Escríbenos por WhatsApp con el modelo de tu coche y te pasamos un presupuesto exacto.", "El pack frontal de PPF parteix de 890 € i el cotxe complet de 2.390 €, amb 3 anys de garantia del film i IVA inclòs. Escriu-nos per WhatsApp amb el model del teu cotxe i et passem un pressupost exacte."],
+    "How long does a full Car Wrap take?": ["¿Cuánto tarda un Car Wrap completo?", "Quant triga un Car Wrap complet?"],
+    "A full colour change takes several days in the workshop: we remove trim, wrap panel by panel and check every edge before delivery. When you book your appointment we confirm the exact lead time for your car.": ["Un cambio de color completo requiere varios días de taller: desmontamos piezas, forramos panel a panel y revisamos cada borde antes de la entrega. Al reservar tu cita te confirmamos el plazo exacto para tu coche.", "Un canvi de color complet requereix diversos dies de taller: desmuntem peces, folrem panell a panell i revisem cada vora abans del lliurament. En reservar la teva cita et confirmem el termini exacte per al teu cotxe."],
+    "Where is the SERRES workshop?": ["¿Dónde está el taller de SERRES?", "On és el taller de SERRES?"],
+    "We are at Av. Can Fatjó dels Aurons, 15, 08174 Sant Cugat del Vallès (Barcelona). We work by appointment: Monday to Friday from 09:00 to 19:00 and Saturdays from 10:00 to 14:00.": ["Estamos en Av. Can Fatjó dels Aurons, 15, 08174 Sant Cugat del Vallès (Barcelona). Trabajamos con cita previa: de lunes a viernes de 09:00 a 19:00 y sábados de 10:00 a 14:00.", "Som a l'Av. Can Fatjó dels Aurons, 15, 08174 Sant Cugat del Vallès (Barcelona). Treballem amb cita prèvia: de dilluns a divendres de 09:00 a 19:00 i dissabtes de 10:00 a 14:00."],
+    "PPF or ceramic": ["PPF o cerámico", "PPF o ceràmic"],
+    "PPF in Barcelona — paint protection for your car": ["PPF en Barcelona — protección de pintura para tu coche", "PPF a Barcelona — protecció de pintura per al teu cotxe"],
+    "Frequently asked questions": ["Preguntas frecuentes", "Preguntes freqüents"],
+    "PPF, made": ["PPF, en", "PPF, en"],
+    "clear.": ["claro.", "clar."],
+    "What we get asked before protecting a car. If your case is different, message us on WhatsApp.": ["Lo que nos preguntan antes de proteger un coche. Si tu caso es distinto, escríbenos por WhatsApp.", "El que ens pregunten abans de protegir un cotxe. Si el teu cas és diferent, escriu-nos per WhatsApp."],
+    "The front pack starts at 890 €, the full front at 1.190 € and the full body at 2.390 €, VAT included. The final price depends on the model and the condition of the paint, which is why we confirm a fixed quote after seeing the car or photos via WhatsApp.": ["El pack frontal parte de 890 €, el frontal completo de 1.190 € y la carrocería completa de 2.390 €, IVA incluido. El precio final depende del modelo y del estado de la pintura, por eso confirmamos presupuesto cerrado tras ver el coche o fotos por WhatsApp.", "El pack frontal parteix de 890 €, el frontal complet de 1.190 € i la carrosseria completa de 2.390 €, IVA inclòs. El preu final depèn del model i de l'estat de la pintura, per això confirmem pressupost tancat després de veure el cotxe o fotos per WhatsApp."],
+    "How long does PPF last and what warranty does it have?": ["¿Cuánto dura el PPF y qué garantía tiene?", "Quant dura el PPF i quina garantia té?"],
+    "We work with self-healing film from several professional brands with a 3-year manufacturer warranty against yellowing, cracking and delamination. With correct washing, the film keeps its clarity throughout its service life and is removed without damaging the original paint.": ["Trabajamos con film autorregenerable de varias marcas profesionales con 3 años de garantía del fabricante contra amarilleo, grietas y delaminación. Con lavados correctos, el film mantiene su transparencia durante toda su vida útil y se retira sin dañar la pintura original.", "Treballem amb film autoregenerable de diverses marques professionals amb 3 anys de garantia del fabricant contra esgrogueïment, esquerdes i delaminació. Amb rentats correctes, el film manté la seva transparència durant tota la seva vida útil i es retira sense danyar la pintura original."],
+    "Does PPF really self-heal?": ["¿El PPF se autorregenera de verdad?", "El PPF s'autoregenera de veritat?"],
+    "Yes. The film's top coat is self-healing: wash micro-scratches and light scuffs disappear with the heat of the sun or warm water. Gravel impacts are absorbed by the thickness of the film before they reach the paint.": ["Sí. La capa superior del film es autorregenerable: las micro-rayaduras de lavado y los roces leves desaparecen con el calor del sol o agua templada. Los impactos de gravilla quedan absorbidos por el espesor del film sin llegar a la pintura.", "Sí. La capa superior del film és autoregenerable: les micro-ratllades de rentat i els frecs lleus desapareixen amb la calor del sol o aigua tèbia. Els impactes de graveta queden absorbits pel gruix del film sense arribar a la pintura."],
+    "What is the installation process like?": ["¿Cómo es el proceso de instalación?", "Com és el procés d'instal·lació?"],
+    "Paint decontamination and correction, cutting the pattern specific to your model, application in a clean booth and a panel-by-panel review under controlled hexagonal lighting. The process takes place in our workshop in Sant Cugat del Vallès and, if anything falls short of our standard, it is redone before delivery.": ["Descontaminación y corrección de la pintura, corte del patrón específico de tu modelo, aplicación en cabina limpia y revisión panel a panel bajo iluminación hexagonal controlada. El proceso se realiza en nuestro taller de Sant Cugat del Vallès y, si algo no cumple nuestro estándar, se repite antes de la entrega.", "Descontaminació i correcció de la pintura, tall del patró específic del teu model, aplicació en cabina neta i revisió panell a panell sota il·luminació hexagonal controlada. El procés es realitza al nostre taller de Sant Cugat del Vallès i, si alguna cosa no compleix el nostre estàndard, es repeteix abans del lliurament."],
+    "How many days does it take and how do I book?": ["¿Cuántos días tarda y cómo pido cita?", "Quants dies triga i com demano cita?"],
+    "A front end is delivered in 1-2 working days; a full body, in 3-5 days. We work by appointment from Monday to Saturday: call or message us on WhatsApp at +34 621 24 44 69 and we confirm your date and quote the same day.": ["Un frontal se entrega en 1-2 días laborables; la carrocería completa, en 3-5 días. Trabajamos con cita previa de lunes a sábado: llama o escribe por WhatsApp al +34 621 24 44 69 y te confirmamos fecha y presupuesto en el mismo día.", "Un frontal es lliura en 1-2 dies laborables; la carrosseria completa, en 3-5 dies. Treballem amb cita prèvia de dilluns a dissabte: truca o escriu per WhatsApp al +34 621 24 44 69 i et confirmem data i pressupost el mateix dia."],
+    "Which is better, PPF or a ceramic coating?": ["¿Qué es mejor, PPF o tratamiento cerámico?", "Què és millor, PPF o tractament ceràmic?"],
+    "They are different things: PPF physically protects against stone chips and scratches; Ceramic Coating SiO₂ (from 340 €) adds gloss, hydrophobic behaviour and easier washing. The most complete combination is PPF on the impact zones and Ceramic Coating on the rest, and we can quote both together.": ["Son cosas distintas: el PPF protege físicamente contra impactos de piedras y arañazos; el Ceramic Coating SiO₂ (desde 340 €) aporta brillo, hidrofobia y facilidad de lavado. La combinación más completa es PPF en las zonas de impacto y Ceramic Coating en el resto, y podemos presupuestar ambos juntos.", "Són coses diferents: el PPF protegeix físicament contra impactes de pedres i ratllades; el Ceramic Coating SiO₂ (des de 340 €) aporta brillantor, hidrofòbia i facilitat de rentat. La combinació més completa és PPF a les zones d'impacte i Ceramic Coating a la resta, i podem pressupostar tots dos junts."],
+    "You may also be interested in": ["También te puede interesar", "També et pot interessar"],
+    "Car Wrap — car colour change in Barcelona": ["Car Wrap — cambio de color de coche en Barcelona", "Car Wrap — canvi de color de cotxe a Barcelona"],
+    "Ceramic Coating — paint correction and ceramic sealing in Barcelona": ["Ceramic Coating — corrección y sellado cerámico en Barcelona", "Ceramic Coating — correcció i segellat ceràmic a Barcelona"],
+    "Car detailing in Barcelona": ["Detailing de coche en Barcelona", "Detailing de cotxe a Barcelona"],
+    "Before you book.": ["Antes de reservar.", "Abans de reservar."],
+    "What people ask before a detail — prices, timings and how we work in Sant Cugat.": ["Lo que nos preguntan antes de un detailing — precios, tiempos y cómo trabajamos en Sant Cugat.", "El que ens pregunten abans d'un detailing — preus, temps i com treballem a Sant Cugat."],
+    "How much does a full detail cost?": ["¿Cuánto cuesta un detailing completo?", "Quant costa un detailing complet?"],
+    "We work with three fixed tiers, VAT included: Refresh from €35, Deep Clean with steam interior cleaning from €150 and Showroom Reset — the full inside-and-out reset — from €490. The exact price depends on the size of the vehicle and its condition; we confirm it before starting, with no surprises at pick-up.": ["Trabajamos con tres niveles cerrados, IVA incluido: Refresh desde 35 €, Deep Clean con limpieza interior a vapor desde 150 € y Showroom Reset — el reinicio completo por dentro y por fuera — desde 490 €. El precio exacto depende del tamaño del vehículo y su estado; lo confirmamos antes de empezar, sin sorpresas al recoger.", "Treballem amb tres nivells tancats, IVA inclòs: Refresh des de 35 €, Deep Clean amb neteja interior al vapor des de 150 € i Showroom Reset — el reinici complet per dins i per fora — des de 490 €. El preu exacte depèn de la mida del vehicle i del seu estat; el confirmem abans de començar, sense sorpreses en recollir-lo."],
+    "How long does the service take?": ["¿Cuánto tiempo tarda el servicio?", "Quant de temps triga el servei?"],
+    "A Refresh takes 1–2 hours and a Deep Clean with steam and upholstery extraction usually takes half a day. The Showroom Reset needs a full day, because every panel, seam and surface is finished by hand. We give you the delivery time when we confirm the appointment and we stick to it.": ["Un Refresh se resuelve en 1–2 horas y un Deep Clean con vapor y extracción de tapicería suele ocupar media jornada. El Showroom Reset requiere una jornada completa, porque cada panel, costura y superficie se trata a mano. Te damos la hora de entrega al confirmar la cita y la cumplimos.", "Un Refresh es resol en 1–2 hores i un Deep Clean amb vapor i extracció de tapisseria sol ocupar mitja jornada. El Showroom Reset requereix una jornada completa, perquè cada panell, costura i superfície es tracta a mà. Et donem l'hora de lliurament en confirmar la cita i la complim."],
+    "What does the steam interior cleaning include?": ["¿Qué incluye la limpieza interior a vapor?", "Què inclou la neteja interior al vapor?"],
+    "We steam-treat every panel, vent and seam of the cabin, extract carpets and upholstery, and clean and condition the leather with UV protection. Steam disinfects without harsh chemicals and removes odours at the source instead of masking them. It is included from the Deep Clean tier (from €150).": ["Tratamos a vapor cada panel, rejilla y costura del habitáculo, extraemos alfombras y tapicería y limpiamos y acondicionamos el cuero con protección UV. El vapor desinfecta sin químicos agresivos y elimina olores en origen, no los enmascara. Está incluido desde el nivel Deep Clean (desde 150 €).", "Tractem al vapor cada panell, reixeta i costura de l'habitacle, extraiem catifes i tapisseria i netegem i condicionem el cuir amb protecció UV. El vapor desinfecta sense químics agressius i elimina olors en origen, no els emmascara. Està inclòs des del nivell Deep Clean (des de 150 €)."],
+    "Do you remove stains from upholstery and leather?": ["¿Elimináis manchas de tapicería y cuero?", "Elimineu taques de tapisseria i cuir?"],
+    "Yes, it is a core part of the Deep Clean: fabric extraction and dedicated leather cleaning with conditioning afterwards. We remove the vast majority of everyday stains — coffee, seat marks, ground-in dirt — and we tell you honestly if an old stain has damaged the fibre and will not come out 100%.": ["Sí, es parte central del Deep Clean: extracción en tejidos y limpieza específica de cuero con acondicionado posterior. Eliminamos la gran mayoría de manchas de uso — café, marcas de asiento, suciedad incrustada — y te decimos con honestidad si alguna mancha antigua ha dañado la fibra y no saldrá al 100%.", "Sí, és part central del Deep Clean: extracció en teixits i neteja específica de cuir amb condicionament posterior. Eliminem la gran majoria de taques d'ús — cafè, marques de seient, brutícia incrustada — i et diem amb honestedat si alguna taca antiga ha danyat la fibra i no sortirà al 100%."],
+    "Is the result guaranteed? How do you check it?": ["¿El resultado está garantizado? ¿Cómo lo controláis?", "El resultat està garantit? Com ho controleu?"],
+    "We don't work by eye alone: we review the finish panel by panel under controlled hexagonal lighting, at our Sant Cugat del Vallès workshop. If anything falls short of our standard, it is redone before delivery. That is the reason behind our 4.9 rating and why 98% of clients recommend us.": ["No trabajamos a ojo: revisamos el acabado panel a panel bajo iluminación hexagonal controlada, en nuestro taller de Sant Cugat del Vallès. Si algo no cumple nuestro estándar, se repite antes de la entrega. Es la razón de nuestra valoración de 4,9 y de que el 98% de los clientes nos recomiende.", "No treballem a ull: revisem l'acabat panell a panell sota il·luminació hexagonal controlada, al nostre taller de Sant Cugat del Vallès. Si alguna cosa no compleix el nostre estàndard, es repeteix abans del lliurament. És la raó de la nostra valoració de 4,9 i que el 98% dels clients ens recomani."],
+    "How do I book and where are you located?": ["¿Cómo reservo cita y dónde estáis?", "Com reservo cita i on sou?"],
+    "We work by appointment only, Monday to Saturday, at Av. Can Fatjó dels Aurons 15, Sant Cugat del Vallès (Barcelona). Message us on WhatsApp or call +34 621 24 44 69 with your car's model and condition and we confirm a fixed price and date, usually the same day.": ["Trabajamos solo con cita previa, de lunes a sábado, en Av. Can Fatjó dels Aurons 15, Sant Cugat del Vallès (Barcelona). Escríbenos por WhatsApp o llama al +34 621 24 44 69 con el modelo y el estado del coche y te confirmamos precio cerrado y fecha, normalmente el mismo día.", "Treballem només amb cita prèvia, de dilluns a dissabte, a l'Av. Can Fatjó dels Aurons 15, Sant Cugat del Vallès (Barcelona). Escriu-nos per WhatsApp o truca al +34 621 24 44 69 amb el model i l'estat del cotxe i et confirmem preu tancat i data, normalment el mateix dia."],
+    "Pair it with:": ["Combínalo con:", "Combina-ho amb:"],
+    "PPF paint protection": ["Protección de pintura PPF", "Protecció de pintura PPF"],
+    "Ceramic coating for cars in Barcelona": ["Tratamiento cerámico para coche en Barcelona", "Tractament ceràmic per a cotxe a Barcelona"],
+    "Straight answers on price, timelines and durability of the ceramic treatment.": ["Respuestas directas sobre precio, plazos y durabilidad del tratamiento cerámico.", "Respostes directes sobre preu, terminis i durabilitat del tractament ceràmic."],
+    "How much does a ceramic coating cost at SERRES?": ["¿Cuánto cuesta un tratamiento cerámico en SERRES?", "Quant costa un tractament ceràmic a SERRES?"],
+    "We work with three fixed packs, VAT included: Essential from €340, Signature from €590 and Concours from €890. The final price depends on the size of the vehicle and the condition of the paint, which we assess in a free prior inspection.": ["Trabajamos con tres packs cerrados, IVA incluido: Essential desde 340 €, Signature desde 590 € y Concours desde 890 €. El precio final depende del tamaño del vehículo y del estado de la pintura, que valoramos en una inspección previa gratuita.", "Treballem amb tres packs tancats, IVA inclòs: Essential des de 340 €, Signature des de 590 € i Concours des de 890 €. El preu final depèn de la mida del vehicle i de l'estat de la pintura, que valorem en una inspecció prèvia gratuïta."],
+    "What does each ceramic pack include?": ["¿Qué incluye cada pack cerámico?", "Què inclou cada pack ceràmic?"],
+    "Every pack includes decontamination, machine paint correction and a SiO₂ Ceramic Coating. Essential applies a single-stage polish and one layer; Signature adds a two-stage correction, a double layer and a rain-repellent glass treatment; Concours is the full correction with additional layers and interior protection.": ["Todos los packs incluyen descontaminación, corrección de pintura a máquina y Ceramic Coating SiO₂. Essential aplica un pulido de una etapa y una capa; Signature añade corrección de dos etapas, doble capa y tratamiento antilluvia en cristales; Concours es la corrección completa con capas adicionales y protección interior.", "Tots els packs inclouen descontaminació, correcció de pintura a màquina i Ceramic Coating SiO₂. Essential aplica un polit d'una etapa i una capa; Signature afegeix correcció de dues etapes, doble capa i tractament antipluja als vidres; Concours és la correcció completa amb capes addicionals i protecció interior."],
+    "How long does the treatment last on the car?": ["¿Cuánto dura el tratamiento en el coche?", "Quant dura el tractament al cotxe?"],
+    "Up to 5 years of protection depending on the pack and the maintenance: 2 years on Essential, 3 on Signature and 5 on Concours. Before delivery we inspect the car panel by panel under controlled hexagonal lighting, and we give you a wash routine to preserve the hydrophobic effect.": ["Hasta 5 años de protección según el pack y el mantenimiento: 2 años en Essential, 3 en Signature y 5 en Concours. Antes de la entrega revisamos el coche panel a panel bajo iluminación hexagonal controlada, y te damos una pauta de lavado para conservar el efecto hidrófobo.", "Fins a 5 anys de protecció segons el pack i el manteniment: 2 anys a Essential, 3 a Signature i 5 a Concours. Abans del lliurament revisem el cotxe panell a panell sota il·luminació hexagonal controlada, i et donem una pauta de rentat per conservar l'efecte hidròfob."],
+    "How many days does the car need in the workshop?": ["¿Cuántos días necesita el coche en el taller?", "Quants dies necessita el cotxe al taller?"],
+    "Between 1 and 4 working days depending on the pack: the paint correction sets the pace and the coating needs a controlled 24-hour cure in a dust-free bay. We confirm the exact timeline when you book.": ["Entre 1 y 4 días laborables según el pack: la corrección de pintura marca el ritmo y el recubrimiento necesita un curado controlado de 24 horas en box sin polvo. Te confirmamos el plazo exacto al reservar.", "Entre 1 i 4 dies laborables segons el pack: la correcció de pintura marca el ritme i el recobriment necessita un curat controlat de 24 hores en un box sense pols. Et confirmem el termini exacte en reservar."],
+    "Does the ceramic remove existing scratches?": ["¿El cerámico elimina los arañazos existentes?", "El ceràmic elimina les ratllades existents?"],
+    "Micro-scratches and holograms are removed in the paint-correction stage, included in every pack. The coating then seals that corrected base; that is why we never apply ceramic over unprepared paint.": ["Los micro-arañazos y hologramas se eliminan en la fase de corrección de pintura, incluida en todos los packs. El recubrimiento después sella esa base corregida; por eso nunca aplicamos cerámica sobre pintura sin preparar.", "Les micro-ratllades i els hologrames s'eliminen a la fase de correcció de pintura, inclosa en tots els packs. Després, el recobriment segella aquesta base corregida; per això mai apliquem ceràmica sobre pintura sense preparar."],
+    "How do I book an appointment?": ["¿Cómo reservo cita?", "Com reservo cita?"],
+    "By prior appointment from Monday to Saturday at our workshop in Sant Cugat del Vallès (Av. Can Fatjó dels Aurons 15). Message us on WhatsApp or call +34 621 24 44 69 and we will give you a closed quote the same day.": ["Con cita previa de lunes a sábado en nuestro taller de Sant Cugat del Vallès (Av. Can Fatjó dels Aurons 15). Escríbenos por WhatsApp o llama al +34 621 24 44 69 y te damos presupuesto cerrado en el día.", "Amb cita prèvia de dilluns a dissabte al nostre taller de Sant Cugat del Vallès (Av. Can Fatjó dels Aurons 15). Escriu-nos per WhatsApp o truca al +34 621 24 44 69 i et donem pressupost tancat el mateix dia."],
+    "Related services": ["Servicios relacionados", "Serveis relacionats"],
+    "Paint correction & polishing": ["Pulido y corrección de pintura", "Polit i correcció de pintura"],
+    "How much does PPF cost": ["Cuánto cuesta el PPF", "Quant costa el PPF"],
+    "Work gallery — PPF, Car Wrap & Detailing in Barcelona": ["Galería de trabajos — PPF, Car Wrap y Detailing en Barcelona", "Galeria de treballs — PPF, Car Wrap i Detailing a Barcelona"],
+    "PPF protection in Barcelona": ["Protección PPF en Barcelona", "Protecció PPF a Barcelona"],
+    "Car Wrap and car vinyl wrapping": ["Car Wrap y vinilado de coches", "Car Wrap i vinilat de cotxes"],
+    "Body kit fitting in Barcelona": ["Montaje de body kits en Barcelona", "Muntatge de body kits a Barcelona"],
+    "Related:": ["Relacionado:", "Relacionat:"],
+    "Car Wrap and colour change in Barcelona": ["Car Wrap y cambio de color en Barcelona", "Car Wrap i canvi de color a Barcelona"],
+    "Before fitting": ["Antes de montar", "Abans de muntar"],
+    "your body kit.": ["tu body kit.", "el teu body kit."],
+    "What we get asked every week at the Sant Cugat workshop. If your question isn't here, message us on WhatsApp.": ["Lo que nos preguntan cada semana en el taller de Sant Cugat. Si tu duda no está aquí, escríbenos por WhatsApp.", "El que ens pregunten cada setmana al taller de Sant Cugat. Si el teu dubte no és aquí, escriu-nos per WhatsApp."],
+    "How much does it cost to fit a body kit?": ["¿Cuánto cuesta montar un body kit?", "Quant costa muntar un body kit?"],
+    "Aero add-ons —splitter, diffuser or spoiler— start at €450. A complete kit with fitting and paint starts at €1,490, and a full widebody transformation from €3,490, VAT included. Once we've seen the car and the kit, we lock in a fixed written quote before starting.": ["Los complementos aerodinámicos —splitter, difusor o spoiler— parten de 450 €. Un kit completo con ajuste y pintura empieza en 1.490 €, y una transformación integral tipo widebody desde 3.490 €, IVA incluido. Tras ver el coche y el kit, cerramos un presupuesto fijo por escrito antes de empezar.", "Els complements aerodinàmics —splitter, difusor o spoiler— parteixen de 450 €. Un kit complet amb ajust i pintura comença en 1.490 €, i una transformació integral tipus widebody des de 3.490 €, IVA inclòs. Després de veure el cotxe i el kit, tanquem un pressupost fix per escrit abans de començar."],
+    "How long does the installation take?": ["¿Cuánto tarda la instalación?", "Quant triga la instal·lació?"],
+    "A lip or diffuser is fitted the same day. A complete kit with prep and paint takes 3 to 5 working days, and a widebody project 1 to 3 weeks depending on the bodywork. We give you a firm delivery date when you confirm the job.": ["Un lip o difusor se monta en el mismo día. Un kit completo con preparación y pintura requiere entre 3 y 5 días laborables, y un proyecto widebody entre 1 y 3 semanas según el trabajo de carrocería. Te damos fecha de entrega concreta al confirmar el encargo.", "Un lip o difusor es munta el mateix dia. Un kit complet amb preparació i pintura requereix entre 3 i 5 dies laborables, i un projecte widebody entre 1 i 3 setmanes segons el treball de carrosseria. Et donem data d'entrega concreta en confirmar l'encàrrec."],
+    "Is the fitting guaranteed?": ["¿El montaje tiene garantía?", "El muntatge té garantia?"],
+    "Yes. We guarantee the mounting, the panel-gap fitment and the paint finish of the installed kit. All the work is done at our Sant Cugat del Vallès workshop, so we answer directly for every part we fit. The exact terms depend on the kit's material and are detailed in the quote.": ["Sí. Garantizamos la fijación, el ajuste de holguras y el acabado de pintura del kit instalado. Todo el trabajo se hace en nuestro taller de Sant Cugat del Vallès, por lo que respondemos directamente de cada pieza montada. Las condiciones exactas dependen del material del kit y se detallan en el presupuesto.", "Sí. Garantim la fixació, l'ajust de les folgances i l'acabat de pintura del kit instal·lat. Tota la feina es fa al nostre taller de Sant Cugat del Vallès, per la qual cosa responem directament de cada peça muntada. Les condicions exactes depenen del material del kit i es detallen al pressupost."],
+    "What does the fitting process look like?": ["¿Cómo es el proceso de montaje?", "Com és el procés de muntatge?"],
+    "First we do a dry test fit and correct panel gaps piece by piece until we reach OEM-level tolerances. Then we prep, prime and paint the kit to match the vehicle's colour, and secure it with structural anchors and adhesives. Before delivery we check the fit and finish panel by panel under controlled hexagon lighting; if anything falls short of our standard, it gets redone.": ["Primero hacemos una prueba de ajuste en seco y corregimos holguras pieza a pieza hasta lograr tolerancias de nivel OEM. Después preparamos, imprimamos y pintamos el kit igualando el color con el vehículo, y lo fijamos con anclajes y adhesivos estructurales. Antes de la entrega revisamos el ajuste y el acabado panel a panel bajo iluminación hexagonal controlada; si algo no cumple nuestro estándar, se repite.", "Primer fem una prova d'ajust en sec i corregim folgances peça a peça fins a aconseguir toleràncies de nivell OEM. Després preparem, emprimem i pintem el kit igualant el color amb el vehicle, i el fixem amb ancoratges i adhesius estructurals. Abans de l'entrega revisem l'ajust i l'acabat panell a panell sota il·luminació hexagonal controlada; si alguna cosa no compleix el nostre estàndard, es repeteix."],
+    "Can I bring my own kit, or do you order it?": ["¿Puedo traer mi propio kit o lo pedís vosotros?", "Puc portar el meu propi kit o el demaneu vosaltres?"],
+    "Both. We can work with a kit you already have or source proven manufacturers in fibreglass, ABS or polyurethane for your model. If you bring your own, we inspect it before quoting to catch warping or moulding defects.": ["Ambas opciones. Podemos trabajar con un kit que ya tengas o buscarte fabricantes contrastados en fibra, ABS o poliuretano para tu modelo. Si lo traes tú, lo inspeccionamos antes de presupuestar para detectar deformaciones o defectos de molde.", "Totes dues opcions. Podem treballar amb un kit que ja tinguis o buscar-te fabricants contrastats en fibra, ABS o poliuretà per al teu model. Si el portes tu, l'inspeccionem abans de pressupostar per detectar deformacions o defectes de motlle."],
+    "How do I book, and where are you?": ["¿Cómo pido cita y dónde estáis?", "Com demano cita i on sou?"],
+    "We work by appointment Monday to Saturday at Av. Can Fatjó dels Aurons 15, Sant Cugat del Vallès, 20 minutes from Barcelona. Message us on WhatsApp or call +34 621 24 44 69 with your model and the kit you have in mind, and we'll give you a quote and a date the same day.": ["Trabajamos con cita previa de lunes a sábado en Av. Can Fatjó dels Aurons 15, Sant Cugat del Vallès, a 20 minutos de Barcelona. Escríbenos por WhatsApp o llama al +34 621 24 44 69 con el modelo y el kit que tienes en mente, y te damos valoración y fecha en el día.", "Treballem amb cita prèvia de dilluns a dissabte a l'Av. Can Fatjó dels Aurons 15, Sant Cugat del Vallès, a 20 minuts de Barcelona. Escriu-nos per WhatsApp o truca al +34 621 24 44 69 amb el model i el kit que tens al cap, i et donem valoració i data el mateix dia."],
+    "Guides & advice": ["Guías y consejos", "Guies i consells"],
+    "Prices, comparisons and maintenance — written by the workshop team, no sales fluff.": ["Precios, comparativas y mantenimiento — escrito por el equipo del taller, sin humo comercial.", "Preus, comparatives i manteniment — escrit per l'equip del taller, sense fum comercial."],
+    "PPF, Car Wrap, Ceramic Coating & Detailing prices in Barcelona": ["Precios de PPF, Car Wrap, Ceramic Coating y Detailing en Barcelona", "Preus de PPF, Car Wrap, Ceramic Coating i Detailing a Barcelona"],
+    "Car Wrap & vinyl wrapping": ["Car Wrap y vinilado", "Car Wrap i vinilat"],
+    "Car detailing": ["Detailing de coches", "Detailing de cotxes"],
+    "Car polishing": ["Pulido de coche", "Polit de cotxe"],
+    "Car polishing in Barcelona — paint correction": ["Pulido de coche en Barcelona — corrección de pintura", "Polit de cotxe a Barcelona — correcció de pintura"],
+    "Before booking": ["Antes de reservar", "Abans de reservar"],
+    "your correction": ["tu corrección", "la teva correcció"],
+    "Straight answers on price, timing, warranty and process. If your case is different, message us on WhatsApp.": ["Respuestas directas sobre precio, plazos, garantía y proceso. Si tu caso es distinto, escríbenos por WhatsApp.", "Respostes directes sobre preu, terminis, garantia i procés. Si el teu cas és diferent, escriu-nos per WhatsApp."],
+    "How much does car polishing cost in Barcelona?": ["¿Cuánto cuesta un pulido de coche en Barcelona?", "Quant costa un polit de cotxe a Barcelona?"],
+    "At SERRES Wrap Center polishing with a SiO₂ Ceramic Coating starts at 340 € (Essential, VAT included). The Signature level, with multi-stage correction, costs 590 €, and the Concours, with a show-grade finish, 890 €. The exact price depends on the condition of the paint: we confirm it during the initial panel-by-panel inspection, before starting.": ["En SERRES Wrap Center el pulido con Ceramic Coating SiO₂ parte de 340 € (Essential, IVA incluido). El nivel Signature, con corrección multietapa, cuesta 590 €, y el Concours, con acabado de concurso, 890 €. El precio exacto depende del estado de la pintura: lo confirmamos en la inspección inicial, panel a panel, antes de empezar.", "A SERRES Wrap Center el polit amb Ceramic Coating SiO₂ parteix de 340 € (Essential, IVA inclòs). El nivell Signature, amb correcció multietapa, costa 590 €, i el Concours, amb acabat de concurs, 890 €. El preu exacte depèn de l'estat de la pintura: el confirmem a la inspecció inicial, panell a panell, abans de començar."],
+    "How long does paint correction take?": ["¿Cuánto tiempo tarda la corrección de pintura?", "Quant de temps triga la correcció de pintura?"],
+    "An Essential is completed in one or two days; a Signature or Concours multi-stage correction takes 2 to 4 days depending on the size of the car and the hardness of the clear coat. We work by appointment Monday to Saturday and give you a firm delivery date before starting.": ["Un Essential se completa en una o dos jornadas; una corrección multietapa Signature o Concours requiere de 2 a 4 días según el tamaño del coche y la dureza del barniz. Trabajamos con cita previa de lunes a sábado y te damos fecha de entrega cerrada antes de empezar.", "Un Essential es completa en una o dues jornades; una correcció multietapa Signature o Concours requereix de 2 a 4 dies segons la mida del cotxe i la duresa del vernís. Treballem amb cita prèvia de dilluns a dissabte i et donem data de lliurament tancada abans de començar."],
+    "Does polishing remove all scratches?": ["¿El pulido elimina todos los arañazos?", "El polit elimina totes les ratllades?"],
+    "We completely remove swirls, holograms and surface scratches that don't go through the clear coat; deeper ones are reduced until they are nearly invisible. Before polishing we assess the condition of the clear coat panel by panel so we only remove the material that's strictly necessary and never compromise it.": ["Eliminamos por completo remolinos, hologramas y arañazos superficiales que no atraviesan el barniz; los más profundos se atenúan hasta hacerlos casi invisibles. Antes de pulir evaluamos el estado del barniz panel a panel para retirar solo el material necesario y no comprometerlo.", "Eliminem del tot remolins, hologrames i ratllades superficials que no travessen el vernís; les més profundes s'atenuen fins a fer-les gairebé invisibles. Abans de polir avaluem l'estat del vernís panell a panell per retirar només el material necessari i no comprometre'l."],
+    "What is the process like and how do I know the result is real?": ["¿Cómo es el proceso y cómo sé que el resultado es real?", "Com és el procés i com sé que el resultat és real?"],
+    "We work in three stages: cutting to remove the defects, refining and final finishing. We review the car panel by panel under controlled hexagonal lighting and, if anything falls short of our standard, it is redone before delivery. Everything is done at our workshop in Sant Cugat del Vallès.": ["Trabajamos en tres etapas: corte para eliminar los defectos, refinado y acabado final. Revisamos el coche panel a panel bajo iluminación hexagonal controlada y, si algo no cumple nuestro estándar, se repite antes de la entrega. Todo se hace en nuestro taller de Sant Cugat del Vallès.", "Treballem en tres etapes: tall per eliminar els defectes, refinat i acabat final. Revisem el cotxe panell a panell sota il·luminació hexagonal controlada i, si alguna cosa no compleix el nostre estàndard, es repeteix abans del lliurament. Tot es fa al nostre taller de Sant Cugat del Vallès."],
+    "Is the result guaranteed? How long does it last?": ["¿El resultado tiene garantía? ¿Cuánto dura?", "El resultat té garantia? Quant dura?"],
+    "The SiO₂ Ceramic Coating protects the corrected paint for up to 5 years depending on the chosen pack and maintenance. If you want to shield the result against new scratches, self-healing PPF (from 890 € for the front end) includes a 3-year film warranty.": ["El Ceramic Coating SiO₂ protege la pintura corregida hasta 5 años según el pack elegido y el mantenimiento. Si quieres blindar el resultado frente a nuevos arañazos, el PPF autorregenerable (desde 890 € el frontal) incluye 3 años de garantía del film.", "El Ceramic Coating SiO₂ protegeix la pintura corregida fins a 5 anys segons el pack triat i el manteniment. Si vols blindar el resultat davant de noves ratllades, el PPF autoregenerable (des de 890 € el frontal) inclou 3 anys de garantia del film."],
+    "How do I book an appointment, and do I need to leave the car all day?": ["¿Cómo reservo cita y necesito dejar el coche todo el día?", "Com reservo cita i necessito deixar el cotxe tot el dia?"],
+    "Message us on WhatsApp at +34 621 24 44 69 or call us and we'll book you in Monday to Saturday. We are at Av. Can Fatjó dels Aurons 15, Sant Cugat del Vallès, 20 minutes from Barcelona. For corrections taking more than one day we can coordinate pick-up and delivery with you.": ["Escríbenos por WhatsApp al +34 621 24 44 69 o llámanos y te damos cita de lunes a sábado. Estamos en Av. Can Fatjó dels Aurons 15, Sant Cugat del Vallès, a 20 minutos de Barcelona. Para correcciones de más de un día podemos coordinar la recogida y entrega contigo.", "Escriu-nos per WhatsApp al +34 621 24 44 69 o truca'ns i et donem cita de dilluns a dissabte. Som a l'Av. Can Fatjó dels Aurons 15, Sant Cugat del Vallès, a 20 minuts de Barcelona. Per a correccions de més d'un dia podem coordinar la recollida i el lliurament amb tu."],
+    "Ceramic Coating to seal the gloss": ["Ceramic Coating para sellar el brillo", "Ceramic Coating per segellar la brillantor"],
+    "PPF to protect the corrected paint": ["PPF para proteger la pintura corregida", "PPF per protegir la pintura corregida"],
+    "Car wrapping in Barcelona — wrap your car": ["Car Wrapping en Barcelona — vinilar tu coche", "Car wrapping a Barcelona — vinilar el teu cotxe"],
+    "Pair it with": ["Combínalo con", "Combina-ho amb"],
+    "Ceramic Coating treatment": ["Tratamiento Ceramic Coating", "Tractament Ceramic Coating"],
+    "Before wrapping": ["Antes de vinilar", "Abans de vinilar"],
+    "your car": ["tu coche", "el teu cotxe"],
+    "How much does it cost to wrap a full car?": ["¿Cuánto cuesta vinilar un coche completo?", "Quant costa vinilar un cotxe complet?"],
+    "A full colour change with 3M, Avery Dennison or Inozetek films starts at €1,490 VAT included; accents (roof, mirrors, pillars) from €250 and the Signature finish with extended disassembly from €1,990. The final price depends on the size of the vehicle, the film you choose and the level of disassembly. After a 20-minute inspection we give you a fixed quote.": ["El cambio de color completo con films 3M, Avery Dennison e Inozetek parte de 1.490 € IVA incluido; los acentos (techo, retrovisores, pilares) desde 250 € y el acabado Signature con desmontaje ampliado desde 1.990 €. El precio final depende del tamaño del vehículo, el film elegido y el nivel de desmontaje. Tras una inspección de 20 minutos te damos un presupuesto cerrado.", "El canvi de color complet amb films 3M, Avery Dennison i Inozetek parteix de 1.490 € IVA inclòs; els accents (sostre, retrovisors, pilars) des de 250 € i l'acabat Signature amb desmuntatge ampliat des de 1.990 €. El preu final depèn de la mida del vehicle, el film triat i el nivell de desmuntatge. Després d'una inspecció de 20 minuts et donem un pressupost tancat."],
+    "How many days does a full colour change take?": ["¿Cuántos días tarda un cambio de color completo?", "Quants dies triga un canvi de color complet?"],
+    "A full-body colour change takes between 5 and 7 working days: parts removal, decontamination, panel-by-panel application and edge heat-sealing. Partial jobs (roof, accents) are delivered in 1 or 2 days. We confirm the delivery date before we start.": ["Un cambio de color de carrocería completa requiere entre 5 y 7 días laborables: desmontaje de piezas, descontaminación, aplicación panel a panel y termosellado de bordes. Los trabajos parciales (techo, acentos) se entregan en 1 o 2 días. Te confirmamos la fecha de entrega antes de empezar.", "Un canvi de color de carrosseria completa requereix entre 5 i 7 dies laborables: desmuntatge de peces, descontaminació, aplicació panell a panell i termosegellat de vores. Les feines parcials (sostre, accents) es lliuren en 1 o 2 dies. Et confirmem la data de lliurament abans de començar."],
+    "How long does the wrap last and what warranty does it carry?": ["¿Cuánto dura el vinilo y qué garantía tiene?", "Quant dura el vinil i quina garantia té?"],
+    "The 3M, Avery Dennison and Inozetek films we install last between 5 and 7 years outdoors with normal care, and the manufacturer backs them with its official warranty. We also guarantee our installation in writing: edges, seams and no lifting. All the work is done at our own workshop in Sant Cugat del Vallès.": ["Los films 3M, Avery Dennison e Inozetek que instalamos duran entre 5 y 7 años en exterior con un mantenimiento normal, y el fabricante los respalda con su garantía oficial. Además garantizamos por escrito nuestra instalación: bordes, uniones y ausencia de levantamientos. Todo el trabajo se hace en nuestro taller propio de Sant Cugat del Vallès.", "Els films 3M, Avery Dennison i Inozetek que instal·lem duren entre 5 i 7 anys a l'exterior amb un manteniment normal, i el fabricant els avala amb la seva garantia oficial. A més, garantim per escrit la nostra instal·lació: vores, unions i absència d'aixecaments. Tota la feina es fa al nostre taller propi de Sant Cugat del Vallès."],
+    "Does the vinyl damage the original paint?": ["¿El vinilo daña la pintura original?", "El vinil fa malbé la pintura original?"],
+    "No. On factory paint in good condition, the vinyl protects it from UV rays, light scuffs and wear, and comes off without leaving residue. The process is fully reversible: when the film is removed, the original paint is intact and preserved.": ["No. Sobre una pintura de fábrica en buen estado, el vinilo la protege de rayos UV, roces leves y desgaste, y se retira sin dejar residuos. El proceso es totalmente reversible: al quitar el film, la pintura original queda intacta y conservada.", "No. Sobre una pintura de fàbrica en bon estat, el vinil la protegeix dels raigs UV, fregaments lleus i desgast, i es retira sense deixar residus. El procés és totalment reversible: en treure el film, la pintura original queda intacta i conservada."],
+    "What does the process look like, from quote to delivery?": ["¿Cómo es el proceso, desde el presupuesto hasta la entrega?", "Com és el procés, des del pressupost fins al lliurament?"],
+    "First you choose a colour and finish from more than 150 colours in our palette; then we inspect the vehicle and lock in the quote and date. In the workshop: wash and decontamination, parts removal, panel-by-panel film application and heat-sealing. At delivery we go over every edge together and explain the care routine for the first 15 days.": ["Primero eliges color y acabado entre más de 150 colores de nuestra paleta; después inspeccionamos el vehículo y cerramos presupuesto y fecha. En taller: lavado y descontaminación, desmontaje de piezas, aplicación del film panel a panel y termosellado. En la entrega revisamos juntos cada borde y te explicamos el cuidado de los primeros 15 días.", "Primer tries color i acabat entre més de 150 colors de la nostra paleta; després inspeccionem el vehicle i tanquem pressupost i data. Al taller: rentat i descontaminació, desmuntatge de peces, aplicació del film panell a panell i termosegellat. Al lliurament revisem junts cada vora i t'expliquem la cura dels primers 15 dies."],
+    "We work by appointment from Monday to Saturday at Av. Can Fatjó dels Aurons 15, Sant Cugat del Vallès (Barcelona), 20 minutes from central Barcelona. Message us on WhatsApp or call +34 621 24 44 69 and we'll confirm the day and an approximate quote in the same conversation.": ["Trabajamos con cita previa de lunes a sábado en Av. Can Fatjó dels Aurons 15, Sant Cugat del Vallès (Barcelona), a 20 minutos del centro de Barcelona. Escríbenos por WhatsApp o llama al +34 621 24 44 69 y te confirmamos día y presupuesto orientativo en la misma conversación.", "Treballem amb cita prèvia de dilluns a dissabte a l'Av. Can Fatjó dels Aurons 15, Sant Cugat del Vallès (Barcelona), a 20 minuts del centre de Barcelona. Escriu-nos per WhatsApp o truca al +34 621 24 44 69 i et confirmem dia i pressupost orientatiu a la mateixa conversa."],
+    "Breadcrumb": ["Migas de pan", "Ruta de navegació"],
   };
 
   /* ===================================================================

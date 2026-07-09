@@ -6,6 +6,19 @@
 <title>Car Wrap en Barcelona — Cambio de Color | SERRES</title>
 <meta name="description" content="Car Wrap: cambio de color con films 3M, Avery Dennison e Inozetek. Más de 150 colores. Coche completo desde 1.490 €. Sant Cugat del Vallès.">
 <link rel="canonical" href="https://serreswrapcenter.es/services/vinyl.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SERRES Wrap Center">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="Car Wrap en Barcelona — Cambio de Color | SERRES">
+<meta property="og:description" content="Car Wrap: cambio de color con films 3M, Avery Dennison e Inozetek. Más de 150 colores. Coche completo desde 1.490 €. Sant Cugat del Vallès.">
+<meta property="og:url" content="https://serreswrapcenter.es/services/vinyl.html">
+<meta property="og:image" content="https://serreswrapcenter.es/assets/og/vinyl.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Car Wrap en Barcelona — Cambio de Color | SERRES">
+<meta name="twitter:description" content="Car Wrap: cambio de color con films 3M, Avery Dennison e Inozetek. Más de 150 colores. Coche completo desde 1.490 €. Sant Cugat del Vallès.">
+<meta name="twitter:image" content="https://serreswrapcenter.es/assets/og/vinyl.jpg">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
@@ -67,13 +80,22 @@
   .back:hover{color:var(--text)}
   .nav-right{display:flex;align-items:center;gap:20px}
 
+  /* ---------- BREADCRUMBS ---------- */
+  .crumbs{width:100%;padding-top:22px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;
+    font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.18em;
+    font-size:12px;color:var(--muted-2)}
+  .crumbs a{color:var(--muted);transition:color .25s var(--ease)}
+  .crumbs a:hover{color:var(--text)}
+  .crumbs .sep{color:var(--muted-2)}
+  .crumbs [aria-current]{color:var(--text)}
+
   /* ---------- HERO / INTRO ---------- */
   .hero{position:relative;padding:96px 0 60px;overflow:hidden}
   .hero::after{content:"";position:absolute;left:50%;top:-14%;transform:translateX(-50%);
     width:min(120vw,1500px);height:560px;z-index:0;pointer-events:none;
     background:radial-gradient(46% 52% at 50% 50%,rgba(54,58,72,.34),rgba(10,10,11,0) 72%);}
   .hero .wrap{position:relative;z-index:1}
-  /* film surface as hero background (toggled via Tweaks) */
+  /* film surface as hero background */
   .hero-film-canvas{position:absolute;inset:0;width:100%;height:100%;z-index:0;display:block;
     opacity:0;transition:opacity .6s var(--ease);pointer-events:none}
   .hero.film-on .hero-film-canvas{opacity:1}
@@ -87,6 +109,9 @@
   .hero h1{font-size:clamp(56px,11.5vw,168px);margin:20px 0 0}
   .hero h1 .ln{display:block;overflow:hidden;padding-bottom:.03em}
   .hero h1 .ln span{display:block}
+  .hero h1 .ln .h1-kw{font-weight:500;font-size:clamp(11.5px,1.3vw,16px);letter-spacing:.18em;
+    line-height:1.5;color:var(--muted);margin-top:18px;background:none;
+    -webkit-text-fill-color:currentColor}
   @keyframes rise{from{transform:translateY(108%)}to{transform:translateY(0)}}
   .hero .lead{margin-top:26px;max-width:50ch;color:var(--muted);font-size:clamp(16px,1.5vw,19px)}
   @keyframes fade{from{opacity:0}to{opacity:1}}
@@ -99,6 +124,7 @@
   @media(prefers-reduced-motion:no-preference){
     .hero h1 .ln span{transform:translateY(108%);animation:rise 1s var(--ease) .05s forwards}
     .hero h1 .ln:nth-child(2) span{animation-delay:.16s}
+    .hero h1 .ln:nth-child(3) span{animation-delay:.28s}
     .hero .eyebrow{opacity:0;animation:fade .9s var(--ease) .2s forwards}
     .hero .lead{opacity:0;animation:fade .9s var(--ease) .42s forwards}
     .hero-stats{opacity:0;animation:fade .9s var(--ease) .55s forwards}
@@ -225,6 +251,13 @@
   .xspecs .k{font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.2em;
     font-size:12.5px;color:var(--muted-2);width:128px;flex:none;padding-top:2px}
   .xspecs .v{color:var(--text);font-size:15.5px}
+  .rel-links{margin-top:26px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+  .rel-links .rel-k{font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;
+    letter-spacing:.2em;font-size:12px;color:var(--muted-2)}
+  .rel-links a{font-family:"Barlow Condensed",sans-serif;font-weight:600;text-transform:uppercase;
+    letter-spacing:.14em;font-size:14px;color:var(--muted);border-bottom:1px solid var(--line-strong);
+    padding-bottom:2px;transition:color .25s var(--ease),border-color .25s var(--ease)}
+  .rel-links a:hover{color:var(--text);border-color:#fff}
 
   .compare{position:relative;width:100%;aspect-ratio:16/10;overflow:hidden;
     border:1px solid var(--line-strong);background:#000;user-select:none;touch-action:pan-y;
@@ -296,6 +329,152 @@
     .reveal-up{opacity:1;transform:none}
   }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://serreswrapcenter.es/" },
+    { "@type": "ListItem", "position": 2, "name": "Servicios", "item": "https://serreswrapcenter.es/#services" },
+    { "@type": "ListItem", "position": 3, "name": "Car Wrap", "item": "https://serreswrapcenter.es/services/vinyl.html" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://serreswrapcenter.es/services/vinyl.html#service",
+  "name": "Car Wrap — Vinilado de coches (car wrapping)",
+  "serviceType": "Car wrapping — cambio de color con films 3M 2080, Avery Dennison e Inozetek",
+  "url": "https://serreswrapcenter.es/services/vinyl.html",
+  "image": "https://serreswrapcenter.es/assets/og/vinyl.jpg",
+  "description": "Cambio de color total y parcial con films 3M 2080, Avery Dennison e Inozetek: más de 150 colores y acabados mate, satinado, brillo, metalizado y colour-flip. Instalación con termosellado panel a panel en nuestro taller de Sant Cugat del Vallès.",
+  "provider": {
+    "@type": "AutoRepair",
+    "name": "SERRES Wrap Center",
+    "url": "https://serreswrapcenter.es/",
+    "telephone": "+34621244469",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Can Fatjó dels Aurons 15",
+      "postalCode": "08174",
+      "addressLocality": "Sant Cugat del Vallès",
+      "addressRegion": "Barcelona",
+      "addressCountry": "ES"
+    }
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Sant Cugat del Vallès" },
+    { "@type": "City", "name": "Barcelona" }
+  ],
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Acentos en vinilo (techo, retrovisores, pilares)",
+      "price": "250",
+      "priceCurrency": "EUR",
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "price": "250",
+        "priceCurrency": "EUR",
+        "valueAddedTaxIncluded": true,
+        "minPrice": "250"
+      }
+    },
+    {
+      "@type": "Offer",
+      "name": "Cambio de color completo",
+      "price": "1490",
+      "priceCurrency": "EUR",
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "price": "1490",
+        "priceCurrency": "EUR",
+        "valueAddedTaxIncluded": true,
+        "minPrice": "1490"
+      }
+    },
+    {
+      "@type": "Offer",
+      "name": "Cambio de color Signature (desmontaje ampliado)",
+      "price": "1990",
+      "priceCurrency": "EUR",
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "price": "1990",
+        "priceCurrency": "EUR",
+        "valueAddedTaxIncluded": true,
+        "minPrice": "1990"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Cuánto cuesta vinilar un coche completo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El cambio de color completo con films 3M, Avery Dennison e Inozetek parte de 1.490 € IVA incluido; los acentos (techo, retrovisores, pilares) desde 250 € y el acabado Signature con desmontaje ampliado desde 1.990 €. El precio final depende del tamaño del vehículo, el film elegido y el nivel de desmontaje. Tras una inspección de 20 minutos te damos un presupuesto cerrado."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuántos días tarda un cambio de color completo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Un cambio de color de carrocería completa requiere entre 5 y 7 días laborables: desmontaje de piezas, descontaminación, aplicación panel a panel y termosellado de bordes. Los trabajos parciales (techo, acentos) se entregan en 1 o 2 días. Te confirmamos la fecha de entrega antes de empezar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto dura el vinilo y qué garantía tiene?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Los films 3M, Avery Dennison e Inozetek que instalamos duran entre 5 y 7 años en exterior con un mantenimiento normal, y el fabricante los respalda con su garantía oficial. Además garantizamos por escrito nuestra instalación: bordes, uniones y ausencia de levantamientos. Todo el trabajo se hace en nuestro taller propio de Sant Cugat del Vallès."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿El vinilo daña la pintura original?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Sobre una pintura de fábrica en buen estado, el vinilo la protege de rayos UV, roces leves y desgaste, y se retira sin dejar residuos. El proceso es totalmente reversible: al quitar el film, la pintura original queda intacta y conservada."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo es el proceso, desde el presupuesto hasta la entrega?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Primero eliges color y acabado entre más de 150 colores de nuestra paleta; después inspeccionamos el vehículo y cerramos presupuesto y fecha. En taller: lavado y descontaminación, desmontaje de piezas, aplicación del film panel a panel y termosellado. En la entrega revisamos juntos cada borde y te explicamos el cuidado de los primeros 15 días."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo pido cita y dónde estáis?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Trabajamos con cita previa de lunes a sábado en Av. Can Fatjó dels Aurons 15, Sant Cugat del Vallès (Barcelona), a 20 minutos del centro de Barcelona. Escríbenos por WhatsApp o llama al +34 621 24 44 69 y te confirmamos día y presupuesto orientativo en la misma conversación."
+      }
+    }
+  ]
+}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1K6FYZ99GN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-1K6FYZ99GN');
+</script>
 </head>
 <body>
 
@@ -311,6 +490,10 @@
   </div>
 </header>
 
+<nav class="crumbs wrap" aria-label="Migas de pan">
+  <a href="../index.html">Inicio</a><span class="sep">/</span><a href="../index.html#services">Servicios</a><span class="sep">/</span><span aria-current="page">Car Wrap</span>
+</nav>
+
 <!-- ===================== HERO / INTRO ===================== -->
 <section class="hero" data-screen-label="Vinyl — Intro">
   <div class="wrap">
@@ -320,6 +503,7 @@
         <h1 class="display">
           <span class="ln"><span>Car</span></span>
           <span class="ln"><span class="chrome-text" data-i18n-skip>Wrap</span></span>
+          <span class="ln"><span class="h1-kw">Car Wrapping en Barcelona — vinilar tu coche</span></span>
         </h1>
       </div>
       <div class="hero-stats">
@@ -328,7 +512,7 @@
         <div class="hstat"><b class="chrome-text">100%</b><span>Reversible</span></div>
       </div>
     </div>
-    <p class="lead">Car Wrap de cambio de color total o parcial con films de varias marcas profesionales — acabados mate, satinado, brillo, metalizado y colour-flip, ajustados con precisión y termosellados a cada panel, borde y recoveco.</p>
+    <p class="lead">Car wrapping en Barcelona: vinilamos tu coche con cambio de color total o parcial usando films 3M, Avery Dennison e Inozetek — más de 150 colores en mate, satinado, brillo, metalizado y colour-flip. Coche completo desde 1.490 €, totalmente reversible, en nuestro taller de Sant Cugat del Vallès.</p>
   </div>
 </section>
 
@@ -338,7 +522,7 @@
     <div class="section-head reveal-up">
       <div>
         <span class="eyebrow">La paleta</span>
-        <h2>Todos los colores que<br>podemos poner en tu coche</h2>
+        <h2>Todos los colores para<br>vinilar tu coche</h2>
       </div>
       <p class="sh-note">Trabajamos con varias marcas profesionales. Elige la marca, filtra por familia de color y desliza para explorar.</p>
     </div>
@@ -387,12 +571,17 @@
           <div class="row"><span class="k">Cobertura</span><span class="v">Cambio de color de carrocería completa</span></div>
           <div class="row"><span class="k">Plazo</span><span class="v">5–7 días</span></div>
         </div>
+        <div class="rel-links">
+          <span class="rel-k">Combínalo con</span>
+          <a href="ppf.html">Protección de pintura PPF</a>
+          <a href="ceramic.html">Tratamiento Ceramic Coating</a>
+        </div>
       </div>
 
       <div class="reveal-up">
         <div class="compare touched" id="compare">
-          <img class="after" src="../assets/vinyl/xm-after.jpg" alt="BMW XM después — Car Wrap negro satinado SERRES" draggable="false">
-          <img class="before" id="beforeImg" src="../assets/vinyl/xm-before.jpg" alt="BMW XM antes — negro brillo de fábrica" draggable="false">
+          <img class="after" src="../assets/vinyl/xm-after.webp" width="1400" height="933" loading="lazy" decoding="async" alt="BMW XM después — Car Wrap negro satinado SERRES" draggable="false">
+          <img class="before" id="beforeImg" src="../assets/vinyl/xm-before.webp" width="1248" height="936" loading="lazy" decoding="async" alt="BMW XM antes — negro brillo de fábrica" draggable="false">
           <div class="cmp-tag bef" id="tagBef"><small>Antes</small>Brillo de fábrica</div>
           <div class="cmp-tag aft" id="tagAft"><small>Después</small>Car Wrap satinado SERRES</div>
           <div class="cmp-divider" id="divider"></div>
@@ -402,6 +591,68 @@
           <div class="cmp-hint">Desliza para revelar</div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<style>
+  .faq{padding:80px 0}
+  .faq-list{margin-top:40px;border-top:1px solid var(--line)}
+  .faq-item{border-bottom:1px solid var(--line)}
+  .faq-item summary{list-style:none;cursor:pointer;display:flex;align-items:center;
+    justify-content:space-between;gap:24px;padding:24px 0;
+    font-family:"Barlow Condensed",sans-serif;font-weight:600;text-transform:uppercase;
+    letter-spacing:.06em;font-size:clamp(18px,2.2vw,23px);transition:color .25s var(--ease)}
+  .faq-item summary::-webkit-details-marker{display:none}
+  .faq-item summary:hover{color:#fff}
+  .faq-item summary .fq-ico{flex:0 0 auto;width:34px;height:34px;border:1px solid var(--line-strong);
+    border-radius:50%;display:grid;place-items:center;color:var(--muted);
+    transition:transform .3s var(--ease),border-color .3s var(--ease)}
+  .faq-item[open] summary .fq-ico{transform:rotate(45deg);border-color:#fff;color:#fff}
+  .faq-item .fq-a{padding:0 0 26px;max-width:68ch;color:var(--muted);font-size:16px}
+</style>
+
+<section class="faq" id="faq" data-screen-label="FAQ">
+  <div class="wrap">
+    <div class="section-head reveal-up">
+      <div>
+        <span class="eyebrow">Preguntas frecuentes</span>
+        <h2>Antes de vinilar<br>tu coche</h2>
+      </div>
+      <p class="sh-note">Lo que nos preguntan cada semana en el taller de Sant Cugat. Si tu duda no está aquí, escríbenos por WhatsApp.</p>
+    </div>
+
+    <div class="faq-list reveal-up">
+      <details class="faq-item">
+        <summary>¿Cuánto cuesta vinilar un coche completo?<span class="fq-ico">＋</span></summary>
+        <p class="fq-a">El cambio de color completo con films 3M, Avery Dennison e Inozetek parte de 1.490 € IVA incluido; los acentos (techo, retrovisores, pilares) desde 250 € y el acabado Signature con desmontaje ampliado desde 1.990 €. El precio final depende del tamaño del vehículo, el film elegido y el nivel de desmontaje. Tras una inspección de 20 minutos te damos un presupuesto cerrado.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>¿Cuántos días tarda un cambio de color completo?<span class="fq-ico">＋</span></summary>
+        <p class="fq-a">Un cambio de color de carrocería completa requiere entre 5 y 7 días laborables: desmontaje de piezas, descontaminación, aplicación panel a panel y termosellado de bordes. Los trabajos parciales (techo, acentos) se entregan en 1 o 2 días. Te confirmamos la fecha de entrega antes de empezar.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>¿Cuánto dura el vinilo y qué garantía tiene?<span class="fq-ico">＋</span></summary>
+        <p class="fq-a">Los films 3M, Avery Dennison e Inozetek que instalamos duran entre 5 y 7 años en exterior con un mantenimiento normal, y el fabricante los respalda con su garantía oficial. Además garantizamos por escrito nuestra instalación: bordes, uniones y ausencia de levantamientos. Todo el trabajo se hace en nuestro taller propio de Sant Cugat del Vallès.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>¿El vinilo daña la pintura original?<span class="fq-ico">＋</span></summary>
+        <p class="fq-a">No. Sobre una pintura de fábrica en buen estado, el vinilo la protege de rayos UV, roces leves y desgaste, y se retira sin dejar residuos. El proceso es totalmente reversible: al quitar el film, la pintura original queda intacta y conservada.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>¿Cómo es el proceso, desde el presupuesto hasta la entrega?<span class="fq-ico">＋</span></summary>
+        <p class="fq-a">Primero eliges color y acabado entre más de 150 colores de nuestra paleta; después inspeccionamos el vehículo y cerramos presupuesto y fecha. En taller: lavado y descontaminación, desmontaje de piezas, aplicación del film panel a panel y termosellado. En la entrega revisamos juntos cada borde y te explicamos el cuidado de los primeros 15 días.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>¿Cómo pido cita y dónde estáis?<span class="fq-ico">＋</span></summary>
+        <p class="fq-a">Trabajamos con cita previa de lunes a sábado en Av. Can Fatjó dels Aurons 15, Sant Cugat del Vallès (Barcelona), a 20 minutos del centro de Barcelona. Escríbenos por WhatsApp o llama al +34 621 24 44 69 y te confirmamos día y presupuesto orientativo en la misma conversación.</p>
+      </details>
     </div>
   </div>
 </section>
@@ -852,7 +1103,7 @@ updateScrollState();
    Returns { setStrength, destroy }. Falls back to a static cover draw without WebGL. */
 window.FilmRipple=(function(){
   const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
-  const TEX='../assets/vinyl/wrap-texture.png';
+  const TEX='../assets/vinyl/wrap-texture.webp';
 
   function create(section,canvas){
     const gl=canvas.getContext('webgl',{antialias:true,premultipliedAlpha:false})
@@ -1031,43 +1282,30 @@ window.FilmRipple=(function(){
     strength(m){ strengthMult=m; if(bannerFilm)bannerFilm.setStrength(m); if(heroFilm)heroFilm.setStrength(m); },
     banner(show){ if(banner) banner.style.display=show?'':'none'; }
   };
+
+  /* Production values for the hero film surface */
+  window.__vinylFilm.heroFilm(true);
+  window.__vinylFilm.veil(0.85);
+  window.__vinylFilm.strength(2.5);
 })();
 </script>
 
-<!-- ===================== TWEAKS ===================== -->
-<div id="tweaks-root"></div>
-<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
-<script type="text/babel" src="../tweaks-panel.jsx"></script>
-<script type="text/babel">
-const VINYL_TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
-  "heroFilm": true,
-  "heroDarkness": 85,
-  "rippleStrength": 2.5
-}/*EDITMODE-END*/;
-
-function VinylTweaks(){
-  const [t,setTweak]=useTweaks(VINYL_TWEAK_DEFAULTS);
-  React.useEffect(()=>{ window.__vinylFilm && window.__vinylFilm.heroFilm(t.heroFilm); },[t.heroFilm]);
-  React.useEffect(()=>{ window.__vinylFilm && window.__vinylFilm.veil(t.heroDarkness/100); },[t.heroDarkness]);
-  React.useEffect(()=>{ window.__vinylFilm && window.__vinylFilm.strength(t.rippleStrength); },[t.rippleStrength]);
-  return (
-    <TweaksPanel>
-      <TweakSection label="Film surface" />
-      <TweakToggle label="Film behind hero" value={t.heroFilm}
-                   onChange={(v)=>setTweak('heroFilm',v)} />
-      <TweakSlider label="Hero darkness" value={t.heroDarkness} min={20} max={85} step={1} unit="%"
-                   onChange={(v)=>setTweak('heroDarkness',v)} />
-      <TweakSlider label="Ripple strength" value={t.rippleStrength} min={0} max={2.5} step={0.1} unit="×"
-                   onChange={(v)=>setTweak('rippleStrength',v)} />
-    </TweaksPanel>
-  );
-}
-ReactDOM.createRoot(document.getElementById('tweaks-root')).render(<VinylTweaks />);
-</script>
-
-
 <script src="../assets/serres-enhance.js" defer></script>
+<script>
+(function () {
+  function track(name, params) {
+    if (typeof gtag === 'function') gtag('event', name, params || {});
+  }
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest ? e.target.closest('a') : null;
+    if (!a || !a.href) return;
+    if (a.href.indexOf('wa.me') !== -1 || a.href.indexOf('api.whatsapp.com') !== -1) {
+      track('whatsapp_click', { link_url: a.href, page_path: location.pathname });
+    } else if (a.href.indexOf('tel:') === 0) {
+      track('phone_click', { link_url: a.href, page_path: location.pathname });
+    }
+  }, true);
+})();
+</script>
 </body>
 </html>

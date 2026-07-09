@@ -3,9 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SERRES — PPF, Car Wrap y Detailing Premium en Barcelona</title>
-<meta name="description" content="Estudio premium en Sant Cugat del Vallès: PPF, Car Wrap, Ceramic Coating, pulido por etapas y detailing. Presupuesto por WhatsApp.">
+<title>PPF, Car Wrap y Detailing en Barcelona | SERRES</title>
+<meta name="description" content="Estudio de PPF, Car Wrap y detailing en Barcelona (Sant Cugat del Vallès): Ceramic Coating, pulido por etapas y body kits. Pide presupuesto por WhatsApp.">
 <link rel="canonical" href="https://serreswrapcenter.es/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SERRES Wrap Center">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="PPF, Car Wrap y Detailing en Barcelona | SERRES">
+<meta property="og:description" content="Estudio de PPF, Car Wrap y detailing en Barcelona (Sant Cugat del Vallès): Ceramic Coating, pulido por etapas y body kits. Pide presupuesto por WhatsApp.">
+<meta property="og:url" content="https://serreswrapcenter.es/">
+<meta property="og:image" content="https://serreswrapcenter.es/assets/og/home.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PPF, Car Wrap y Detailing en Barcelona | SERRES">
+<meta name="twitter:description" content="Estudio de PPF, Car Wrap y detailing en Barcelona (Sant Cugat del Vallès): Ceramic Coating, pulido por etapas y body kits. Pide presupuesto por WhatsApp.">
+<meta name="twitter:image" content="https://serreswrapcenter.es/assets/og/home.jpg">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
@@ -97,11 +110,12 @@
     padding:0 .28em 0 .04em;
     white-space:nowrap;flex-shrink:0;
   }
-  .nav-links{display:flex;align-items:center;gap:26px}
+  .nav-links{display:flex;align-items:center;gap:24px}
   .nav-links a{
     font-family:"Barlow Condensed",sans-serif;font-weight:500;
     text-transform:uppercase;letter-spacing:.16em;font-size:15px;
     color:var(--muted);transition:color .25s var(--ease);position:relative;
+    white-space:nowrap;
   }
   .nav-links a:hover{color:var(--text)}
   .nav-right{display:flex;align-items:center;gap:22px}
@@ -109,7 +123,7 @@
   .btn{
     font-family:"Barlow Condensed",sans-serif;font-weight:600;
     text-transform:uppercase;letter-spacing:.14em;font-size:15px;
-    display:inline-flex;align-items:center;gap:11px;
+    display:inline-flex;align-items:center;gap:11px;white-space:nowrap;
     padding:14px 26px;border:none;cursor:pointer;
     background:var(--chrome);color:#0a0a0b;
     clip-path:polygon(0 0,100% 0,100% 100%,12px 100%,0 calc(100% - 12px));
@@ -146,6 +160,13 @@
   .hero h1 .ln{display:block;overflow:hidden;padding-bottom:.04em}
   .hero h1 .ln span{display:block;white-space:nowrap;transform:translateY(110%);animation:rise 1s var(--ease) forwards}
   .hero h1 .ln:nth-child(2) span{animation-delay:.12s}
+  .hero h1 .ln:nth-child(3) span{animation-delay:.24s}
+  .hero h1 .ln .h1-kw{
+    display:inline-block;font-weight:500;
+    font-size:clamp(11.5px,1.4vw,17px);letter-spacing:.18em;
+    color:var(--muted);margin-top:20px;
+    background:none;-webkit-text-fill-color:currentColor;
+  }
   @keyframes rise{to{transform:translateY(0)}}
   .hero .sub{
     margin-top:30px;max-width:48ch;font-size:clamp(16px,1.5vw,20px);
@@ -434,6 +455,45 @@
   .svc-inner .svc-more .arr{transition:transform .3s var(--ease)}
   .svc-inner .svc-more:hover .arr{transform:translateX(4px)}
 
+  /* ---------- LOCAL SEO · indexable text + FAQ ---------- */
+  .home-seo{
+    position:relative;padding:110px 0 96px;
+    /* long soft ramp out of the black reveal studio into the CTA band (--bg-2) */
+    background:linear-gradient(180deg,#000 0%,#050506 26%,#09090b 56%,#0c0c0e 80%,#0e0e10 100%);
+  }
+  .home-seo .wrap{max-width:900px}
+  .home-seo h2{
+    font-family:"Barlow Condensed",sans-serif;font-weight:600;text-transform:uppercase;
+    letter-spacing:.02em;line-height:.94;font-size:clamp(30px,4.6vw,54px);
+    margin-top:18px;text-wrap:balance;
+  }
+  .home-seo p{color:var(--muted);font-size:16px;line-height:1.7;margin-top:20px;max-width:66ch;text-wrap:pretty}
+  .home-faq{margin-top:44px;border-top:1px solid var(--line)}
+  .home-faq details{border-bottom:1px solid var(--line)}
+  .home-faq summary{
+    cursor:pointer;list-style:none;
+    display:flex;align-items:center;justify-content:space-between;gap:18px;
+    padding:18px 0;
+    font-family:"Barlow Condensed",sans-serif;font-weight:600;text-transform:uppercase;
+    letter-spacing:.08em;font-size:17px;color:var(--text);
+    transition:color .25s var(--ease);
+  }
+  .home-faq summary::-webkit-details-marker{display:none}
+  .home-faq summary::after{
+    content:"+";font-weight:400;color:var(--muted-2);font-size:22px;line-height:1;flex:none;
+    transition:transform .25s var(--ease),color .25s var(--ease);
+  }
+  .home-faq details[open] summary::after{transform:rotate(45deg);color:var(--text)}
+  .home-faq summary:hover{color:#fff}
+  .home-faq summary:focus-visible{outline:2px solid #e7e7ec;outline-offset:3px}
+  .home-faq details p{margin:0;padding:0 0 20px;color:var(--muted);font-size:15.5px;max-width:66ch}
+  @media(max-width:760px){
+    .home-seo{padding:80px 0 70px}
+  }
+  @media(prefers-reduced-motion:reduce){
+    .home-faq summary,.home-faq summary::after{transition:none}
+  }
+
   /* ---------- CTA BAND ---------- */
   .cta{position:relative;padding:120px 0;text-align:center;overflow:hidden;background:var(--bg-2)}
   .cta::before,.cta::after{content:"";position:absolute;left:0;right:0;height:1px;background:var(--line)}
@@ -517,12 +577,12 @@
   .mobile-call svg{width:24px;height:24px}
 
   /* ---------- RESPONSIVE ---------- */
-  @media(max-width:1180px){
+  @media(max-width:1500px){
     .nav-inner{gap:18px}
-    .nav-links{gap:18px}
-    .nav-links a{font-size:14px}
+    .nav-links{gap:16px}
+    .nav-links a{font-size:14px;letter-spacing:.13em}
   }
-  @media(max-width:980px){
+  @media(max-width:1200px){
     .nav-links{display:none}
   }
   @media(max-width:1024px){
@@ -558,8 +618,12 @@
   "telephone": "+34621244469",
   "image": "https://serreswrapcenter.es/apple-touch-icon.png",
   "priceRange": "€€€",
+  "description": "Taller de PPF, Car Wrap, Ceramic Coating, pulido por etapas, detailing y body kits en Sant Cugat del Vallès (Barcelona). Films de varias marcas profesionales y trabajo con cita previa.",
+  "hasMap": "https://maps.google.com/?cid=14481261717501919901",
   "address": {
     "@type": "PostalAddress",
+    "streetAddress": "Av. Can Fatjó dels Aurons, 15",
+    "postalCode": "08174",
     "addressLocality": "Sant Cugat del Vallès",
     "addressRegion": "Barcelona",
     "addressCountry": "ES"
@@ -581,6 +645,46 @@
   "sameAs": ["https://www.instagram.com/serres.wrap.center/"]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Cuánto cuesta instalar PPF en Barcelona?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El pack frontal de PPF parte de 890 € y el coche completo de 2.390 €, con 3 años de garantía del film e IVA incluido. Escríbenos por WhatsApp con el modelo de tu coche y te pasamos un presupuesto exacto."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto tarda un Car Wrap completo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Un cambio de color completo requiere varios días de taller: desmontamos piezas, forramos panel a panel y revisamos cada borde antes de la entrega. Al reservar tu cita te confirmamos el plazo exacto para tu coche."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Dónde está el taller de SERRES?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Estamos en Av. Can Fatjó dels Aurons, 15, 08174 Sant Cugat del Vallès (Barcelona). Trabajamos con cita previa: de lunes a viernes de 09:00 a 19:00 y sábados de 10:00 a 14:00."
+      }
+    }
+  ]
+}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1K6FYZ99GN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-1K6FYZ99GN');
+</script>
 </head>
 <body>
 
@@ -592,6 +696,7 @@
       <a href="pages/gallery.html">Proyectos</a>
       <a href="pages/projects.html"><span class="gold-text">Exclusivo</span></a>
       <a href="pages/prices.html">Precios</a>
+      <a href="blog/index.html">Blog</a>
       <a href="pages/why-serres.html">Por qué SERRES</a>
       <a href="#contact">Contacto</a>
     </nav>
@@ -613,8 +718,9 @@
       <h1 class="display">
         <span class="ln"><span>Eleva</span></span>
         <span class="ln"><span class="chrome-text">tu sueño</span></span>
+        <span class="ln"><span class="h1-kw">PPF, Car Wrap y Detailing en Barcelona</span></span>
       </h1>
-      <p class="sub">Protección de pintura, Car Wrap a medida y detailing de nivel concours, pensados para los coches alrededor de los que construyes tu vida. Un taller. Estándares obsesivos.</p>
+      <p class="sub">PPF, Car Wrap a medida y detailing de nivel concours en Barcelona (Sant Cugat del Vallès), pensados para los coches alrededor de los que construyes tu vida. Un taller. Estándares obsesivos.</p>
       <div class="actions">
         <a href="#contact" class="btn ghost">Pedir presupuesto <span class="arr">→</span></a>
         <a href="#services" class="btn ghost">Ver servicios</a>
@@ -701,6 +807,30 @@
   </div>
 </section>
 
+<!-- ===================== LOCAL · indexable text + FAQ ===================== -->
+<section class="home-seo" id="taller-barcelona" data-screen-label="Taller">
+  <div class="wrap">
+    <span class="eyebrow">Taller en Barcelona</span>
+    <h2>PPF, Car Wrap y detailing en Barcelona</h2>
+    <p>SERRES es un taller de PPF, Car Wrap y detailing en Sant Cugat del Vallès, a pocos minutos de Barcelona. Trabajamos con films de varias marcas profesionales: PPF con más de 50 colores y vinilos 3M, Avery Dennison e Inozetek con más de 150 colores para el cambio de color.</p>
+    <p>Cada proyecto se trabaja con cita previa y se revisa panel a panel bajo iluminación hexagonal controlada; si algo no cumple nuestro estándar, se repite antes de la entrega. Completamos la gama con Ceramic Coating, pulido por etapas, detailing y body kits, con precios orientativos publicados e IVA incluido.</p>
+    <div class="home-faq">
+      <details>
+        <summary>¿Cuánto cuesta instalar PPF en Barcelona?</summary>
+        <p>El pack frontal de PPF parte de 890 € y el coche completo de 2.390 €, con 3 años de garantía del film e IVA incluido. Escríbenos por WhatsApp con el modelo de tu coche y te pasamos un presupuesto exacto.</p>
+      </details>
+      <details>
+        <summary>¿Cuánto tarda un Car Wrap completo?</summary>
+        <p>Un cambio de color completo requiere varios días de taller: desmontamos piezas, forramos panel a panel y revisamos cada borde antes de la entrega. Al reservar tu cita te confirmamos el plazo exacto para tu coche.</p>
+      </details>
+      <details>
+        <summary>¿Dónde está el taller de SERRES?</summary>
+        <p>Estamos en Av. Can Fatjó dels Aurons, 15, 08174 Sant Cugat del Vallès (Barcelona). Trabajamos con cita previa: de lunes a viernes de 09:00 a 19:00 y sábados de 10:00 a 14:00.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
 <!-- ===================== CTA ===================== -->
 <section class="cta" id="contact" data-screen-label="Contact">
   <div class="wrap">
@@ -725,7 +855,7 @@
       </div>
       <div class="contact-map">
         <div class="map-frame">
-          <iframe title="SERRES Wrap Center en Google Maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28430.735708274406!2d2.0633841973199507!3d41.49532481891128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2027f0d4ea2a70f1%3A0xc8f7c6ce9b2a429d!2sSerres%20Wrap%20Center!5e0!3m2!1sen!2ses!4v1780990222187!5m2!1sen!2ses" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe title="SERRES Wrap Center en Google Maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28430.735708274406!2d2.0633841973199507!3d41.49532481891128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2027f0d4ea2a70f1%3A0xc8f7c6ce9b2a429d!2sSerres%20Wrap%20Center!5e0!3m2!1ses!2ses!4v1780990222187!5m2!1ses!2ses" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </div>
@@ -743,10 +873,12 @@
       <div class="foot-cols">
         <div class="foot-col">
           <h3>Servicios</h3>
-          <a href="#services">Paint Protection Film</a>
-          <a href="#services" data-i18n-skip>Car Wrap</a>
-          <a href="#services">Body Kits</a>
-          <a href="#services">Corrección de pintura</a>
+          <a href="services/ppf.html">Paint Protection Film</a>
+          <a href="services/vinyl.html" data-i18n-skip>Car Wrap</a>
+          <a href="services/ceramic.html" data-i18n-skip>Ceramic Coating</a>
+          <a href="services/paint-correction.html">Corrección de pintura</a>
+          <a href="services/detailing.html" data-i18n-skip>Detailing</a>
+          <a href="services/body-kits.html">Body Kits</a>
         </div>
         <div class="foot-col">
           <h3>Taller</h3>
@@ -758,6 +890,7 @@
           <a href="https://www.instagram.com/serres.wrap.center/" target="_blank" rel="noopener">Instagram</a>
           <a href="https://wa.me/34621244469?text=Hola%20SERRES%2C%20quer%C3%ADa%20pedir%20presupuesto%20para%20mi%20coche." target="_blank" rel="noopener">WhatsApp</a>
           <a href="https://www.google.com/maps/search/?api=1&query=Serres+Wrap+Center+Sant+Cugat+del+Vall%C3%A8s" target="_blank" rel="noopener">Google Maps</a>
+          <a href="blog/index.html">Blog</a>
         </div>
       </div>
     </div>
@@ -883,6 +1016,23 @@
 </script>
 
 <script src="assets/serres-enhance.js" defer></script>
+
+<script>
+(function () {
+  function track(name, params) {
+    if (typeof gtag === 'function') gtag('event', name, params || {});
+  }
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest ? e.target.closest('a') : null;
+    if (!a || !a.href) return;
+    if (a.href.indexOf('wa.me') !== -1 || a.href.indexOf('api.whatsapp.com') !== -1) {
+      track('whatsapp_click', { link_url: a.href, page_path: location.pathname });
+    } else if (a.href.indexOf('tel:') === 0) {
+      track('phone_click', { link_url: a.href, page_path: location.pathname });
+    }
+  }, true);
+})();
+</script>
 
 </body>
 </html>
