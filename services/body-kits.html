@@ -172,23 +172,7 @@
     font-size:11.5px;color:var(--muted-2)}
   .stage p{color:var(--muted);font-size:14.5px;line-height:1.5;text-wrap:pretty;margin-top:auto}
 
-  /* gloss meter */
-  .gloss{margin-top:64px;display:grid;grid-template-columns:.85fr 1.15fr;gap:54px;align-items:center}
-  .gloss .gl-copy h3{font-family:"Barlow Condensed",sans-serif;font-weight:700;text-transform:uppercase;
-    font-size:clamp(26px,3vw,42px);line-height:.98;letter-spacing:.01em;margin-bottom:18px;text-wrap:balance}
-  .gloss .gl-copy p{color:var(--muted);font-size:15.5px;max-width:40ch;text-wrap:pretty}
-  .gl-meter{display:flex;flex-direction:column;gap:26px}
-  .gbar{display:flex;flex-direction:column;gap:10px}
-  .gbar .gb-top{display:flex;align-items:baseline;justify-content:space-between}
-  .gbar .gb-label{font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.16em;
-    font-size:13px;color:var(--muted)}
-  .gbar .gb-val{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:30px;line-height:1}
-  .gbar .gb-track{height:6px;background:rgba(255,255,255,.08);position:relative;overflow:hidden}
-  .gbar .gb-fill{position:absolute;left:0;top:0;height:100%;width:0;transition:width 1.3s var(--ease)}
-  .gbar.before .gb-fill{background:rgba(255,255,255,.22)}
-  .gbar.before .gb-val{color:var(--muted)}
-  .gbar.after .gb-fill{background:var(--chrome);box-shadow:0 0 16px rgba(255,255,255,.4)}
-  .gbar.after .gb-val{color:var(--text)}
+
 
   /* ---------- CTA ---------- */
   .cta{position:relative;margin-top:80px;padding:104px 0;text-align:center;background:var(--bg-2)}
@@ -201,7 +185,7 @@
     text-transform:uppercase;font-size:14px;color:var(--muted)}
   .cta .phone strong{color:var(--text);font-weight:600}
 
-  footer{padding:30px 40px;border-top:1px solid var(--line);color:var(--muted-2);font-size:13px;
+  footer{padding:30px 40px;border-top:1px solid var(--line);color:var(--muted);font-size:13px;
     letter-spacing:.04em;text-align:center}
 
   .reveal-up{opacity:0;transform:translateY(26px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
@@ -211,7 +195,6 @@
     .xform-grid{grid-template-columns:1fr;gap:34px;max-width:520px}
     .xtext p{max-width:100%}
     .proc-grid{grid-template-columns:1fr}
-    .gloss{grid-template-columns:1fr;gap:30px}
   }
   @media(max-width:760px){
     .wrap,.nav-inner{padding-left:22px;padding-right:22px}
@@ -227,8 +210,7 @@
     .hero .lead,.hero-stats,.hero .eyebrow{opacity:1}
     .scroll-cue{opacity:1}
     .reveal-up{opacity:1;transform:none}
-    .gbar .gb-fill{transition:none}
-  }
+      }
 </style>
 </head>
 <body>
@@ -347,7 +329,7 @@
     <h2 class="display">Dale presencia <span class="chrome-text">de verdad.</span></h2>
     <div class="actions">
       <a href="../index.html#contact" class="btn">Pedir presupuesto <span class="arr">→</span></a>
-      <a href="../pages/gallery.html" class="btn ghost">Ver la galería</a>
+      <a href="../pages/gallery.html" class="btn ghost">Ver proyectos</a>
     </div>
     <p class="phone">Sant Cugat del Vallès, Barcelona &nbsp;·&nbsp; <strong>+34 621 24 44 69</strong></p>
   </div>
@@ -367,23 +349,7 @@
 })();
 </script>
 
-<script>
-/* ---------- gloss-meter fill on view ---------- */
-(function(){
-  const sec=document.getElementById('glossSection');
-  if(!sec)return;
-  const fills=[...sec.querySelectorAll('.gb-fill')];
-  const io=new IntersectionObserver((ents)=>{
-    ents.forEach(en=>{
-      if(en.isIntersecting){
-        fills.forEach(f=>f.style.width=f.dataset.w+'%');
-        io.disconnect();
-      }
-    });
-  },{threshold:.4});
-  io.observe(sec);
-})();
-</script>
+
 
 <script>
 /* ---------- Before / After comparison slider ---------- */

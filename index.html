@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SERRES — PPF, Vinilado y Detailing Premium en Barcelona</title>
-<meta name="description" content="Estudio premium en Sant Cugat del Vallès: PPF 3M, car wrapping, tratamiento cerámico, pulido y detailing. Presupuesto por WhatsApp.">
+<title>SERRES — PPF, Car Wrap y Detailing Premium en Barcelona</title>
+<meta name="description" content="Estudio premium en Sant Cugat del Vallès: PPF, Car Wrap, Ceramic Coating, pulido por etapas y detailing. Presupuesto por WhatsApp.">
 <link rel="canonical" href="https://serreswrapcenter.es/">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
@@ -175,6 +175,130 @@
     font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;
     letter-spacing:.22em;font-size:12px;color:var(--muted);
     opacity:0;animation:fade 1s var(--ease) 1.1s forwards;
+  }
+
+  /* ---------- SERVICE NAVIGATOR · six doors into the studio ---------- */
+  .svcnav{
+    position:relative;
+    /* seats between the hero (ends #14151b) and the black reveal studio:
+       long multi-stop gradient so there is no visible seam on either side */
+    background:linear-gradient(180deg,
+      #14151b 0%,
+      #101116 14%,
+      #0c0d11 34%,
+      #0b0b0e 62%,
+      #0e0f14 84%,
+      #14151b 100%);
+    padding:110px 0 120px;
+  }
+  .svcnav-head{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;flex-wrap:wrap;margin-bottom:46px}
+  .svcnav-head h2{
+    font-family:"Barlow Condensed",sans-serif;font-weight:700;text-transform:uppercase;
+    line-height:.94;letter-spacing:.012em;font-size:clamp(36px,5.4vw,72px);margin-top:16px;text-wrap:balance;
+  }
+  .svcnav-head .sn-note{color:var(--muted);font-size:15.5px;max-width:36ch;margin-top:14px;text-wrap:pretty}
+  .svcnav-grid{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:14px;
+  }
+  .svc-door{
+    position:relative;display:flex;flex-direction:column;justify-content:flex-end;
+    min-height:250px;padding:26px 26px 24px;overflow:hidden;isolation:isolate;
+    background:var(--panel);border:1px solid var(--line);
+    clip-path:polygon(0 0,100% 0,100% 100%,16px 100%,0 calc(100% - 16px));
+    transition:border-color .5s var(--ease),transform .5s var(--ease);
+  }
+  .svc-door:hover{border-color:var(--line-strong);transform:translateY(-4px)}
+  .svc-door .sd-img{
+    position:absolute;inset:0;z-index:0;width:100%;height:100%;object-fit:cover;
+    opacity:0;transform:scale(1.07);
+    filter:brightness(.62) saturate(.82) contrast(1.04);
+    transition:opacity .65s var(--ease),transform 1.1s var(--ease);
+    pointer-events:none;
+  }
+  .svc-door::after{ /* scrim so the label always reads over the photo */
+    content:"";position:absolute;inset:0;z-index:1;pointer-events:none;opacity:0;
+    background:linear-gradient(180deg,rgba(8,8,10,.05) 0%,rgba(8,8,10,.18) 46%,rgba(8,8,10,.78) 100%);
+    transition:opacity .65s var(--ease);
+  }
+  .svc-door:hover .sd-img,.svc-door:focus-visible .sd-img{opacity:1;transform:scale(1.015)}
+  .svc-door:hover::after,.svc-door:focus-visible::after{opacity:1}
+  .svc-door .sd-top{
+    position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;
+    margin-bottom:auto;
+  }
+  .svc-door .sd-num{
+    font-family:"Barlow Condensed",sans-serif;font-weight:600;letter-spacing:.22em;
+    font-size:12px;color:var(--muted-2);transition:color .4s var(--ease);
+  }
+  .svc-door:hover .sd-num{color:#d6d6db}
+  .svc-door .sd-arrow{
+    width:38px;height:38px;border-radius:50%;display:grid;place-items:center;
+    border:1px solid var(--line);color:var(--muted);
+    transition:background .4s var(--ease),color .4s var(--ease),border-color .4s var(--ease),transform .4s var(--ease);
+  }
+  .svc-door .sd-arrow svg{width:15px;height:15px}
+  .svc-door:hover .sd-arrow{
+    background:var(--chrome);color:#0a0a0b;border-color:transparent;
+    transform:translate(2px,-2px);
+  }
+  .svc-door .sd-name{
+    position:relative;z-index:2;
+    font-family:"Barlow Condensed",sans-serif;font-weight:700;text-transform:uppercase;
+    letter-spacing:.02em;font-size:clamp(24px,2.3vw,33px);line-height:.96;margin-top:34px;
+    transition:transform .5s var(--ease);
+  }
+  .svc-door:hover .sd-name{transform:translateY(-3px)}
+  .svc-door .sd-sub{
+    position:relative;z-index:2;margin-top:7px;
+    font-family:"Barlow Condensed",sans-serif;font-weight:500;text-transform:uppercase;
+    letter-spacing:.2em;font-size:11.5px;color:var(--muted);
+    transition:color .4s var(--ease);
+  }
+  .svc-door:hover .sd-sub{color:#e3e3e8}
+  .svc-door .sd-line{
+    position:absolute;left:0;right:0;bottom:0;height:2px;z-index:2;
+    background:var(--chrome);transform:scaleX(0);transform-origin:left;
+    transition:transform .55s var(--ease);
+  }
+  .svc-door:hover .sd-line,.svc-door:focus-visible .sd-line{transform:scaleX(1)}
+  .svc-door:focus-visible{outline:2px solid #e7e7ec;outline-offset:3px}
+  @media(max-width:1024px){
+    .svcnav-grid{grid-template-columns:repeat(2,1fr)}
+    .svc-door{min-height:210px}
+  }
+  @media(max-width:760px){
+    .svcnav{padding:76px 0 84px}
+    .svcnav-grid{grid-template-columns:repeat(2,1fr);gap:10px}
+    .svc-door{min-height:172px;padding:18px 16px 16px}
+    .svc-door .sd-arrow{width:32px;height:32px}
+    .svc-door .sd-name{font-size:21px;margin-top:22px}
+    .svc-door .sd-sub{font-size:10.5px;letter-spacing:.16em}
+    /* no hover on touch: keep each photo faintly present so the doors read visual */
+    .svc-door .sd-img{opacity:.34;transform:scale(1.02)}
+    .svc-door::after{opacity:1}
+  }
+  @media(hover:none){
+    .svc-door .sd-img{opacity:.34;transform:scale(1.02)}
+    .svc-door::after{opacity:1}
+  }
+  @media(prefers-reduced-motion:reduce){
+    .svc-door,.svc-door .sd-img,.svc-door .sd-name,.svc-door .sd-arrow,.svc-door .sd-line{transition:none}
+  }
+
+  /* ---------- GOLD · "Exclusivo" ---------- */
+  .gold-text{
+    background:linear-gradient(105deg,#8a6d2f 0%,#c9a44f 20%,#f3e0ac 38%,#d4af5f 52%,#8a6d2f 70%,#e9d194 88%,#b28f41 100%);
+    background-size:220% 100%;background-position:0% 0;
+    -webkit-background-clip:text;background-clip:text;
+    color:transparent;-webkit-text-fill-color:transparent;
+    transition:filter .35s var(--ease),background-position .9s var(--ease);
+  }
+  .gold-text:hover,a:hover > .gold-text,a:focus-visible > .gold-text{
+    background-position:100% 0;
+    filter:drop-shadow(0 0 6px rgba(212,175,95,.5)) drop-shadow(0 0 18px rgba(212,175,95,.22));
+  }
+  @media(prefers-reduced-motion:reduce){
+    .gold-text{transition:none}
   }
 
   /* ---------- REVEAL · scroll-driven Urus transformation ---------- */
@@ -371,16 +495,16 @@
   .foot .logo{font-size:26px}
   .foot .tagline{color:var(--muted);max-width:30ch;margin-top:16px;font-size:15px}
   .foot-cols{display:flex;gap:70px;flex-wrap:wrap}
-  .foot-col h5{
+  .foot-col h3{
     font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.2em;
-    font-size:13px;color:var(--muted-2);font-weight:600;margin-bottom:16px;
+    font-size:13px;color:var(--muted);font-weight:600;margin-bottom:16px;
   }
   .foot-col a,.foot-col p{display:block;color:var(--muted);font-size:15px;margin-bottom:9px;transition:color .25s var(--ease)}
   .foot-col a:hover{color:var(--text)}
   .foot-bottom{
     margin-top:60px;padding-top:26px;border-top:1px solid var(--line);
     display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
-    color:var(--muted-2);font-size:13px;letter-spacing:.04em;
+    color:var(--muted);font-size:13px;letter-spacing:.04em;
   }
 
   /* sticky mobile call */
@@ -465,8 +589,8 @@
     <a href="#top" class="logo chrome-text">SERRES</a>
     <nav class="nav-links">
       <a href="#services">Servicios</a>
-      <a href="pages/gallery.html">Galería</a>
-      <a href="pages/projects.html">Proyectos</a>
+      <a href="pages/gallery.html">Proyectos</a>
+      <a href="pages/projects.html"><span class="gold-text">Exclusivo</span></a>
       <a href="pages/prices.html">Precios</a>
       <a href="pages/why-serres.html">Por qué SERRES</a>
       <a href="#contact">Contacto</a>
@@ -490,7 +614,7 @@
         <span class="ln"><span>Eleva</span></span>
         <span class="ln"><span class="chrome-text">tu sueño</span></span>
       </h1>
-      <p class="sub">Protección de pintura, vinilos personalizados y detailing de nivel concours, pensados para los coches alrededor de los que construyes tu vida. Un solo taller. Estándares obsesivos.</p>
+      <p class="sub">Protección de pintura, Car Wrap a medida y detailing de nivel concours, pensados para los coches alrededor de los que construyes tu vida. Un taller. Estándares obsesivos.</p>
       <div class="actions">
         <a href="#contact" class="btn ghost">Pedir presupuesto <span class="arr">→</span></a>
         <a href="#services" class="btn ghost">Ver servicios</a>
@@ -498,18 +622,75 @@
     </div>
   </div>
   <div class="scroll-cue"><span class="bar"></span> Desliza</div>
-  <div class="hero-meta">PPF · Vinilos · Corrección de pintura<br>Estudio de detailing</div>
+  <div class="hero-meta">PPF · Car Wrap · Corrección de pintura<br>Estudio de detailing</div>
+</section>
+
+<!-- ===================== SERVICE NAVIGATOR ===================== -->
+<section class="svcnav" id="services" data-screen-label="Services">
+  <div class="wrap">
+    <div class="svcnav-head">
+      <div>
+        <span class="eyebrow">Nuestros servicios</span>
+        <h2 class="chrome-text">Elige por dónde empezar.</h2>
+      </div>
+      <p class="sn-note">Seis especialidades, un mismo estándar. Toca un servicio para ver el proceso, los materiales y los precios.</p>
+    </div>
+    <nav class="svcnav-grid" aria-label="Servicios SERRES">
+      <a class="svc-door" href="services/ppf.html">
+        <img class="sd-img" src="assets/svc/ppf-tile.jpg" alt="" aria-hidden="true" loading="lazy" decoding="async">
+        <span class="sd-top"><span class="sd-num">01</span><span class="sd-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span></span>
+        <span class="sd-name">PPF</span>
+        <span class="sd-sub">Protección invisible</span>
+        <span class="sd-line" aria-hidden="true"></span>
+      </a>
+      <a class="svc-door" href="services/vinyl.html">
+        <img class="sd-img" src="assets/gallery/xm-grille-s.jpg" alt="" aria-hidden="true" loading="lazy" decoding="async">
+        <span class="sd-top"><span class="sd-num">02</span><span class="sd-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span></span>
+        <span class="sd-name" data-i18n-skip>Car Wrap</span>
+        <span class="sd-sub">Cambio de color</span>
+        <span class="sd-line" aria-hidden="true"></span>
+      </a>
+      <a class="svc-door" href="services/ceramic.html">
+        <img class="sd-img" src="assets/gallery/supra-villa-s.jpg" alt="" aria-hidden="true" loading="lazy" decoding="async">
+        <span class="sd-top"><span class="sd-num">03</span><span class="sd-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span></span>
+        <span class="sd-name" data-i18n-skip>Ceramic Coating</span>
+        <span class="sd-sub">Sellado y brillo</span>
+        <span class="sd-line" aria-hidden="true"></span>
+      </a>
+      <a class="svc-door" href="services/paint-correction.html">
+        <img class="sd-img" src="assets/gallery/e92-coast-s.jpg" alt="" aria-hidden="true" loading="lazy" decoding="async">
+        <span class="sd-top"><span class="sd-num">04</span><span class="sd-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span></span>
+        <span class="sd-name">Corrección de pintura</span>
+        <span class="sd-sub">Pulido por etapas</span>
+        <span class="sd-line" aria-hidden="true"></span>
+      </a>
+      <a class="svc-door" href="services/detailing.html">
+        <img class="sd-img" src="assets/gallery/xm-headliner-s.jpg" alt="" aria-hidden="true" loading="lazy" decoding="async">
+        <span class="sd-top"><span class="sd-num">05</span><span class="sd-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span></span>
+        <span class="sd-name" data-i18n-skip>Detailing</span>
+        <span class="sd-sub">Interior y exterior</span>
+        <span class="sd-line" aria-hidden="true"></span>
+      </a>
+      <a class="svc-door" href="services/body-kits.html">
+        <img class="sd-img" src="assets/gallery/rwb-profile-s.jpg" alt="" aria-hidden="true" loading="lazy" decoding="async">
+        <span class="sd-top"><span class="sd-num">06</span><span class="sd-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span></span>
+        <span class="sd-name" data-i18n-skip>Body Kits</span>
+        <span class="sd-sub">Aero y stance</span>
+        <span class="sd-line" aria-hidden="true"></span>
+      </a>
+    </nav>
+  </div>
 </section>
 
 <!-- ===================== REVEAL · scroll-driven Urus transformation ===================== -->
-<section class="reveal" id="services" data-screen-label="Transformation">
+<section class="reveal" id="transformacion" data-screen-label="Transformation">
   <div class="reveal-stage">
     <canvas id="urus-canvas"></canvas>
 
     <div class="reveal-head">
       <span class="eyebrow">La transformación SERRES</span>
       <h2>Hacemos realidad tu <span class="chrome-text">coche soñado</span><span data-en=" a reality"></span></h2>
-      <nav class="svc-line"><a href="services/ppf.html">PPF</a><span>·</span><a href="services/vinyl.html">VINILO</a><span>·</span><a href="services/ceramic.html">Cerámica</a><span>·</span><a href="services/paint-correction.html">Corrección de pintura</a><span>·</span><a href="services/detailing.html">Detailing</a><span>·</span><a href="services/body-kits.html">Body Kits</a></nav>
+      <nav class="svc-line"><a href="services/ppf.html">PPF</a><span>·</span><a href="services/vinyl.html" data-i18n-skip>CAR WRAP</a><span>·</span><a href="services/ceramic.html" data-i18n-skip>Ceramic Coating</a><span>·</span><a href="services/paint-correction.html">Corrección de pintura</a><span>·</span><a href="services/detailing.html">Detailing</a><span>·</span><a href="services/body-kits.html">Body Kits</a></nav>
     </div>
 
     <div class="reveal-hint" id="reveal-hint"><span class="dot"></span> Desliza para transformar</div>
@@ -557,23 +738,23 @@
     <div class="foot">
       <div>
         <div class="logo chrome-text">SERRES</div>
-        <p class="tagline">Protección de pintura, vinilos personalizados y detailing de nivel concours.</p>
+        <p class="tagline">Protección de pintura, Car Wrap a medida y detailing de nivel concours.</p>
       </div>
       <div class="foot-cols">
         <div class="foot-col">
-          <h5>Servicios</h5>
+          <h3>Servicios</h3>
           <a href="#services">Paint Protection Film</a>
-          <a href="#services">Vinilos</a>
+          <a href="#services" data-i18n-skip>Car Wrap</a>
           <a href="#services">Body Kits</a>
           <a href="#services">Corrección de pintura</a>
         </div>
         <div class="foot-col">
-          <h5>Taller</h5>
+          <h3>Taller</h3>
           <p>Sant Cugat del Vallès<br>Barcelona, España</p>
           <a href="tel:+34621244469">+34 621 24 44 69</a>
         </div>
         <div class="foot-col">
-          <h5>Síguenos</h5>
+          <h3>Síguenos</h3>
           <a href="https://www.instagram.com/serres.wrap.center/" target="_blank" rel="noopener">Instagram</a>
           <a href="https://wa.me/34621244469?text=Hola%20SERRES%2C%20quer%C3%ADa%20pedir%20presupuesto%20para%20mi%20coche." target="_blank" rel="noopener">WhatsApp</a>
           <a href="https://www.google.com/maps/search/?api=1&query=Serres+Wrap+Center+Sant+Cugat+del+Vall%C3%A8s" target="_blank" rel="noopener">Google Maps</a>
@@ -582,7 +763,7 @@
     </div>
     <div class="foot-bottom">
       <span>© 2026 SERRES. Todos los derechos reservados.</span>
-      <span>PPF · Vinilo · Detailing · Corrección de pintura · Llantas personalizadas</span>
+      <span>PPF · Car Wrap · Detailing · Corrección de pintura · Body Kits</span>
     </div>
   </div>
 </footer>
@@ -602,7 +783,7 @@
 /* ---- Scroll-driven Urus transformation (frame sequence on canvas) ---- */
 (function(){
   const N=72;
-  const section=document.getElementById('services');
+  const section=document.getElementById('transformacion');
   const canvas=document.getElementById('urus-canvas');
   const ctx=canvas.getContext('2d');
   const fill=document.getElementById('reveal-fill');

@@ -47,7 +47,7 @@
     "See Projects": ["Ver proyectos", "Mira els projectes"],
     "Request Your Build": ["Solicita tu proyecto", "Sol·licita el teu projecte"],
     "What's Included": ["Qué incluye", "Què inclou"],
-    "About the Commission": ["Sobre la Commission", "Sobre la Commission"],
+    "About the Exclusive": ["Sobre el Exclusivo", "Sobre l'Exclusiu"],
     "Scroll": ["Desliza", "Desplaça"],
     "Chat on WhatsApp": ["Escríbenos por WhatsApp", "Escriu-nos per WhatsApp"],
     "Open menu": ["Abrir menú", "Obre el menú"],
@@ -55,19 +55,29 @@
 
     /* ---------- HOME ---------- */
     "SERRES — Premium Paint Protection, Wraps & Detailing":
-      ["SERRES — PPF, Vinilado y Detailing Premium en Barcelona", "SERRES — PPF, Vinilat i Detailing Premium a Barcelona"],
+      ["SERRES — PPF, Car Wrap y Detailing Premium en Barcelona", "SERRES — PPF, Car Wrap i Detailing Premium a Barcelona"],
     "Premium Detailing & Customization":
       ["Detailing y personalización premium", "Detailing i personalització premium"],
     "Elevate": ["Eleva", "Eleva"],
     "your dream": ["tu sueño", "el teu somni"],
     "Paint protection, custom wraps, and concours-level detailing — engineered for the cars you build your life around. One workshop. Obsessive standards.":
-      ["Protección de pintura, vinilos personalizados y detailing de nivel concours, pensados para los coches alrededor de los que construyes tu vida. Un solo taller. Estándares obsesivos.",
-       "Protecció de pintura, vinils personalitzats i detailing de nivell concours, pensats per als cotxes al voltant dels quals construeixes la teva vida. Un sol taller. Estàndards obsessius."],
+      ["Protección de pintura, Car Wrap a medida y detailing de nivel concours, pensados para los coches alrededor de los que construyes tu vida. Un taller. Estándares obsesivos.",
+       "Protecció de pintura, Car Wrap a mida i detailing de nivell concours, pensats per als cotxes al voltant dels quals construeixes la teva vida. Un taller. Estàndards obsessius."],
     "The SERRES Build": ["La transformación SERRES", "La transformació SERRES"],
+    "Our services": ["Nuestros servicios", "Els nostres serveis"],
+    "Choose where to begin.": ["Elige por dónde empezar.", "Tria per on començar."],
+    "Six specialities, one standard. Tap a service to see the process, materials and pricing.":
+      ["Seis especialidades, un mismo estándar. Toca un servicio para ver el proceso, los materiales y los precios.",
+       "Sis especialitats, un mateix estàndard. Toca un servei per veure el procés, els materials i els preus."],
+    "Invisible protection": ["Protección invisible", "Protecció invisible"],
+    "Colour change": ["Cambio de color", "Canvi de color"],
+    "Seal & gloss": ["Sellado y brillo", "Segellat i brillantor"],
+    "Inside & outside": ["Interior y exterior", "Interior i exterior"],
+    "Aero & stance": ["Aero y stance", "Aero i stance"],
     "We make your": ["Hacemos realidad tu", "Fem realitat el teu"],
     "dream car": ["coche soñado", "cotxe somiat"],
     "a reality": ["", ""],
-    "CAR WRAP": ["VINILO", "VINIL"],
+    "CAR WRAP": ["CAR WRAP", "CAR WRAP"],
     "Ceramic": ["Cerámica", "Ceràmica"],
     "Paint Correction": ["Corrección de pintura", "Correcció de pintura"],
     "Body Kits": ["Body Kits", "Body Kits"],
@@ -81,21 +91,21 @@
     "Mon–Sat · By appointment": ["Lun–Sáb · Con cita previa", "Dl–Ds · Amb cita prèvia"],
     "Follow & chat": ["Síguenos y escríbenos", "Segueix-nos i escriu-nos"],
     "Premium paint protection, custom wraps, and concours-level detailing.":
-      ["Protección de pintura, vinilos personalizados y detailing de nivel concours.",
-       "Protecció de pintura, vinils personalitzats i detailing de nivell concours."],
+      ["Protección de pintura, Car Wrap a medida y detailing de nivel concours.",
+       "Protecció de pintura, Car Wrap a mida i detailing de nivell concours."],
     "Paint Protection Film": ["Paint Protection Film", "Paint Protection Film"],
-    "Vinyl Wraps": ["Vinilos", "Vinils"],
     "Barcelona, Spain": ["Barcelona, España", "Barcelona, Espanya"],
     "Follow": ["Síguenos", "Segueix-nos"],
     "© 2026 SERRES. All rights reserved.":
       ["© 2026 SERRES. Todos los derechos reservados.", "© 2026 SERRES. Tots els drets reservats."],
-    "PPF · Vinyl Wrap · Detailing · Paint Correction · Custom Rims":
-      ["PPF · Vinilo · Detailing · Corrección de pintura · Llantas personalizadas",
-       "PPF · Vinil · Detailing · Correcció de pintura · Llandes personalitzades"],
+    "PPF · Car Wrap · Detailing · Paint Correction · Body Kits":
+      ["PPF · Car Wrap · Detailing · Corrección de pintura · Body Kits",
+       "PPF · Car Wrap · Detailing · Correcció de pintura · Body Kits"],
     "Call SERRES": ["Llamar a SERRES", "Truca a SERRES"],
 
     /* ---------- GALLERY ---------- */
-    "SERRES — Gallery": ["Galería de Trabajos — SERRES Barcelona", "Galeria de Treballs — SERRES Barcelona"],
+    "SERRES — Gallery": ["Proyectos — SERRES Barcelona", "Projectes — SERRES Barcelona"],
+    "Our": ["Nuestros", "Els nostres"],
     "The Showroom": ["El showroom", "El showroom"],
     "The": ["La", "La"],
     "Every car gets its own room. Shot in and around Barcelona — no stock photos, no rented cars. Pick a build below, or scroll the floor.":
@@ -107,11 +117,10 @@
        "Un RAUH-Welt 993 widebody — passos de roda reblats, aleró de competició i un acabat plata mirall."],
     "Detailing": ["Detailing", "Detailing"],
     "Frames": ["Tomas", "Preses"],
-    "G87 · Frozen Grey Wrap": ["G87 · Vinilo gris frozen", "G87 · Vinil gris frozen"],
+    "G87 · Frozen Grey Wrap": ["G87 · Car Wrap gris frozen", "G87 · Car Wrap gris frozen"],
     "A new G87 M2 wrapped in a deep frozen grey, photographed on a Barcelona rooftop with the Collserola tower behind it. Matte body, gloss-black detailing, carbon accents.":
-      ["Un M2 G87 nuevo vinilado en un gris frozen profundo, fotografiado en una azotea de Barcelona con la torre de Collserola detrás. Carrocería mate, detalles en negro brillo, acentos de carbono.",
-       "Un M2 G87 nou vinilat en un gris frozen profund, fotografiat en un terrat de Barcelona amb la torre de Collserola al darrere. Carrosseria mat, detalls en negre brillant, accents de carboni."],
-    "Vinyl Wrap": ["Vinilo", "Vinil"],
+      ["Un M2 G87 nuevo con Car Wrap en un gris frozen profundo, fotografiado en una azotea de Barcelona con la torre de Collserola detrás. Carrocería mate, detalles en negro brillo, acentos de carbono.",
+       "Un M2 G87 nou amb Car Wrap en un gris frozen profund, fotografiat en un terrat de Barcelona amb la torre de Collserola al darrere. Carrosseria mat, detalls en negre brillant, accents de carboni."],
     "A90 · Pearl White": ["A90 · Blanco perla", "A90 · Blanc perla"],
     "A pearl-white GR Supra protected and sealed, then taken out into the Catalan countryside.":
       ["Un GR Supra blanco perla protegido y sellado, llevado después al campo catalán.",
@@ -141,7 +150,7 @@
     "Rooftop": ["Azotea", "Terrat"],
     "Collserola": ["Collserola", "Collserola"],
     "Rear detail": ["Detalle trasero", "Detall posterior"],
-    "Wrap": ["Vinilo", "Vinil"],
+    "Wrap": ["Wrap", "Wrap"],
     "Masia driveway": ["Entrada de la masía", "Entrada de la masia"],
     "Mountain road": ["Carretera de montaña", "Carretera de muntanya"],
     "Gloss": ["Brillo", "Brillant"],
@@ -177,62 +186,73 @@
     "Alcantara starlight headliner": ["Cielo estrellado de Alcantara", "Cel estrellat d'Alcantara"],
     "Cockpit · M steering wheel": ["Habitáculo · Volante M", "Habitacle · Volant M"],
     "Jump to a car": ["Ir a un coche", "Ves a un cotxe"],
+    "Ligier · Matte Black Car Wrap": ["Ligier · Car Wrap negro mate", "Ligier · Car Wrap negre mat"],
+    "A Ligier microcar transformed with a matte black Car Wrap — red grille accents, black wheels with red details and smoked lights. The same standard of finish, in a small footprint.":
+      ["Un microcoche Ligier transformado con Car Wrap negro mate — acentos rojos en la parrilla, llantas en negro con detalles rojos y ópticas ahumadas. El mismo estándar de acabado, en formato pequeño.",
+       "Un microcotxe Ligier transformat amb Car Wrap negre mat — accents vermells a la graella, llandes en negre amb detalls vermells i òptiques fumades. El mateix estàndard d'acabat, en format petit."],
+    "Matte Black": ["Negro mate", "Negre mat"],
+    "Hex lighting": ["Luz hexagonal", "Llum hexagonal"],
+    "Rear three-quarter · In the studio": ["Tres cuartos trasero · En el estudio", "Tres quarts posterior · A l'estudi"],
+    "Front three-quarter · Hex lighting": ["Tres cuartos delantero · Luz hexagonal", "Tres quarts davanter · Llum hexagonal"],
+    "F40 · Satin Grey Car Wrap": ["F40 · Car Wrap gris satinado", "F40 · Car Wrap gris setinat"],
+    "1 Series": ["Serie 1", "Sèrie 1"],
+    "A 1 Series taken from its factory colour to a satin grey Car Wrap — gloss black grille and contrasting roof, shot under the studio hex lights.":
+      ["Un Serie 1 llevado del color de fábrica a un Car Wrap gris satinado — parrilla en negro brillo y techo en contraste, fotografiado bajo las luces hexagonales del estudio.",
+       "Un Sèrie 1 portat del color de fàbrica a un Car Wrap gris setinat — graella en negre brillant i sostre en contrast, fotografiat sota les llums hexagonals de l'estudi."],
 
     /* ---------- PRICES (static chrome only; tiers handled in-page) ---------- */
-    "SERRES — Prices": ["Precios — PPF, Vinilado, Cerámico y Detailing | SERRES", "Preus — PPF, Vinilat, Ceràmic i Detailing | SERRES"],
+    "SERRES — Prices": ["Precios — PPF, Car Wrap, Ceramic Coating y Detailing | SERRES", "Preus — PPF, Car Wrap, Ceramic Coating i Detailing | SERRES"],
     "Transparent Pricing": ["Precios transparentes", "Preus transparents"],
     "Pick your": ["Elige tu", "Tria el teu"],
     "level.": ["nivel.", "nivell."],
     "Three levels for every service — from a clean essential package to a no-compromise concours finish. Guide prices below; every car is confirmed with an exact quote in person.":
       ["Tres niveles para cada servicio — desde un paquete esencial impecable hasta un acabado concours sin concesiones. Precios orientativos abajo; cada coche se confirma con un presupuesto exacto en persona.",
        "Tres nivells per a cada servei — des d'un paquet essencial impecable fins a un acabat concours sense concessions. Preus orientatius a sota; cada cotxe es confirma amb un pressupost exacte en persona."],
-    "Guide prices · final quote depends on vehicle size, condition & film choice":
-      ["Precios orientativos · el presupuesto final depende del tamaño del vehículo, su estado y la elección de film",
-       "Preus orientatius · el pressupost final depèn de la mida del vehicle, el seu estat i l'elecció de film"],
+    "Guide prices · final quote depends on vehicle size, condition & film choice · no maintenance kit included":
+      ["Precios orientativos · el presupuesto final depende del tamaño del vehículo, su estado y la elección de film · no incluyen kit de mantenimiento",
+       "Preus orientatius · el pressupost final depèn de la mida del vehicle, el seu estat i l'elecció de film · no inclouen kit de manteniment"],
     "Compare": ["Compara", "Compara"],
     "levels": ["niveles", "nivells"],
     "Want everything?": ["¿Lo quieres todo?", "Ho vols tot?"],
-    "The full build is a": ["El proyecto completo es una", "El projecte complet és una"],
-    "commission.": ["commission.", "commission."],
+    "The full build is a": ["El proyecto completo es un", "El projecte complet és un"],
+    "Exclusive.": ["Exclusivo.", "Exclusiu."],
     "PPF, wrap, correction, ceramic, interior and body work — one car, one vision, priced as a single project. We take on a limited number each year.":
-      ["PPF, vinilo, corrección, cerámica, interior y carrocería — un coche, una visión, presupuestado como un único proyecto. Aceptamos un número limitado cada año.",
-       "PPF, vinil, correcció, ceràmica, interior i carrosseria — un cotxe, una visió, pressupostat com un únic projecte. N'acceptem un nombre limitat cada any."],
+      ["PPF, Car Wrap, corrección, Ceramic Coating, interior y carrocería — un coche, una visión, presupuestado como un único proyecto. Aceptamos un número limitado cada año.",
+       "PPF, Car Wrap, correcció, Ceramic Coating, interior i carrosseria — un cotxe, una visió, pressupostat com un únic projecte. N'acceptem un nombre limitat cada any."],
     "© 2026 SERRES. All rights reserved. \u00A0·\u00A0 Guide prices in EUR, VAT included":
       ["© 2026 SERRES. Todos los derechos reservados. \u00A0·\u00A0 Precios orientativos en EUR, IVA incluido",
        "© 2026 SERRES. Tots els drets reservats. \u00A0·\u00A0 Preus orientatius en EUR, IVA inclòs"],
 
-    /* ---------- PROJECTS / COMMISSION ---------- */
-    "SERRES — The Commission": ["Proyectos SERRES — Transformaciones Completas", "Projectes SERRES — Transformacions Completes"],
-    "The Commission": ["La Commission", "La Commission"],
+    /* ---------- PROJECTS / EXCLUSIVO ---------- */
+    "SERRES — Exclusive": ["Exclusivo SERRES — Transformación Completa", "Exclusiu SERRES — Transformació Completa"],
+    "Exclusive": ["Exclusivo", "Exclusiu"],
     "One car.": ["Un coche.", "Un cotxe."],
     "Everything.": ["Todo.", "Tot."],
-    "Builds a year": ["Proyectos al año", "Projectes l'any"],
+    "Builds a year": ["Exclusivos al año", "Exclusius l'any"],
     "Car at a time": ["Coche a la vez", "Cotxe alhora"],
-    "In-house": ["En casa", "A casa"],
+    "Bespoke": ["A medida", "A mida"],
     "For owners who don't want a service — they want the car reimagined. Correction, protection, colour, interior, body work: every discipline we have, applied to one car as a single project.":
       ["Para propietarios que no quieren un servicio — quieren reimaginar el coche. Corrección, protección, color, interior, carrocería: cada disciplina que tenemos, aplicada a un coche como un único proyecto.",
        "Per a propietaris que no volen un servei — volen reimaginar el cotxe. Correcció, protecció, color, interior, carrosseria: cada disciplina que tenim, aplicada a un cotxe com un únic projecte."],
     "The Scope": ["El alcance", "L'abast"],
     "Every discipline.": ["Cada disciplina.", "Cada disciplina."],
     "One vision.": ["Una visión.", "Una visió."],
-    "A Commission isn't a bundle of services — it's one design, executed across every surface of the car.":
-      ["Una Commission no es un paquete de servicios — es un único diseño, ejecutado en cada superficie del coche.",
-       "Una Commission no és un paquet de serveis — és un únic disseny, executat a cada superfície del cotxe."],
+    "An Exclusive isn't a bundle of services — it's one design, executed across every surface of the car.":
+      ["Un Exclusivo no es un paquete de servicios — es un único diseño, ejecutado en cada superficie del coche.",
+       "Un Exclusiu no és un paquet de serveis — és un únic disseny, executat a cada superfície del cotxe."],
     "The foundation. Multi-stage machine polishing until the paint reads flawless under hex lighting.":
       ["La base. Pulido a máquina multietapa hasta que la pintura se ve impecable bajo la luz hexagonal.",
        "La base. Polit a màquina multietapa fins que la pintura es veu impecable sota la llum hexagonal."],
-    "Colour & Wrap": ["Color y vinilo", "Color i vinil"],
     "The identity. A full colour change or signature film chosen in a one-to-one design consultation.":
       ["La identidad. Un cambio de color completo o un film signature elegido en una consulta de diseño personalizada.",
        "La identitat. Un canvi de color complet o un film signature triat en una consulta de disseny personalitzada."],
-    "PPF Armour": ["Blindaje PPF", "Blindatge PPF"],
     "The insurance. Self-healing film over the finished surfaces, edges tucked, invisible.":
       ["El seguro. Film autorreparable sobre las superficies acabadas, bordes ocultos, invisible.",
        "L'assegurança. Film autoreparable sobre les superfícies acabades, vores amagades, invisible."],
-    "Ceramic Coating": ["Recubrimiento cerámico", "Recobriment ceràmic"],
-    "The seal. Multi-layer SiO₂ over paint, film, wheels and glass for years of slick protection.":
-      ["El sellado. SiO₂ multicapa sobre pintura, film, llantas y cristales para años de protección deslizante.",
-       "El segellat. SiO₂ multicapa sobre pintura, film, llandes i vidres per a anys de protecció lliscant."],
+    "Ceramic Coating": ["Ceramic Coating", "Ceramic Coating"],
+    "The seal. Multi-layer SiO₂ over paint, film and glass for years of slick protection.":
+      ["El sellado. SiO₂ multicapa sobre pintura, film y cristales para años de protección deslizante.",
+       "El segellat. SiO₂ multicapa sobre pintura, film i vidres per a anys de protecció lliscant."],
     "Body & Stance": ["Carrocería y stance", "Carrosseria i stance"],
     "The silhouette. Aero, arches, wheels and fitment resolved as part of the same design.":
       ["La silueta. Aero, pasos de rueda, llantas y encaje resueltos como parte del mismo diseño.",
@@ -258,14 +278,14 @@
       ["Tu coche tiene el taller para él solo. Un equipo, de principio a fin — con fotos en cada hito hasta el día de la entrega.",
        "El teu cotxe té el taller per a ell sol. Un equip, de principi a fi — amb fotos a cada fita fins al dia del lliurament."],
     "Limited by design": ["Limitado por diseño", "Limitat per disseny"],
-    "Six commissions.": ["Seis commissions.", "Sis commissions."],
+    "Six Exclusives.": ["Seis Exclusivos.", "Sis Exclusius."],
     "Per year. That's it.": ["Al año. Nada más.", "L'any. Res més."],
     "A full build takes over the studio for weeks, so we only accept a handful each year. Tell us about your car — if the vision fits, we'll reserve your slot and prepare your estimation.":
       ["Un proyecto completo ocupa el taller durante semanas, así que solo aceptamos unos pocos al año. Cuéntanos tu coche — si la visión encaja, reservamos tu plaza y preparamos tu estimación.",
        "Un projecte complet ocupa el taller durant setmanes, així que només n'acceptem uns quants l'any. Explica'ns el teu cotxe — si la visió encaixa, reservem la teva plaça i preparem la teva estimació."],
-    "© 2026 SERRES. All rights reserved. \u00A0·\u00A0 The Commission — limited full builds":
-      ["© 2026 SERRES. Todos los derechos reservados. \u00A0·\u00A0 La Commission — proyectos completos limitados",
-       "© 2026 SERRES. Tots els drets reservats. \u00A0·\u00A0 La Commission — projectes complets limitats"],
+    "© 2026 SERRES. All rights reserved. \u00A0·\u00A0 Exclusivo — limited full builds":
+      ["© 2026 SERRES. Todos los derechos reservados. \u00A0·\u00A0 Exclusivo — proyectos completos limitados",
+       "© 2026 SERRES. Tots els drets reservats. \u00A0·\u00A0 Exclusiu — projectes complets limitats"],
 
     /* ---------- WHY SERRES (static; testimonials in-page) ---------- */
     "SERRES — Why SERRES": ["Por Qué SERRES — Estudio Premium en Sant Cugat", "Per Què SERRES — Estudi Premium a Sant Cugat"],
@@ -273,9 +293,9 @@
     "Cars Transformed": ["Coches transformados", "Cotxes transformats"],
     "Average Rating": ["Valoración media", "Valoració mitjana"],
     "Workshop": ["Taller", "Taller"],
-    "We're a single studio in Sant Cugat with one obsession: doing it properly. No outsourcing, no shortcuts, no \u201Cgood enough\u201D — just measured prep, premium materials and the same standards applied to a daily driver and a hypercar alike.":
-      ["Somos un único taller en Sant Cugat con una obsesión: hacerlo bien. Sin subcontratas, sin atajos, sin \u201Cya vale\u201D — solo preparación medida, materiales premium y los mismos estándares aplicados a un coche diario y a un hiperdeportivo por igual.",
-       "Som un únic taller a Sant Cugat amb una obsessió: fer-ho bé. Sense subcontractes, sense dreceres, sense \u201Cja n'hi ha prou\u201D — només preparació mesurada, materials premium i els mateixos estàndards aplicats a un cotxe diari i a un hiperesportiu per igual."],
+    "One studio in Sant Cugat with one obsession: doing it properly. No shortcuts, no \u201Cgood enough\u201D — meticulous prep, premium materials and the same standards applied to a daily driver and a hypercar alike.":
+      ["Somos un taller en Sant Cugat con una obsesión: hacerlo bien. Sin atajos, sin \u201Cya vale\u201D — solo preparación meticulosa, materiales premium y los mismos estándares aplicados a un coche diario y a un hiperdeportivo por igual.",
+       "Som un taller a Sant Cugat amb una obsessió: fer-ho bé. Sense dreceres, sense \u201Cja n'hi ha prou\u201D — només preparació meticulosa, materials premium i els mateixos estàndards aplicats a un cotxe diari i a un hiperesportiu per igual."],
     "The Difference": ["La diferencia", "La diferència"],
     "Standards you": ["Estándares que", "Estàndards que"],
     "can measure.": ["puedes medir.", "pots mesurar."],
@@ -285,13 +305,13 @@
     "Obsessive": ["Preparación", "Preparació"],
     "prep": ["obsesiva", "obsessiva"],
     "Most of the work happens before the result shows. Decontamination, measurement and correction come first — every time.":
-      ["La mayor parte del trabajo ocurre antes de que se vea el resultado. Descontaminación, medición y corrección van primero — siempre.",
-       "La major part de la feina passa abans que es vegi el resultat. Descontaminació, mesura i correcció van primer — sempre."],
-    "Measured": ["Resultados", "Resultats"],
-    "results": ["medidos", "mesurats"],
-    "Gloss meters, thickness gauges and controlled lighting. We prove the finish, we don't just photograph it.":
-      ["Medidores de brillo, galgas de espesor e iluminación controlada. Demostramos el acabado, no solo lo fotografiamos.",
-       "Mesuradors de brillantor, galgues de gruix i il·luminació controlada. Demostrem l'acabat, no només el fotografiem."],
+      ["La mayor parte del trabajo ocurre antes de que se vea el resultado. Descontaminación, inspección y corrección van primero — siempre.",
+       "La major part de la feina passa abans que es vegi el resultat. Descontaminació, inspecció i correcció van primer — sempre."],
+    "Results": ["Resultados", "Resultats"],
+    "on display": ["a la vista", "a la vista"],
+    "Controlled hex lighting and panel-by-panel inspection. We show you the finish under the light, not just in photos.":
+      ["Iluminación hexagonal controlada y revisión panel a panel. Te enseñamos el acabado bajo la luz, no solo en fotos.",
+       "Il·luminació hexagonal controlada i revisió panell a panell. T'ensenyem l'acabat sota la llum, no només en fotos."],
     "Premium": ["Materiales", "Materials"],
     "materials": ["premium", "premium"],
     "Only certified films, coatings and compounds — backed by real manufacturer warranties, never grey-market stock.":
@@ -299,16 +319,16 @@
        "Només films, recobriments i compostos certificats — avalats per garanties reals de fabricant, mai estoc de mercat gris."],
     "One": ["Un solo", "Un sol"],
     "workshop": ["taller", "taller"],
-    "Your car never leaves our floor. The same hands that quote it are the hands that finish it.":
-      ["Tu coche nunca sale de nuestra planta. Las mismas manos que lo presupuestan son las que lo terminan.",
-       "El teu cotxe mai surt de la nostra planta. Les mateixes mans que el pressuposten són les que l'acaben."],
+    "One point of contact from start to finish: the same team that quotes your car is the team that hands it back.":
+      ["Un único interlocutor de principio a fin: el mismo equipo que presupuesta tu coche es el que te lo entrega.",
+       "Un únic interlocutor de principi a fi: el mateix equip que pressuposta el teu cotxe és el que te l'entrega."],
     "What clients say": ["Lo que dicen los clientes", "El que diuen els clients"],
     "Trusted with": ["La confianza de", "La confiança de"],
     "the cars they": ["los coches que", "els cotxes que"],
     "love most.": ["más quieren.", "més estimen."],
     "From a first wrap to a full PPF and correction build — these are the people who handed us the keys, and what they said when they got them back.":
-      ["Desde un primer vinilo hasta un proyecto completo de PPF y corrección — estas son las personas que nos dieron las llaves, y lo que dijeron al recuperarlas.",
-       "Des d'un primer vinil fins a un projecte complet de PPF i correcció — aquestes són les persones que ens van donar les claus, i el que van dir en recuperar-les."],
+      ["Desde un primer Car Wrap hasta un proyecto completo de PPF y corrección — estas son las personas que nos dieron las llaves, y lo que dijeron al recuperarlas.",
+       "Des d'un primer Car Wrap fins a un projecte complet de PPF i correcció — aquestes són les persones que ens van donar les claus, i el que van dir en recuperar-les."],
     "Avg Rating": ["Valoración media", "Valoració mitjana"],
     "Cars": ["Coches", "Cotxes"],
     "Referrals": ["Recomendaciones", "Recomanacions"],
@@ -341,7 +361,7 @@
     "Fitment": ["Encaje", "Encaix"],
 
     /* ---------- SERVICE: PPF ---------- */
-    "SERRES — Paint Protection Film (PPF)": ["PPF en Barcelona — Protección de Pintura 3M | SERRES", "PPF a Barcelona — Protecció de Pintura 3M | SERRES"],
+    "SERRES — Paint Protection Film (PPF)": ["PPF en Barcelona — Protección de Pintura | SERRES", "PPF a Barcelona — Protecció de Pintura | SERRES"],
     "Service 03 · Paint Protection Film": ["Servicio 03 · Paint Protection Film", "Servei 03 · Paint Protection Film"],
     "Paint": ["Paint", "Paint"],
     "Armour": ["Armour", "Armour"],
@@ -363,7 +383,6 @@
        "El resultat és un canvi de color i textura i una capa protectora alhora: resistència a impactes de pedra, capa superior autoreparable i un acabat totalment reversible."],
     "Satin Self-Healing PPF": ["PPF satinado autorreparable", "PPF setinat autoreparable"],
     "Full body wrap": ["Cobertura de carrocería completa", "Cobertura de carrosseria completa"],
-    "10 years": ["10 años", "10 anys"],
     "Why PPF": ["Por qué PPF", "Per què PPF"],
     "Protection you": ["Protección que", "Protecció que"],
     "never see.": ["no se ve.", "no es veu."],
@@ -404,32 +423,32 @@
     "Colour PPF": ["PPF de color", "PPF de color"],
     "Protect it.": ["Protégelo.", "Protegeix-lo."],
     "Express it.": ["Exprésalo.", "Expressa't."],
-    "PPF isn't only clear. The 3M\u2122 protection range comes in gloss, matte and colour-shift — a finish change and a shield in a single film.":
-      ["El PPF no es solo transparente. La gama de protección 3M\u2122 viene en brillo, mate y colour-shift — un cambio de acabado y un escudo en un solo film.",
-       "El PPF no és només transparent. La gamma de protecció 3M\u2122 ve en brillant, mat i colour-shift — un canvi d'acabat i un escut en un sol film."],
+    "PPF isn't only clear. 50+ colours from several professional brands — gloss, satin, matte and colour-shift — a finish change and a shield in a single film.":
+      ["El PPF no es solo transparente. Más de 50 colores de varias marcas profesionales — brillo, satinado, mate y colour-shift — un cambio de acabado y un escudo en un solo film.",
+       "El PPF no és només transparent. Més de 50 colors de diverses marques professionals — brillant, setinat, mat i colour-shift — un canvi d'acabat i un escut en un sol film."],
     "Previous colour": ["Color anterior", "Color anterior"],
     "Next colour": ["Color siguiente", "Color següent"],
-    "Finishes shown are representative of the 3M\u2122 protection film range. Final swatches confirmed in-studio under our lighting before application.":
-      ["Los acabados mostrados son representativos de la gama de film de protección 3M\u2122. Las muestras finales se confirman en el taller bajo nuestra iluminación antes de aplicar.",
-       "Els acabats mostrats són representatius de la gamma de film de protecció 3M\u2122. Les mostres finals es confirmen al taller sota la nostra il·luminació abans d'aplicar."],
+    "Finishes shown are representative of the protection film ranges we install. Final swatches confirmed in-studio under our lighting before application.":
+      ["Los acabados mostrados son representativos de las gamas de film de protección con las que trabajamos. Las muestras finales se confirman en el taller bajo nuestra iluminación antes de aplicar.",
+       "Els acabats mostrats són representatius de les gammes de film de protecció amb què treballem. Les mostres finals es confirmen al taller sota la nostra il·luminació abans d'aplicar."],
     "Shield your car": ["Blinda tu coche", "Blinda el teu cotxe"],
     "Protect what you": ["Protege lo que", "Protegeix el que"],
     "drive.": ["conduces.", "condueixes."],
-    "© 2026 SERRES. All rights reserved. \u00A0·\u00A0 3M\u2122 Paint Protection Film":
-      ["© 2026 SERRES. Todos los derechos reservados. \u00A0·\u00A0 3M\u2122 Paint Protection Film",
-       "© 2026 SERRES. Tots els drets reservats. \u00A0·\u00A0 3M\u2122 Paint Protection Film"],
+    "© 2026 SERRES. All rights reserved. \u00A0·\u00A0 Paint Protection Film · Inozetek · 3M":
+      ["© 2026 SERRES. Todos los derechos reservados. \u00A0·\u00A0 Paint Protection Film · Inozetek · 3M",
+       "© 2026 SERRES. Tots els drets reservats. \u00A0·\u00A0 Paint Protection Film · Inozetek · 3M"],
 
     /* ---------- SERVICE: CERAMIC ---------- */
     "SERRES — Ceramic Coating": ["Tratamiento Cerámico para Coche en Barcelona | SERRES", "Tractament Ceràmic per a Cotxe a Barcelona | SERRES"],
-    "Service 02 · Ceramic Coating": ["Servicio 02 · Recubrimiento cerámico", "Servei 02 · Recobriment ceràmic"],
+    "Service 02 · Ceramic Coating": ["Servicio 02 · Ceramic Coating", "Servei 02 · Ceramic Coating"],
     "Liquid": ["Cristal", "Vidre"],
     "Glass": ["líquido", "líquid"],
     "Surface Hardness": ["Dureza superficial", "Duresa superficial"],
     "Protection": ["Protección", "Protecció"],
     "Water Contact": ["Contacto del agua", "Contacte de l'aigua"],
-    "A liquid-glass SiO₂ coating that chemically bonds to your clear coat — sealing in the gloss with a slick, hydrophobic shell that shrugs off water, grime and UV for years, not weeks.":
-      ["Un recubrimiento de cristal líquido SiO₂ que se adhiere químicamente a tu coche — sellando el brillo con una capa deslizante e hidrófoba que repele agua, suciedad y UV durante años, no semanas.",
-       "Un recobriment de vidre líquid SiO₂ que s'adhereix químicament al teu vernís — segellant la brillantor amb una capa lliscant i hidròfoba que repel·leix aigua, brutícia i UV durant anys, no setmanes."],
+    "A SiO₂ Ceramic Coating that chemically bonds to the paint — sealing the gloss with a slick, hydrophobic layer that repels water, grime and UV for years.":
+      ["Un tratamiento Ceramic Coating de SiO₂ que se adhiere químicamente a la pintura — sella el brillo con una capa hidrófoba y deslizante que repele agua, suciedad y UV durante años.",
+       "Un tractament Ceramic Coating de SiO₂ que s'adhereix químicament a la pintura — segella la brillantor amb una capa hidròfoba i lliscant que repel·leix aigua, brutícia i UV durant anys."],
     "Water just": ["El agua", "L'aigua"],
     "lets go.": ["se suelta.", "es deixa anar."],
     "Same hood, same hex light. Drag the slider to watch flat, clinging water snap into tight beads that roll straight off.":
@@ -476,8 +495,8 @@
     "Lock in the": ["Fija el", "Fixa la"],
     "gloss.": ["brillo.", "brillantor."],
     "© 2026 SERRES. All rights reserved. \u00A0·\u00A0 SiO₂ Ceramic Coating":
-      ["© 2026 SERRES. Todos los derechos reservados. \u00A0·\u00A0 Recubrimiento cerámico SiO₂",
-       "© 2026 SERRES. Tots els drets reservats. \u00A0·\u00A0 Recobriment ceràmic SiO₂"],
+      ["© 2026 SERRES. Todos los derechos reservados. \u00A0·\u00A0 Ceramic Coating SiO₂",
+       "© 2026 SERRES. Tots els drets reservats. \u00A0·\u00A0 Ceramic Coating SiO₂"],
 
     /* ---------- SERVICE: DETAILING ---------- */
     "SERRES — Detailing": ["Detailing y Limpieza Interior de Coche en Barcelona | SERRES", "Detailing i Neteja Interior de Cotxe a Barcelona | SERRES"],
@@ -523,9 +542,9 @@
        "Dins, cada panell, reixeta i costura es tracta a vapor i es raspalla; catifes i cuir s'extreuen i es netegen fins que l'habitacle està realment net."],
     "Dress & Protect": ["Tratar y proteger", "Tractar i protegir"],
     "Sealant · conditioner · UV": ["Sellador · acondicionador · UV", "Segellador · condicionador · UV"],
-    "Paint is sealed for gloss and beading, trim and leather are conditioned and UV-protected, and glass is left streak-free.":
-      ["La pintura se sella para brillo y repelencia, los plásticos y el cuero se acondicionan y protegen de los UV, y el cristal queda sin marcas.",
-       "La pintura es segella per brillantor i repel·lència, els plàstics i el cuir es condicionen i es protegeixen dels UV, i el vidre queda sense marques."],
+    "Paint is sealed for gloss and beading, trim and leather are conditioned and UV-protected, and the glass gets a rain-repellent treatment and is left streak-free.":
+      ["La pintura se sella para brillo y repelencia, los plásticos y el cuero se acondicionan y protegen de los UV, y los cristales reciben un tratamiento antilluvia y quedan sin marcas.",
+       "La pintura es segella per brillantor i repel·lència, els plàstics i el cuir es condicionen i es protegeixen dels UV, i els vidres reben un tractament antipluja i queden sense marques."],
     "Inside & out": ["Por dentro y por fuera", "Per dins i per fora"],
     "Make it feel": ["Haz que se sienta", "Fes que se senti"],
     "new again.": ["nuevo otra vez.", "nou un altre cop."],
@@ -536,7 +555,8 @@
     /* ---------- SERVICE: PAINT CORRECTION ---------- */
     "SERRES — Paint Correction": ["Pulido y Corrección de Pintura de Coche en Barcelona | SERRES", "Polit i Correcció de Pintura de Cotxe a Barcelona | SERRES"],
     "Service 04 · Paint Correction": ["Servicio 04 · Corrección de pintura", "Servei 04 · Correcció de pintura"],
-    "Mirror": ["Acabado", "Acabat"],
+    "Staged": ["Pulido", "Polit"],
+    "polishing": ["por etapas", "per etapes"],
     "Stage Polish": ["Pulido por etapas", "Polit per etapes"],
     "Defect Removal": ["Eliminación de defectos", "Eliminació de defectes"],
     "Holograms": ["Hologramas", "Hologrames"],
@@ -551,62 +571,68 @@
     "This BMW arrived with years of wash-induced swirls and micro-marring dulling its gloss black — light scattering in every direction instead of reflecting cleanly.":
       ["Este BMW llegó con años de micro-arañazos de lavado y micro-marcas apagando su negro brillo — la luz dispersándose en todas direcciones en vez de reflejarse limpia.",
        "Aquest BMW va arribar amb anys de micro-ratllades de rentat i micro-marques apagant el seu negre brillant — la llum dispersant-se en totes direccions en lloc de reflectir-se neta."],
-    "We measured the clear coat, then cut, refined and finished the paint by machine until the defects were gone. The hex lighting now mirrors back razor-sharp, with deep, wet-looking reflections restored.":
-      ["Medimos el barniz, luego cortamos, refinamos y acabamos la pintura a máquina hasta eliminar los defectos. La luz hexagonal ahora se refleja nítida, con reflejos profundos y de aspecto húmedo restaurados.",
-       "Vam mesurar el vernís, després vam tallar, refinar i acabar la pintura a màquina fins a eliminar els defectes. La llum hexagonal ara es reflecteix nítida, amb reflexos profunds i d'aspecte humit restaurats."],
+    "We assessed the clear coat, then cut, refined and finished the paint by machine until the defects were gone. The hex lighting now mirrors back razor-sharp, with deep, wet-looking reflections restored.":
+      ["Evaluamos el estado del barniz, luego cortamos, refinamos y acabamos la pintura a máquina hasta eliminar los defectos. La luz hexagonal ahora se refleja nítida, con reflejos profundos y de aspecto húmedo restaurados.",
+       "Vam avaluar l'estat del vernís, després vam tallar, refinar i acabar la pintura a màquina fins a eliminar els defectes. La llum hexagonal ara es reflecteix nítida, amb reflexos profunds i d'aspecte humit restaurats."],
     "BMW Coupé · Gloss Black": ["BMW Coupé · Negro brillo", "BMW Coupé · Negre brillant"],
-    "3-Stage Machine Correction": ["Corrección a máquina de 3 etapas", "Correcció a màquina de 3 etapes"],
+    "Stage polishing · Stage 3": ["Pulido por etapas · Etapa 3", "Polit per etapes · Etapa 3"],
     "Swirls · holograms · oxidation": ["Micro-arañazos · hologramas · oxidación", "Micro-ratllades · hologrames · oxidació"],
     "Sealed & protected": ["Sellado y protegido", "Segellat i protegit"],
-    "Cut. Refine.": ["Corta. Refina.", "Talla. Refina."],
-    "Finish.": ["Acaba.", "Acaba."],
+    "Stage 1. Stage 2.": ["Etapa 1. Etapa 2.", "Etapa 1. Etapa 2."],
+    "Stage 3.": ["Etapa 3.", "Etapa 3."],
+    "No two paints are alike: the polish adapts to the condition of your paint and the level of correction needed — from a one-stage enhancement to a full three-stage correction.":
+      ["No hay dos pinturas iguales: el pulido se adapta al estado de tu pintura y al nivel de corrección necesario — desde un realce de una etapa hasta una corrección completa de tres.",
+       "No hi ha dues pintures iguals: el polit s'adapta a l'estat de la teva pintura i al nivell de correcció necessari — des d'un realç d'una etapa fins a una correcció completa de tres."],
     "A measured, three-stage system — never a one-hit polish. We remove only what's needed and finish to true clarity.":
       ["Un sistema medido de tres etapas — nunca un pulido de una sola pasada. Eliminamos solo lo necesario y acabamos hasta una claridad real.",
        "Un sistema mesurat de tres etapes — mai un polit d'una sola passada. Eliminem només el necessari i acabem fins a una claredat real."],
-    "Compounding": ["Compound", "Compound"],
+    "Stage 1 · Cut": ["Etapa 1 · Corte", "Etapa 1 · Tall"],
     "Cutting pad · heavy compound": ["Boina de corte · compound agresivo", "Boina de tall · compound agressiu"],
     "The aggressive stage — levelling deeper scratches, swirls and oxidation by removing a precise micron-thin layer of clear coat.":
       ["La etapa agresiva — eliminando arañazos más profundos, micro-arañazos y oxidación al retirar una capa de barniz de micras precisa.",
        "L'etapa agressiva — eliminant ratllades més profundes, micro-ratllades i oxidació en retirar una capa de vernís de micres precisa."],
-    "Refining": ["Refinado", "Refinat"],
+    "Stage 2 · Refine": ["Etapa 2 · Refinado", "Etapa 2 · Refinat"],
     "Polishing pad · medium polish": ["Boina de pulido · pulido medio", "Boina de polit · polit mitjà"],
     "The haze and micro-marring left by cutting are refined away, building back clarity and lifting gloss across the panel.":
       ["La turbidez y las micro-marcas que deja el corte se refinan, recuperando claridad y elevando el brillo en todo el panel.",
        "La tèrbolesa i les micro-marques que deixa el tall es refinen, recuperant claredat i elevant la brillantor a tot el panell."],
-    "Finishing": ["Acabado", "Acabat"],
+    "Stage 3 · Finish": ["Etapa 3 · Acabado", "Etapa 3 · Acabat"],
     "Finishing pad · fine polish": ["Boina de acabado · pulido fino", "Boina d'acabat · polit fi"],
     "The final jewelling pass eliminates holograms and brings paint to a true, defect-free mirror before it's sealed in.":
       ["La pasada final de jewelling elimina hologramas y lleva la pintura a un espejo real y sin defectos antes de sellarla.",
        "La passada final de jewelling elimina hologrames i porta la pintura a un mirall real i sense defectes abans de segellar-la."],
     "The numbers,": ["Los números,", "Els números,"],
     "not just the shine.": ["no solo el brillo.", "no només la brillantor."],
-    "We read gloss with a meter before and after — so the depth you see isn't a trick of the light, it's measured. Typical results on neglected paint:":
-      ["Medimos el brillo con un medidor antes y después — así la profundidad que ves no es un truco de la luz, está medida. Resultados típicos en pintura descuidada:",
-       "Mesurem la brillantor amb un mesurador abans i després — així la profunditat que veus no és un truc de la llum, està mesurada. Resultats típics en pintura descuidada:"],
+    "Gloss is expressed in GU (gloss units): the higher the number, the deeper and sharper the reflection. Typical results on neglected paint:":
+      ["El brillo se expresa en GU (unidades de brillo): cuanto más alto, más profundo y nítido el reflejo. Resultados típicos en pintura descuidada:",
+       "La brillantor s'expressa en GU (unitats de brillantor): com més alt, més profund i nítid el reflex. Resultats típics en pintura descuidada:"],
     "On arrival": ["A la llegada", "A l'arribada"],
     "After correction": ["Tras la corrección", "Després de la correcció"],
     "Restore the depth": ["Recupera la profundidad", "Recupera la profunditat"],
     "Bring back the": ["Devuelve el", "Torna la"],
     "© 2026 SERRES. All rights reserved. \u00A0·\u00A0 Multi-Stage Machine Polishing":
-      ["© 2026 SERRES. Todos los derechos reservados. \u00A0·\u00A0 Pulido a máquina multietapa",
-       "© 2026 SERRES. Tots els drets reservats. \u00A0·\u00A0 Polit a màquina multietapa"],
+      ["© 2026 SERRES. Todos los derechos reservados. \u00A0·\u00A0 Pulido por etapas a máquina",
+       "© 2026 SERRES. Tots els drets reservats. \u00A0·\u00A0 Polit per etapes a màquina"],
 
     /* ---------- SERVICE: VINYL ---------- */
-    "SERRES — Car Wrap / Vinyl": ["Car Wrapping en Barcelona — Vinilar Coche | SERRES", "Car Wrapping a Barcelona — Vinilar Cotxe | SERRES"],
-    "Service 01 · Vinyl": ["Servicio 01 · Vinilo", "Servei 01 · Vinil"],
+    "SERRES — Car Wrap / Vinyl": ["Car Wrap en Barcelona — Cambio de Color | SERRES", "Car Wrap a Barcelona — Canvi de Color | SERRES"],
+    "Service 01 · Car Wrap": ["Servicio 01 · Car Wrap", "Servei 01 · Car Wrap"],
     "Car": ["Car", "Car"],
     "Film Colours ": ["Colores de film ", "Colors de film "],
     "Finish Families": ["Familias de acabado", "Famílies d'acabat"],
-    "1080 Series": ["Serie 1080", "Sèrie 1080"],
-    "Full and partial colour-change wraps in the 3M\u2122 Wrap Film Series 1080 range — matte, satin, gloss, metallic and colour-flip finishes, precision-fit and heat-sealed to every panel, edge and recess.":
-      ["Vinilos de cambio de color totales y parciales en la gama 3M\u2122 Wrap Film Series 1080 — acabados mate, satinado, brillo, metalizado y colour-flip, ajustados con precisión y termosellados a cada panel, borde y recoveco.",
-       "Vinils de canvi de color totals i parcials en la gamma 3M\u2122 Wrap Film Series 1080 — acabats mat, setinat, brillant, metal·litzat i colour-flip, ajustats amb precisió i termosegellats a cada panell, vora i racó."],
+    "Pro film brands": ["Marcas profesionales", "Marques professionals"],
+    "Reversible": ["Reversible", "Reversible"],
+    "Film layers": ["Capas de film", "Capes de film"],
+    "Layers": ["Capas", "Capes"],
+    "Full or partial colour-change Car Wrap with films from several professional brands — matte, satin, gloss, metallic and colour-flip finishes, precision-fit and heat-sealed to every panel, edge and recess.":
+      ["Car Wrap de cambio de color total o parcial con films de varias marcas profesionales — acabados mate, satinado, brillo, metalizado y colour-flip, ajustados con precisión y termosellados a cada panel, borde y recoveco.",
+       "Car Wrap de canvi de color total o parcial amb films de diverses marques professionals — acabats mat, setinat, brillant, metal·litzat i colour-flip, ajustats amb precisió i termosegellats a cada panell, vora i racó."],
     "The Palette": ["La paleta", "La paleta"],
     "Every colour we": ["Todos los colores que", "Tots els colors que"],
     "can put on your car": ["podemos poner en tu coche", "podem posar al teu cotxe"],
-    "The full 3M\u2122 Wrap Film Series 1080 spectrum. Filter by finish, then drag or scroll to explore.":
-      ["Todo el espectro 3M\u2122 Wrap Film Series 1080. Filtra por acabado y luego arrastra o desliza para explorar.",
-       "Tot l'espectre 3M\u2122 Wrap Film Series 1080. Filtra per acabat i després arrossega o llisca per explorar."],
+    "We work with several professional brands. Pick the brand, filter by colour family and drag to explore.":
+      ["Trabajamos con varias marcas profesionales. Elige la marca, filtra por familia de color y desliza para explorar.",
+       "Treballem amb diverses marques professionals. Tria la marca, filtra per família de color i llisca per explorar."],
     "Scroll left": ["Desplazar a la izquierda", "Desplaça a l'esquerra"],
     "Scroll right": ["Desplazar a la derecha", "Desplaça a la dreta"],
     "One panel at": ["Un panel a", "Un panell a"],
@@ -617,15 +643,15 @@
     "Drag the slider to see the change. No paint touched, fully reversible, and protecting the original finish underneath.":
       ["Desliza el control para ver el cambio. Sin tocar la pintura, totalmente reversible y protegiendo el acabado original de debajo.",
        "Llisca el control per veure el canvi. Sense tocar la pintura, totalment reversible i protegint l'acabat original de sota."],
-    "3M\u2122 1080 Satin Black": ["3M\u2122 1080 Satin Black", "3M\u2122 1080 Satin Black"],
+    "3M\u2122 2080 Satin Black": ["3M\u2122 2080 Satin Black", "3M\u2122 2080 Satin Black"],
     "Full body colour change": ["Cambio de color de carrocería completa", "Canvi de color de carrosseria completa"],
     "5–7 days": ["5–7 días", "5–7 dies"],
-    "Book your wrap": ["Reserva tu vinilo", "Reserva el teu vinil"],
+    "Book your wrap": ["Reserva tu Car Wrap", "Reserva el teu Car Wrap"],
     "Found your": ["¿Has encontrado tu", "Has trobat el teu"],
     "colour?": ["color?", "color?"],
-    "© 2026 SERRES. All rights reserved. \u00A0·\u00A0 3M\u2122 Wrap Film Series 1080":
-      ["© 2026 SERRES. Todos los derechos reservados. \u00A0·\u00A0 3M\u2122 Wrap Film Series 1080",
-       "© 2026 SERRES. Tots els drets reservats. \u00A0·\u00A0 3M\u2122 Wrap Film Series 1080"],
+    "© 2026 SERRES. All rights reserved. \u00A0·\u00A0 Car Wrap · 3M · Avery Dennison · Inozetek":
+      ["© 2026 SERRES. Todos los derechos reservados. \u00A0·\u00A0 Car Wrap · 3M · Avery Dennison · Inozetek",
+       "© 2026 SERRES. Tots els drets reservats. \u00A0·\u00A0 Car Wrap · 3M · Avery Dennison · Inozetek"],
 
     /* ---------- SERVICE: BODY KITS ---------- */
     "SERRES — Body Kits": ["Montaje de Body Kits en Barcelona | SERRES", "Muntatge de Body Kits a Barcelona | SERRES"],
@@ -655,9 +681,9 @@
     "What We Fit": ["Qué montamos", "Què muntem"],
     "Kits, rims": ["Kits, llantas", "Kits, llandes"],
     "& tips.": ["y colas.", "i sortides."],
-    "We install all types of body kits, plus the details that finish the look — custom rims and exhaust tips, sourced and fitted in-house.":
-      ["Instalamos todo tipo de body kits, además de los detalles que rematan el look — llantas a medida y colas de escape, suministradas y montadas en casa.",
-       "Instal·lem tot tipus de body kits, a més dels detalls que rematen el look — llandes a mida i sortides d'escapament, subministrades i muntades a casa."],
+    "We install all types of body kits, plus the details that finish the look — custom rims and exhaust tips, sourced and fitted with precision.":
+      ["Instalamos todo tipo de body kits, además de los detalles que rematan el look — llantas a medida y colas de escape, suministradas y montadas con precisión.",
+       "Instal·lem tot tipus de body kits, a més dels detalls que rematen el look — llandes a mida i sortides d'escapament, subministrades i muntades amb precisió."],
     "All types · OEM & aftermarket": ["Todos los tipos · OEM y aftermarket", "Tots els tipus · OEM i aftermarket"],
     "Front lips, splitters, side skirts, rear diffusers, spoilers and full widebody conversions — dry-fitted, colour-matched and mounted to factory standards.":
       ["Labios delanteros, splitters, faldones laterales, difusores traseros, alerones y conversiones widebody completas — montados en seco, igualados en color y fijados a estándares de fábrica.",
@@ -685,7 +711,7 @@
        =================================================================== */
 
     /* ---------- PRICES: tab labels + UI words ---------- */
-    "Car Wrap": ["Vinilo", "Vinil"],
+    "Car Wrap": ["Car Wrap", "Car Wrap"],
     "Correction + Ceramic": ["Pulido + Cerámica", "Poliment + Ceràmica"],
     "pricing": ["precios", "preus"],
     "Most chosen": ["Más elegido", "Més triat"],
@@ -699,18 +725,15 @@
     "Guide price": ["Precio orientativo", "Preu orientatiu"],
 
     /* ---------- PRICES: service blurbs ---------- */
-    "Colour change with certified 3M & KPMF films — from subtle accents to a full identity change.":
-      ["Cambio de color con films certificados 3M y KPMF — desde acentos sutiles hasta un cambio de identidad completo.",
-       "Canvi de color amb films certificats 3M i KPMF — des d'accents subtils fins a un canvi d'identitat complet."],
-    "Self-healing paint protection film over the areas the road attacks first — or the whole car.":
-      ["Film de protección de pintura autorreparable sobre las zonas que la carretera ataca primero — o el coche entero.",
-       "Film de protecció de pintura autoreparable sobre les zones que la carretera ataca primer — o el cotxe sencer."],
-    "Liquid-glass SiO₂ protection bonded to your paint — gloss, slickness and easy washing for years.":
-      ["Protección de cristal líquido SiO₂ adherida a tu pintura — brillo, tacto deslizante y lavado fácil durante años.",
-       "Protecció de vidre líquid SiO₂ adherida a la teva pintura — brillantor, tacte lliscant i rentat fàcil durant anys."],
-    "Machine correction to remove the swirls, then a liquid-glass SiO₂ coating to lock the gloss in — the two steps that belong together.":
-      ["Pulido a máquina para eliminar los micro-arañazos y, a continuación, un recubrimiento de cristal líquido SiO₂ que sella el brillo — los dos pasos que van de la mano.",
-       "Polit a màquina per eliminar les micro-ratllades i, tot seguit, un recobriment de vidre líquid SiO₂ que segella la brillantor — els dos passos que van de la mà."],
+    "Colour change with films from several professional brands — from subtle accents to a full identity change.":
+      ["Cambio de color con films de varias marcas profesionales — desde acentos sutiles hasta un cambio de identidad completo.",
+       "Canvi de color amb films de diverses marques professionals — des d'accents subtils fins a un canvi d'identitat complet."],
+    "Self-healing paint protection film — 50+ colours from several professional brands — over the areas the road attacks first, or the whole car.":
+      ["Film de protección de pintura autorreparable — más de 50 colores de varias marcas profesionales — sobre las zonas que la carretera ataca primero, o el coche entero.",
+       "Film de protecció de pintura autoreparable — més de 50 colors de diverses marques professionals — sobre les zones que la carretera ataca primer, o el cotxe sencer."],
+    "Stage polishing to remove the swirls, then a Ceramic Coating to lock the gloss in — the two steps that belong together.":
+      ["Pulido por etapas para eliminar los micro-arañazos y, a continuación, un tratamiento Ceramic Coating que sella el brillo — los dos pasos que van de la mano.",
+       "Polit per etapes per eliminar les micro-ratllades i, tot seguit, un tractament Ceramic Coating que segella la brillantor — els dos passos que van de la mà."],
     "Machine polishing that removes swirls, holograms and oxidation — measured, not guessed.":
       ["Pulido a máquina que elimina micro-arañazos, hologramas y oxidación — medido, no improvisado.",
        "Polit a màquina que elimina micro-ratllades, hologrames i oxidació — mesurat, no improvisat."],
@@ -724,9 +747,9 @@
     /* ---------- PRICES: tier names ---------- */
     "Accents": ["Acentos", "Accents"],
     "Full Colour Change": ["Cambio de color completo", "Canvi de color complet"],
-    "Signature Wrap": ["Vinilo Signature", "Vinil Signature"],
+    "Signature Wrap": ["Car Wrap Signature", "Car Wrap Signature"],
     "Front Pack": ["Pack frontal", "Pack frontal"],
-    "Full Front": ["Frontal completo", "Frontal complet"],
+    "Pro": ["Pro", "Pro"],
     "Full Body": ["Carrocería completa", "Carrosseria completa"],
     "Essential": ["Esencial", "Essencial"],
     "Enhancement": ["Realce", "Realç"],
@@ -734,15 +757,15 @@
     "Showroom Reset": ["Reinicio de exposición", "Reinici d'exposició"],
     "Aero Parts": ["Piezas aero", "Peces aero"],
     "Full Kit Fitted": ["Kit completo montado", "Kit complet muntat"],
-    "Single-stage polish to revive the gloss, then one ceramic layer to seal it — real protection, entry price.":
-      ["Pulido de una etapa que revive el brillo y, después, una capa cerámica que lo sella — protección real, precio de entrada.",
-       "Polit d'una etapa que reviu la brillantor i, després, una capa ceràmica que el segella — protecció real, preu d'entrada."],
-    "Two-stage correction plus a two-layer ceramic coat, wheels and glass — our standard.":
-      ["Corrección de dos etapas más un recubrimiento cerámico de dos capas, llantas y cristales — nuestro estándar.",
-       "Correcció de dues etapes més un recobriment ceràmic de dues capes, llandes i vidres — el nostre estàndard."],
-    "Full multi-stage correction under hex lighting, then a multi-layer ceramic stack, wheels-off and interior.":
-      ["Corrección multietapa completa bajo luz hexagonal y, después, varias capas cerámicas, con llantas desmontadas e interior.",
-       "Correcció multietapa completa sota llum hexagonal i, després, diverses capes ceràmiques, amb llandes desmuntades i interior."],
+    "Stage 1 polish to revive the gloss, then one ceramic layer to seal it — real protection, entry price.":
+      ["Pulido de Etapa 1 que revive el brillo y, después, una capa cerámica que lo sella — protección real, precio de entrada.",
+       "Polit d'Etapa 1 que reviu la brillantor i, després, una capa ceràmica que el segella — protecció real, preu d'entrada."],
+    "Stage 2 correction plus a two-layer ceramic coat and rain-repellent glass — our standard.":
+      ["Corrección de Etapa 2 más un recubrimiento cerámico de dos capas y antilluvia en los cristales — nuestro estándar.",
+       "Correcció d'Etapa 2 més un recobriment ceràmic de dues capes i antipluja als vidres — el nostre estàndard."],
+    "Full Stage 3 correction under hex lighting, then a multi-layer ceramic stack and interior protection.":
+      ["Corrección completa de Etapa 3 bajo luz hexagonal y, después, varias capas cerámicas y protección de interior.",
+       "Correcció completa d'Etapa 3 sota llum hexagonal i, després, diverses capes ceràmiques i protecció d'interior."],
 
     /* ---------- PRICES: tier descriptions ---------- */
     "Roof, mirrors and detail pieces — change the attitude, not the whole car.":
@@ -751,15 +774,15 @@
     "Every exterior panel wrapped edge-to-edge in the colour you actually wanted.":
       ["Cada panel exterior vinilado de borde a borde en el color que de verdad querías.",
        "Cada panell exterior vinilat de vora a vora en el color que realment volies."],
-    "Premium and colour-flip films with full de-chrome and wrapped door shuts.":
-      ["Films premium y camaleón con de-chrome completo y marcos de puerta vinilados.",
-       "Films premium i camaleó amb de-chrome complet i marcs de porta vinilats."],
+    "Premium and colour-flip films, with the service tailored to the vehicle configuration.":
+      ["Films premium y camaleón — servicio según configuración del vehículo.",
+       "Films premium i camaleó — servei segons configuració del vehicle."],
     "Bumper, partial bonnet and mirrors — the high-impact essentials covered.":
       ["Paragolpes, capó parcial y retrovisores — lo esencial de alto impacto, cubierto.",
        "Para-xocs, capó parcial i retrovisors — l'essencial d'alt impacte, cobert."],
-    "Full bonnet, wings, bumper, mirrors and headlights — seamless coverage.":
-      ["Capó completo, aletas, paragolpes, retrovisores y faros — cobertura sin costuras.",
-       "Capó complet, aletes, para-xocs, retrovisors i fars — cobertura sense costures."],
+    "Full bonnet, wings, bumper, mirrors and headlights — seamless coverage, sealed with a Ceramic Coating over the film.":
+      ["Capó completo, aletas, paragolpes, retrovisores y faros — cobertura sin costuras, sellada con Ceramic Coating sobre el film.",
+       "Capó complet, aletes, para-xocs, retrovisors i fars — cobertura sense costures, segellada amb Ceramic Coating sobre el film."],
     "Every painted panel protected, edges tucked — invisible armour, total peace of mind.":
       ["Cada panel pintado protegido, bordes ocultos — blindaje invisible, tranquilidad total.",
        "Cada panell pintat protegit, vores amagades — blindatge invisible, tranquil·litat total."],
@@ -815,30 +838,24 @@
     "2–4 weeks · by consultation": ["2–4 semanas · con consulta", "2–4 setmanes · amb consulta"],
 
     /* ---------- PRICES: comparison-row labels ---------- */
-    "3M / KPMF certified films": ["Films certificados 3M / KPMF", "Films certificats 3M / KPMF"],
-    "Edges & shut lines wrapped": ["Bordes y marcos vinilados", "Vores i marcs vinilats"],
+    "Films from professional brands": ["Films de marcas profesionales", "Films de marques professionals"],
+    "Service per vehicle configuration": ["Servicio según configuración del vehículo", "Servei segons configuració del vehicle"],
     "Premium & colour-flip films": ["Films premium y camaleón", "Films premium i camaleó"],
-    "Full de-chrome package": ["Pack de-chrome completo", "Pack de-chrome complet"],
     "Design consultation": ["Consulta de diseño", "Consulta de disseny"],
-    "Aftercare kit included": ["Kit de mantenimiento incluido", "Kit de manteniment inclòs"],
+    "Maintenance kit": ["Kit de mantenimiento", "Kit de manteniment"],
     "Film warranty": ["Garantía del film", "Garantia del film"],
     "Headlight protection": ["Protección de faros", "Protecció de fars"],
     "Wrapped edges — no visible lines": ["Bordes cubiertos — sin líneas visibles", "Vores cobertes — sense línies visibles"],
     "Door cups & sill protection": ["Protección de manetas y faldones", "Protecció de manetes i faldons"],
-    "Ceramic topcoat over film": ["Capa cerámica sobre el film", "Capa ceràmica sobre el film"],
+    "Ceramic Coating over film": ["Ceramic Coating sobre el film", "Ceramic Coating sobre el film"],
     "Paint preparation": ["Preparación de pintura", "Preparació de pintura"],
     "Coating layers": ["Capas de recubrimiento", "Capes de recobriment"],
-    "Wheel faces coated": ["Cara de llantas recubierta", "Cara de llandes recoberta"],
-    "Wheels off · calipers coated": ["Llantas desmontadas · pinzas recubiertas", "Llandes desmuntades · pinces recobertes"],
-    "Glass coating": ["Recubrimiento de cristales", "Recobriment de vidres"],
+    "Rain-repellent glass treatment": ["Antilluvia para los cristales", "Antipluja per als vidres"],
     "Interior leather & fabric": ["Cuero y tela del interior", "Cuir i tela de l'interior"],
     "Maintenance plan": ["Plan de mantenimiento", "Pla de manteniment"],
     "Rated durability": ["Durabilidad estimada", "Durabilitat estimada"],
     "Polishing stages": ["Etapas de pulido", "Etapes de polit"],
-    "Typical defect removal": ["Eliminación de defectos típica", "Eliminació de defectes típica"],
-    "Paint depth measurement": ["Medición de espesor de pintura", "Mesurament de gruix de pintura"],
     "Hologram-free finish": ["Acabado sin hologramas", "Acabat sense hologrames"],
-    "Gloss meter readings": ["Mediciones con medidor de brillo", "Mesuraments amb mesurador de brillantor"],
     "Protective sealant": ["Sellante protector", "Segellant protector"],
     "Ceramic upgrade available": ["Mejora cerámica disponible", "Millora ceràmica disponible"],
     "Exterior decon wash": ["Lavado de descontaminación exterior", "Rentat de descontaminació exterior"],
@@ -853,7 +870,7 @@
     "Paint-matched finish": ["Acabado igualado en color", "Acabat igualat en color"],
     "Fitment & clearance check": ["Comprobación de encaje y holguras", "Comprovació d'encaix i folgances"],
     "Arch & clearance work": ["Trabajo de pasos de rueda y holguras", "Treball de passos de roda i folgances"],
-    "Wrap / PPF integration": ["Integración con vinilo / PPF", "Integració amb vinil / PPF"],
+    "Wrap / PPF integration": ["Integración con Car Wrap / PPF", "Integració amb Car Wrap / PPF"],
     "Sourcing consultation": ["Asesoramiento de compra", "Assessorament de compra"],
 
     /* ---------- PRICES: comparison-cell values ---------- */
@@ -863,18 +880,16 @@
     "Optional": ["Opcional", "Opcional"],
     "3 yr": ["3 años", "3 anys"],
     "5 yr": ["5 años", "5 anys"],
-    "10 yr": ["10 años", "10 anys"],
     "2 yr": ["2 años", "2 anys"],
-    "7 yr+": ["7 años+", "7 anys+"],
     "Bumper + partial bonnet": ["Paragolpes + capó parcial", "Para-xocs + capó parcial"],
     "Full front end": ["Frontal completo", "Frontal complet"],
     "Every painted panel": ["Cada panel pintado", "Cada panell pintat"],
     "Decon wash": ["Lavado de descon.", "Rentat de descon."],
     "Decon + light polish": ["Descon. + pulido ligero", "Descon. + polit lleuger"],
     "Decon + full polish": ["Descon. + pulido completo", "Descon. + polit complet"],
-    "1 — enhance": ["1 — realce", "1 — realç"],
-    "2 — cut & refine": ["2 — corte y refinado", "2 — tall i refinat"],
-    "3 — cut · refine · finish": ["3 — corte · refinado · acabado", "3 — tall · refinat · acabat"],
+    "Stage 1 — enhance": ["Etapa 1 — realce", "Etapa 1 — realç"],
+    "Stage 2 — cut & refine": ["Etapa 2 — corte y refinado", "Etapa 2 — tall i refinat"],
+    "Stage 3 — full correction": ["Etapa 3 — corrección completa", "Etapa 3 — correcció completa"],
     "6 months": ["6 meses", "6 mesos"],
     "12 months": ["12 meses", "12 mesos"],
     "Splitter · spoiler · diffuser": ["Splitter · alerón · difusor", "Splitter · aleró · difusor"],
@@ -889,17 +904,17 @@
     "Audi RS6 · Owner": ["Audi RS6 · Propietario", "Audi RS6 · Propietari"],
     "Range Rover · Owner": ["Range Rover · Propietario", "Range Rover · Propietari"],
     "Satin PPF": ["PPF satinado", "PPF setinat"],
-    "Full Wrap": ["Vinilo completo", "Vinil complet"],
+    "Full Wrap": ["Car Wrap completo", "Car Wrap complet"],
     "PPF + Ceramic": ["PPF + Cerámica", "PPF + Ceràmica"],
     "Excellent service from start to finish. The treatment is genuinely exceptional — very professional, attentive to every detail and always ready to offer a personalised experience. I brought my Golf GTI in for a black wrap and the result was flawless, beyond my expectations. I'm delighted with both the finish and the whole process. Without a doubt, a place I thoroughly recommend.":
-      ["Un servicio excelente de principio a fin. El trato es realmente excepcional: muy profesionales, atentos a cada detalle y siempre dispuestos a ofrecer una experiencia personalizada. Llevé mi Golf GTI para realizar un vinilo en negro y el resultado ha sido impecable, superando mis expectativas. Estoy muy contento tanto con el acabado como con todo el proceso en general. Sin duda, un lugar totalmente recomendable.",
-       "Un servei excel·lent de principi a fi. El tracte és realment excepcional: molt professionals, atents a cada detall i sempre disposats a oferir una experiència personalitzada. Vaig portar el meu Golf GTI per fer un vinil en negre i el resultat ha estat impecable, superant les meves expectatives. Estic molt content tant amb l'acabat com amb tot el procés en general. Sens dubte, un lloc totalment recomanable."],
-    "Years of swirls just… gone. They showed me the gloss readings before and after. You can see your reflection in the roof like a mirror.":
-      ["Años de micro-arañazos simplemente… desaparecidos. Me enseñaron las mediciones de brillo antes y después. Te ves reflejado en el techo como en un espejo.",
-       "Anys de micro-ratllades simplement… desapareguts. Em van ensenyar els mesuraments de brillantor abans i després. Et veus reflectit al sostre com en un mirall."],
-    "Colour change on the G-Class was flawless — every shut line and edge wrapped properly. This is a proper studio.":
-      ["El cambio de color del clase G fue impecable — cada marco y borde vinilado como toca. Esto es un taller de verdad.",
-       "El canvi de color del classe G va ser impecable — cada marc i vora vinilats com cal. Això és un taller de debò."],
+      ["Un servicio excelente de principio a fin. El trato es realmente excepcional: muy profesionales, atentos a cada detalle y siempre dispuestos a ofrecer una experiencia personalizada. Llevé mi Golf GTI para realizar un Car Wrap en negro y el resultado ha sido impecable, superando mis expectativas. Estoy muy contento tanto con el acabado como con todo el proceso en general. Sin duda, un lugar totalmente recomendable.",
+       "Un servei excel·lent de principi a fi. El tracte és realment excepcional: molt professionals, atents a cada detall i sempre disposats a oferir una experiència personalitzada. Vaig portar el meu Golf GTI per fer un Car Wrap en negre i el resultat ha estat impecable, superant les meves expectatives. Estic molt content tant amb l'acabat com amb tot el procés en general. Sens dubte, un lloc totalment recomanable."],
+    "Years of swirls just… gone. They walked me round the car panel by panel under the hex lights. You can see your reflection in the roof like a mirror.":
+      ["Años de micro-arañazos simplemente… desaparecidos. Me enseñaron el coche panel a panel bajo la luz hexagonal. Te ves reflejado en el techo como en un espejo.",
+       "Anys de micro-ratllades simplement… desapareguts. Em van ensenyar el cotxe panell a panell sota la llum hexagonal. Et veus reflectit al sostre com en un mirall."],
+    "Colour change on the G-Class was flawless — every shut line and edge finished properly. This is a proper studio.":
+      ["El cambio de color del clase G fue impecable — cada marco y borde rematado como toca. Esto es un taller de verdad.",
+       "El canvi de color del classe G va ser impecable — cada marc i vora rematats com cal. Això és un taller de debò."],
     "Booked the full front PPF and a ceramic on top. Communication was perfect, timeline was exact, and the car came back cleaner than the showroom.":
       ["Reservé el PPF frontal completo y una cerámica encima. La comunicación fue perfecta, los plazos exactos, y el coche volvió más limpio que en el concesionario.",
        "Vaig reservar el PPF frontal complet i una ceràmica a sobre. La comunicació va ser perfecta, els terminis exactes, i el cotxe va tornar més net que al concessionari."],
@@ -915,14 +930,20 @@
     "Color Flip": ["Camaleón", "Camaleó"],
     "Colour Shift": ["Camaleón", "Camaleó"],
     "Flip": ["Camaleón", "Camaleó"],
+    "Gloss Metallic": ["Brillo metalizado", "Brillant metal·litzat"],
+    "Satin Metallic": ["Satinado metalizado", "Setinat metal·litzat"],
+    "Matte Metallic": ["Mate metalizado", "Mat metal·litzat"],
+    "Metallic": ["Metalizado", "Metal·litzat"],
+    "Frozen Matte": ["Frozen Matte", "Frozen Matte"],
+    "Pearl": ["Perla", "Perla"],
 
     /* ---------- STRINGS BAKED IN SPANISH (added when the HTML source
        was converted to Spanish; EN key = original English text) ---------- */
-    "PPF · Wraps · Paint Correction": ["PPF · Vinilos · Corrección de pintura", "PPF · Vinils · Correcció de pintura"],
+    "PPF · Wraps · Paint Correction": ["PPF · Car Wrap · Corrección de pintura", "PPF · Car Wrap · Correcció de pintura"],
     "Detailing Studio": ["Estudio de detailing", "Estudi de detailing"],
     "SERRES Wrap Center on Google Maps": ["SERRES Wrap Center en Google Maps", "SERRES Wrap Center a Google Maps"],
     "Factory Gloss": ["Brillo de fábrica", "Brillant de fàbrica"],
-    "SERRES Satin Wrap": ["Vinilo satinado SERRES", "Vinil setinat SERRES"],
+    "SERRES Satin Wrap": ["Car Wrap satinado SERRES", "Car Wrap setinat SERRES"],
     "Water Sheets Flat": ["El agua queda plana", "L'aigua queda plana"],
     "Beads & Rolls Off": ["Forma gotas y resbala", "Forma gotes i llisca"],
     "yr": ["años", "anys"],
@@ -932,13 +953,13 @@
     "Full Aero Kit": ["Kit aero completo", "Kit aero complet"],
     "Choose a service": ["Elige un servicio", "Tria un servei"],
     "The Studio": ["El estudio", "L'estudi"],
-    "Land Rover · Satin Black Wrap": ["Land Rover · Vinilo negro satinado", "Land Rover · Vinil negre setinat"],
+    "Land Rover · Satin Black Wrap": ["Land Rover · Car Wrap negro satinado", "Land Rover · Car Wrap negre setinat"],
     "A Range Rover Sport taken from factory gloss to a deep satin-black vinyl wrap — every panel, mirror and pillar colour-matched, then shot under the hexagon lights so the new finish does the talking.":
-      ["Un Range Rover Sport llevado del brillo de fábrica a un vinilo negro satinado profundo — cada panel, retrovisor y pilar igualado en color, fotografiado después bajo las luces hexagonales para que el nuevo acabado hable por sí solo.",
-       "Un Range Rover Sport portat del brillant de fàbrica a un vinil negre setinat profund — cada panell, retrovisor i pilar igualat en color, fotografiat després sota les llums hexagonals perquè el nou acabat parli per si sol."],
+      ["Un Range Rover Sport llevado del brillo de fábrica a un Car Wrap negro satinado profundo — cada panel, retrovisor y pilar igualado en color, fotografiado después bajo las luces hexagonales para que el nuevo acabado hable por sí solo.",
+       "Un Range Rover Sport portat del brillant de fàbrica a un Car Wrap negre setinat profund — cada panell, retrovisor i pilar igualat en color, fotografiat després sota les llums hexagonals perquè el nou acabat parli per si sol."],
     "Satin Black": ["Negro satinado", "Negre setinat"],
     "Front three-quarter": ["Tres cuartos delantero", "Tres quarts davanter"],
-    "Satin Wrap": ["Vinilo satinado", "Vinil setinat"],
+    "Satin Wrap": ["Car Wrap satinado", "Car Wrap setinat"],
     "Head-on": ["De frente", "De front"],
     "Image viewer": ["Visor de imágenes", "Visor d'imatges"],
     "Close viewer": ["Cerrar visor", "Tanca el visor"],
@@ -950,20 +971,20 @@
     /* ---------- SEO META DESCRIPTIONS (baked in Spanish in the HTML;
        EN key = legacy English description shown when switching to EN) ---------- */
     "SERRES — premium automotive detailing & customization. PPF, vinyl wraps, body kits, custom rims, paint correction, interior & exterior deep cleaning.":
-      ["Estudio premium en Sant Cugat del Vallès: PPF 3M, car wrapping, tratamiento cerámico, pulido y detailing. Presupuesto por WhatsApp.",
-       "Estudi premium a Sant Cugat del Vallès: PPF 3M, car wrapping, tractament ceràmic, polit i detailing. Pressupost per WhatsApp."],
+      ["Estudio premium en Sant Cugat del Vallès: PPF, Car Wrap, Ceramic Coating, pulido por etapas y detailing. Presupuesto por WhatsApp.",
+       "Estudi premium a Sant Cugat del Vallès: PPF, Car Wrap, Ceramic Coating, polit per etapes i detailing. Pressupost per WhatsApp."],
     "SERRES PPF — self-healing paint protection film that shields high-impact areas from stone chips, swirls and the road. Available clear, gloss, satin and colour-shift finishes.":
-      ["Instalación de PPF 3M autorregenerable con hasta 10 años de garantía en Sant Cugat, Barcelona. Packs frontal y coche completo desde 890 €.",
-       "Instal·lació de PPF 3M autoregenerable amb fins a 10 anys de garantia a Sant Cugat, Barcelona. Packs frontal i cotxe complet des de 890 €."],
-    "SERRES Vinyl — full and partial colour-change wraps in the 3M Wrap Film Series 1080 range. Matte, satin, gloss, metallic and colour-flip finishes, precision-fit to every panel.":
-      ["Cambio de color con films 3M y Avery Dennison, más de 100 colores. Coche completo desde 1.490 €. Sant Cugat del Vallès.",
-       "Canvi de color amb films 3M i Avery Dennison, més de 100 colors. Cotxe complet des de 1.490 €. Sant Cugat del Vallès."],
+      ["Instalación de PPF autorreparable con más de 50 colores de varias marcas profesionales. Packs frontal y coche completo desde 890 €. Sant Cugat, Barcelona.",
+       "Instal·lació de PPF autoreparable amb més de 50 colors de diverses marques professionals. Packs frontal i cotxe complet des de 890 €. Sant Cugat, Barcelona."],
+    "SERRES Car Wrap — full and partial colour-change wraps with films from several professional brands. Matte, satin, gloss, metallic and colour-flip finishes, precision-fit to every panel.":
+      ["Car Wrap: cambio de color con films 3M, Avery Dennison e Inozetek. Más de 150 colores. Coche completo desde 1.490 €. Sant Cugat del Vallès.",
+       "Car Wrap: canvi de color amb films 3M, Avery Dennison i Inozetek. Més de 150 colors. Cotxe complet des de 1.490 €. Sant Cugat del Vallès."],
     "SERRES Ceramic Coating — a liquid-glass SiO₂ layer that bonds to your paint for years of hydrophobic, high-gloss, swirl-resistant protection.":
-      ["Cerámico SiO2 de dureza 9H con hasta 5 años de protección. Corrección de pintura incluida. Packs desde 340 €.",
-       "Ceràmic SiO2 de duresa 9H amb fins a 5 anys de protecció. Correcció de pintura inclosa. Packs des de 340 €."],
+      ["Tratamiento Ceramic Coating SiO2 con hasta 5 años de protección. Preparación y pulido según pack. Desde 340 €. Sant Cugat, Barcelona.",
+       "Tractament Ceramic Coating SiO2 amb fins a 5 anys de protecció. Preparació i polit segons pack. Des de 340 €. Sant Cugat, Barcelona."],
     "SERRES Paint Correction — multi-stage machine polishing that removes swirls, holograms and oxidation to restore true, mirror-clear depth to your paint.":
-      ["Pulido multietapa a máquina: adiós a arañazos, remolinos y hologramas. Brillo verificado con medidor. Sant Cugat, Barcelona.",
-       "Polit multietapa a màquina: adéu a esgarrapades, remolins i hologrames. Brillantor verificada amb mesurador. Sant Cugat, Barcelona."],
+      ["Pulido por etapas a máquina: Etapa 1, 2 o 3 según el estado de tu pintura. Adiós a arañazos, remolinos y hologramas. Sant Cugat, Barcelona.",
+       "Polit per etapes a màquina: Etapa 1, 2 o 3 segons l'estat de la teva pintura. Adéu a esgarrapades, remolins i hologrames. Sant Cugat, Barcelona."],
     "SERRES Detailing — deep interior steam-cleaning and exterior decontamination that takes your car from neglected to showroom-fresh, inside and out.":
       ["Limpieza integral: vapor, tapicería, cuero y motor. Deep Clean desde 150 €, Showroom Reset desde 490 €. Estudio premium en Sant Cugat.",
        "Neteja integral: vapor, tapisseria, cuir i motor. Deep Clean des de 150 €, Showroom Reset des de 490 €. Estudi premium a Sant Cugat."],
@@ -971,17 +992,17 @@
       ["Instalación y pintura de body kits, spoilers y widebody con ajuste OEM. Desde 450 €. Sant Cugat del Vallès.",
        "Instal·lació i pintura de body kits, spoilers i widebody amb ajust OEM. Des de 450 €. Sant Cugat del Vallès."],
     "SERRES pricing — transparent guide prices for wraps, PPF, ceramic coating, paint correction, detailing and body kits. Three levels per service, from essential to concours.":
-      ["Precios orientativos con IVA de todos los servicios SERRES: PPF, car wrapping, cerámico, pulido, detailing y body kits.",
-       "Preus orientatius amb IVA de tots els serveis SERRES: PPF, car wrapping, ceràmic, polit, detailing i body kits."],
+      ["Precios orientativos con IVA de todos los servicios SERRES: PPF, Car Wrap, Ceramic Coating, pulido por etapas, detailing y body kits.",
+       "Preus orientatius amb IVA de tots els serveis SERRES: PPF, Car Wrap, Ceramic Coating, polit per etapes, detailing i body kits."],
     "Why SERRES — obsessive prep, measured results and premium materials under one roof. The standards behind every car that leaves our Barcelona studio.":
-      ["Un solo estudio, sin subcontratas: materiales certificados, resultados medidos y un 98% de clientes recomendados.",
-       "Un sol estudi, sense subcontractes: materials certificats, resultats mesurats i un 98% de clients que ens recomanen."],
+      ["Un estudio premium en Sant Cugat: materiales certificados, preparación meticulosa y un 98% de clientes que nos recomiendan.",
+       "Un estudi premium a Sant Cugat: materials certificats, preparació meticulosa i un 98% de clients que ens recomanen."],
     "SERRES Gallery — a car-by-car showroom of wraps, PPF, corrections and full builds shot in and around our Barcelona studio.":
-      ["Coches transformados en SERRES: PPF, vinilado, cerámico y detailing. Fotos reales de nuestro estudio.",
-       "Cotxes transformats a SERRES: PPF, vinilat, ceràmic i detailing. Fotos reals del nostre estudi."],
-    "The SERRES Commission — our limited full-build programme. PPF, wrap, correction, ceramic, interior and body work on one car, under one vision. A handful of builds per year.":
-      ["Proyectos de transformación completa: The Commission. Un coche, una visión.",
-       "Projectes de transformació completa: The Commission. Un cotxe, una visió."]
+      ["Coches transformados en SERRES: PPF, Car Wrap, Ceramic Coating y detailing. Fotos reales de nuestro estudio.",
+       "Cotxes transformats a SERRES: PPF, Car Wrap, Ceramic Coating i detailing. Fotos reals del nostre estudi."],
+    "The SERRES Exclusive — our limited full-build programme. PPF, wrap, correction, ceramic, interior and body work on one car, under one vision. A handful of builds per year.":
+      ["Exclusivo SERRES: la transformación completa. Un coche, una visión.",
+       "Exclusiu SERRES: la transformació completa. Un cotxe, una visió."]
   };
 
   /* ===================================================================

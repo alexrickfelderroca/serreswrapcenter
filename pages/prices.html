@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Precios — PPF, Vinilado, Cerámico y Detailing | SERRES</title>
+<title>Precios — PPF, Car Wrap, Ceramic Coating y Detailing | SERRES</title>
 <meta name="description" content="Precios orientativos con IVA de todos los servicios SERRES: PPF, car wrapping, cerámico, pulido, detailing y body kits.">
 <link rel="canonical" href="https://serreswrapcenter.es/pages/prices.html">
 <link rel="icon" href="/favicon.ico" sizes="any">
@@ -36,6 +36,19 @@
     letter-spacing:.01em;text-transform:uppercase;}
   .chrome-text{background:var(--chrome);-webkit-background-clip:text;background-clip:text;
     color:transparent;-webkit-text-fill-color:transparent;}
+  /* gold identity for the Exclusivo programme */
+  .gold-text{
+    background:linear-gradient(105deg,#8a6d2f 0%,#c9a44f 20%,#f3e0ac 38%,#d4af5f 52%,#8a6d2f 70%,#e9d194 88%,#b28f41 100%);
+    background-size:220% 100%;background-position:0% 0;
+    -webkit-background-clip:text;background-clip:text;
+    color:transparent;-webkit-text-fill-color:transparent;
+    transition:filter .35s var(--ease),background-position .9s var(--ease);
+  }
+  .gold-text:hover,a:hover > .gold-text,a:focus-visible > .gold-text{
+    background-position:100% 0;
+    filter:drop-shadow(0 0 6px rgba(212,175,95,.5)) drop-shadow(0 0 18px rgba(212,175,95,.22));
+  }
+  @media(prefers-reduced-motion:reduce){.gold-text{transition:none}}
   .eyebrow{font-family:"Barlow Condensed",sans-serif;font-weight:600;text-transform:uppercase;
     letter-spacing:.34em;font-size:13px;color:var(--muted);display:inline-flex;align-items:center;gap:14px;}
   .eyebrow::before{content:"";width:30px;height:1px;background:linear-gradient(90deg,transparent,var(--line-strong));}
@@ -163,7 +176,7 @@
     text-transform:uppercase;color:var(--muted-2)}
   @media(max-width:880px){.cmp-sec{display:none}}
 
-  /* ---------- COMMISSION TEASER ---------- */
+  /* ---------- EXCLUSIVO TEASER ---------- */
   .teaser{margin:70px 0 0;padding:84px 0;position:relative;text-align:center;background:var(--bg-2)}
   .teaser::before,.teaser::after{content:"";position:absolute;left:0;right:0;height:1px;background:var(--line)}
   .teaser::before{top:0}.teaser::after{bottom:0}
@@ -173,7 +186,7 @@
   .teaser p{margin:18px auto 0;max-width:52ch;color:var(--muted);font-size:16px}
   .teaser .actions{margin-top:32px;display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
 
-  footer{padding:30px 40px;border-top:1px solid var(--line);color:var(--muted-2);font-size:13px;
+  footer{padding:30px 40px;border-top:1px solid var(--line);color:var(--muted);font-size:13px;
     letter-spacing:.04em;text-align:center}
 
   @media(max-width:980px){
@@ -225,7 +238,7 @@
   <div class="wrap">
     <div class="svc-intro" id="svcIntro" data-i18n-skip></div>
     <div class="tier-grid" id="tierGrid" data-i18n-skip></div>
-    <p class="price-note">Precios orientativos · el presupuesto final depende del tamaño del vehículo, su estado y la elección de film</p>
+    <p class="price-note">Precios orientativos · el presupuesto final depende del tamaño del vehículo, su estado y la elección de film · no incluyen kit de mantenimiento</p>
   </div>
 </section>
 
@@ -237,14 +250,14 @@
   </div>
 </section>
 
-<!-- ===================== COMMISSION TEASER ===================== -->
-<section class="teaser" data-screen-label="Prices — Commission teaser">
+<!-- ===================== EXCLUSIVO TEASER ===================== -->
+<section class="teaser" data-screen-label="Prices — Exclusivo teaser">
   <div class="wrap">
     <span class="eyebrow">¿Lo quieres todo?</span>
-    <h2 class="display">El proyecto completo es una <span class="chrome-text">commission.</span></h2>
-    <p>PPF, vinilo, corrección, cerámica, interior y carrocería — un coche, una visión, presupuestado como un único proyecto. Aceptamos un número limitado cada año.</p>
+    <h2 class="display">El proyecto completo es un <span class="gold-text">Exclusivo.</span></h2>
+    <p>PPF, Car Wrap, corrección, Ceramic Coating, interior y carrocería — un coche, una visión, presupuestado como un único proyecto. Aceptamos un número limitado cada año.</p>
     <div class="actions">
-      <a href="projects.html" class="btn">Sobre la Commission <span class="arr">→</span></a>
+      <a href="projects.html" class="btn">Sobre el Exclusivo <span class="arr">→</span></a>
       <a href="../index.html#contact" class="btn ghost">Hablar con el taller</a>
     </div>
   </div>
@@ -260,33 +273,31 @@
 var PRICING={
   wrap:{
     label:'Car Wrap',
-    blurb:'Colour change with certified 3M & KPMF films — from subtle accents to a full identity change.',
+    blurb:'Colour change with films from several professional brands — from subtle accents to a full identity change.',
     tiers:[
       {name:'Accents',desc:'Roof, mirrors and detail pieces — change the attitude, not the whole car.',price:250,
        note:'From 1 day in the studio'},
       {name:'Full Colour Change',desc:'Every exterior panel wrapped edge-to-edge in the colour you actually wanted.',price:1490,pop:true,
        note:'From 3–4 days in the studio'},
-      {name:'Signature Wrap',desc:'Premium and colour-flip films with full de-chrome and wrapped door shuts.',price:1990,
+      {name:'Signature Wrap',desc:'Premium and colour-flip films, with the service tailored to the vehicle configuration.',price:1990,
        note:'From 5–7 days in the studio'}
     ],
     rows:[
       ['Coverage','Roof · mirrors · accents','Full exterior','Full exterior + door shuts'],
-      ['3M / KPMF certified films',true,true,true],
-      ['Edges & shut lines wrapped',false,true,true],
+      ['Films from professional brands',true,true,true],
+      ['Service per vehicle configuration',false,true,true],
       ['Premium & colour-flip films',false,false,true],
-      ['Full de-chrome package',false,'Optional',true],
       ['Design consultation',false,false,true],
-      ['Aftercare kit included',false,true,true],
-      ['Film warranty','3 yr','5 yr','5 yr']
+      ['Maintenance kit',false,false,false]
     ]
   },
   ppf:{
     label:'PPF',
-    blurb:'Self-healing paint protection film over the areas the road attacks first — or the whole car.',
+    blurb:'Self-healing paint protection film — 50+ colours from several professional brands — over the areas the road attacks first, or the whole car.',
     tiers:[
       {name:'Front Pack',desc:'Bumper, partial bonnet and mirrors — the high-impact essentials covered.',price:890,
        note:'From 1 day in the studio'},
-      {name:'Full Front',desc:'Full bonnet, wings, bumper, mirrors and headlights — seamless coverage.',price:1190,pop:true,
+      {name:'Pro',desc:'Full bonnet, wings, bumper, mirrors and headlights — seamless coverage, sealed with a Ceramic Coating over the film.',price:1190,pop:true,
        note:'From 2–3 days in the studio'},
       {name:'Full Body',desc:'Every painted panel protected, edges tucked — invisible armour, total peace of mind.',price:2390,
        note:'From 5–8 days in the studio'}
@@ -297,32 +308,29 @@ var PRICING={
       ['Headlight protection',false,true,true],
       ['Wrapped edges — no visible lines',false,true,true],
       ['Door cups & sill protection',false,false,true],
-      ['Ceramic topcoat over film','Optional','Optional',true],
-      ['Film warranty','5 yr','10 yr','10 yr']
+      ['Ceramic Coating over film','Optional',true,true],
+      ['Film warranty','3 yr','3 yr','3 yr'],
+      ['Maintenance kit',false,false,false]
     ]
   },
   ceramic:{
     label:'Correction + Ceramic',
-    blurb:'Machine correction to remove the swirls, then a liquid-glass SiO₂ coating to lock the gloss in — the two steps that belong together.',
+    blurb:'Stage polishing to remove the swirls, then a Ceramic Coating to lock the gloss in — the two steps that belong together.',
     tiers:[
-      {name:'Essential',desc:'Single-stage polish to revive the gloss, then one ceramic layer to seal it — real protection, entry price.',price:340,
+      {name:'Essential',desc:'Stage 1 polish to revive the gloss, then one ceramic layer to seal it — real protection, entry price.',price:340,
        note:'1–2 days in the studio'},
-      {name:'Signature',desc:'Two-stage correction plus a two-layer ceramic coat, wheels and glass — our standard.',price:590,pop:true,
+      {name:'Signature',desc:'Stage 2 correction plus a two-layer ceramic coat and rain-repellent glass — our standard.',price:590,pop:true,
        note:'2–3 days in the studio'},
-      {name:'Concours',desc:'Full multi-stage correction under hex lighting, then a multi-layer ceramic stack, wheels-off and interior.',price:890,
+      {name:'Concours',desc:'Full Stage 3 correction under hex lighting, then a multi-layer ceramic stack and interior protection.',price:890,
        note:'3–4 days in the studio'}
     ],
     rows:[
-      ['Polishing stages','1 — enhance','2 — cut & refine','3 — cut · refine · finish'],
-      ['Typical defect removal','~60%','~85%','95%+'],
-      ['Paint depth measurement',true,true,true],
-      ['Gloss meter readings',false,true,true],
+      ['Polishing stages','Stage 1 — enhance','Stage 2 — cut & refine','Stage 3 — full correction'],
       ['Coating layers','1','2','3+'],
-      ['Wheel faces coated',false,true,true],
-      ['Glass coating',false,true,true],
-      ['Wheels off · calipers coated',false,false,true],
+      ['Rain-repellent glass treatment',false,true,true],
       ['Interior leather & fabric',false,false,true],
-      ['Rated durability','2 yr','5 yr','7 yr+']
+      ['Maintenance kit',false,false,false],
+      ['Rated durability','2 yr','3 yr','5 yr']
     ]
   },
   detailing:{

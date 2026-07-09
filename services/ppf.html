@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PPF en Barcelona — Protección de Pintura 3M | SERRES</title>
-<meta name="description" content="Instalación de PPF 3M autorregenerable con hasta 10 años de garantía en Sant Cugat, Barcelona. Packs frontal y coche completo desde 890 €.">
+<title>PPF en Barcelona — Protección de Pintura | SERRES</title>
+<meta name="description" content="Instalación de PPF autorreparable con más de 50 colores de varias marcas profesionales. Packs frontal y coche completo desde 890 €. Sant Cugat, Barcelona.">
 <link rel="canonical" href="https://serreswrapcenter.es/services/ppf.html">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
@@ -194,6 +194,10 @@
   .film-card[data-finish="Gloss"] .film-skin::after{
     background:linear-gradient(128deg,rgba(255,255,255,.42) 0%,rgba(255,255,255,.05) 28%,
       rgba(255,255,255,0) 50%,rgba(0,0,0,.12) 76%,rgba(0,0,0,.30) 100%)}
+  .film-card[data-finish="Satin"] .film-skin::after{
+    background:linear-gradient(150deg,rgba(255,255,255,.16) 0%,rgba(255,255,255,.02) 40%,rgba(0,0,0,.06) 72%,rgba(0,0,0,.16) 100%)}
+  .film-fam{padding:6px 4px 0;font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.18em;font-size:11px;color:var(--muted);opacity:0;transition:opacity .5s var(--ease)}
+  .film-card.active .film-fam{opacity:1}
   .film-card[data-finish="Matte"] .film-skin::after{
     background:linear-gradient(180deg,rgba(255,255,255,.05) 0%,rgba(255,255,255,0) 28%,rgba(0,0,0,.08) 100%)}
   .film-card[data-finish="Colour Shift"] .film-skin{background:var(--c)}
@@ -237,7 +241,7 @@
     text-transform:uppercase;font-size:14px;color:var(--muted)}
   .cta .phone strong{color:var(--text);font-weight:600}
 
-  footer{padding:30px 40px;border-top:1px solid var(--line);color:var(--muted-2);font-size:13px;
+  footer{padding:30px 40px;border-top:1px solid var(--line);color:var(--muted);font-size:13px;
     letter-spacing:.04em;text-align:center}
 
   .reveal-up{opacity:0;transform:translateY(26px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
@@ -291,14 +295,13 @@
       <div>
         <span class="eyebrow">Servicio 03 · Paint Protection Film</span>
         <h1 class="display">
-          <span class="ln"><span>Paint</span></span>
-          <span class="ln"><span class="chrome-text">Armour</span></span>
+          <span class="ln"><span class="chrome-text" data-i18n-skip>PPF</span></span>
         </h1>
       </div>
       <div class="hero-stats">
-        <div class="hstat"><b class="chrome-text" data-en="10 yr">10 años</b><span>Garantía</span></div>
-        <div class="hstat"><b class="chrome-text">200µm</b><span>Autorreparable</span></div>
-        <div class="hstat"><b class="chrome-text">26+</b><span>Colores de film</span></div>
+        <div class="hstat"><b class="chrome-text">50+</b><span>Colores de film</span></div>
+        <div class="hstat"><b class="chrome-text">100%</b><span>Reversible</span></div>
+        <div class="hstat"><b class="chrome-text">3</b><span>Capas de film</span></div>
       </div>
     </div>
     <p class="lead">Una piel de uretano invisible sobre tu pintura de fábrica — absorbe impactos de piedra, micro-arañazos, ácido de insectos...Para que el acabado de debajo siga exactamente como salió del taller. Disponible en transparente, brillo, satinado y colour-shift completo.</p>
@@ -322,7 +325,7 @@
           <div class="row"><span class="k">Vehículo</span><span class="v">BMW M2</span></div>
           <div class="row"><span class="k">Film</span><span class="v">PPF satinado autorreparable</span></div>
           <div class="row"><span class="k">Cobertura</span><span class="v">Cobertura de carrocería completa</span></div>
-          <div class="row"><span class="k">Garantía</span><span class="v">10 años</span></div>
+          <div class="row"><span class="k">Garantía</span><span class="v">3 años</span></div>
         </div>
       </div>
       <div class="reveal-up">
@@ -406,10 +409,11 @@
         <span class="eyebrow">PPF de color</span>
         <h2>Protégelo.<br>Exprésalo.</h2>
       </div>
-      <p class="sh-note">El PPF no es solo transparente. La gama de protección 3M&trade; viene en brillo, mate y colour-shift — un cambio de acabado y un escudo en un solo film.</p>
+      <p class="sh-note">El PPF no es solo transparente. Más de 50 colores de varias marcas profesionales — brillo, satinado, mate y colour-shift — un cambio de acabado y un escudo en un solo film.</p>
     </div>
 
-    <div class="col-filters reveal-up" id="colFilters" data-i18n-skip></div>
+    <div class="col-filters reveal-up" id="colBrands" data-i18n-skip></div>
+    <div class="col-filters reveal-up" id="colFilters" data-i18n-skip style="margin-top:12px"></div>
 
     <div class="coverflow reveal-up">
       <div class="cf-stage">
@@ -427,7 +431,7 @@
         </div>
       </div>
       <div class="cf-rail"><i id="cfRail"></i></div>
-      <p class="col-note">Los acabados mostrados son representativos de la gama de film de protección 3M&trade;. Las muestras finales se confirman en el taller bajo nuestra iluminación antes de aplicar.</p>
+      <p class="col-note">Los acabados mostrados son representativos de las gamas de film de protección con las que trabajamos. Las muestras finales se confirman en el taller bajo nuestra iluminación antes de aplicar.</p>
     </div>
   </div>
 </section>
@@ -439,13 +443,13 @@
     <h2 class="display">Protege lo que <span class="chrome-text">conduces.</span></h2>
     <div class="actions">
       <a href="../index.html#contact" class="btn">Pedir presupuesto <span class="arr">→</span></a>
-      <a href="../pages/gallery.html" class="btn ghost">Ver la galería</a>
+      <a href="../pages/gallery.html" class="btn ghost">Ver proyectos</a>
     </div>
     <p class="phone">Sant Cugat del Vallès, Barcelona &nbsp;·&nbsp; <strong>+34 621 24 44 69</strong></p>
   </div>
 </section>
 
-<footer>© 2026 SERRES. Todos los derechos reservados. &nbsp;·&nbsp; 3M&trade; Paint Protection Film</footer>
+<footer>© 2026 SERRES. Todos los derechos reservados. &nbsp;·&nbsp; Paint Protection Film · Inozetek · 3M</footer>
 
 <script>
 /* ---------- reveal-on-scroll ---------- */
@@ -521,40 +525,88 @@
 </script>
 
 <script>
-/* ---------- Colour PPF coverflow carousel ---------- */
+/* ---------- Colour PPF coverflow carousel — multimarca (Inozetek · 3M) ---------- */
 (function(){
-  const FILMS=[
-    // GLOSS
-    {n:"Crimson Red",c:"GP233",f:"Gloss",h:"#b81e26"},
-    {n:"Umbra Rosso",c:"GP263",f:"Gloss",h:"#5c1f24"},
-    {n:"Habanero Red",c:"G43",f:"Gloss",h:"#bf3a1b"},
-    {n:"Solar Flare",c:"G255",f:"Gloss",h:"#d98a18"},
-    {n:"Olive Green",c:"G76",f:"Gloss",h:"#3f4622"},
-    {n:"British Racing Green",c:"GP276",f:"Gloss",h:"#163826"},
-    {n:"Basilisk Blue",c:"G67",f:"Gloss",h:"#1f586d"},
-    {n:"Neptune Blue",c:"G97",f:"Gloss",h:"#1d4f88"},
-    {n:"Miami Blue",c:"G37",f:"Gloss",h:"#27a3c2"},
-    {n:"Frozen Blue Metallic",c:"G137",f:"Gloss",h:"#7c9eb6"},
-    {n:"Powder Blue",c:"G117",f:"Gloss",h:"#9cc1d4"},
-    {n:"Viola",c:"G248",f:"Gloss",h:"#54268a"},
-    {n:"Bone Gray",c:"G11",f:"Gloss",h:"#cdccc1"},
-    {n:"Nardo Gray",c:"G61",f:"Gloss",h:"#8a8e8e"},
-    {n:"Gloss White",c:"G10",f:"Gloss",h:"#eef0ef"},
-    {n:"Gloss Black",c:"G12",f:"Gloss",h:"#0c0d10"},
-    // MATTE
-    {n:"Moon Rock Blue",c:"M87",f:"Matte",h:"#39465a"},
-    {n:"Coyote Brown",c:"M99",f:"Matte",h:"#897856"},
-    {n:"Matte White",c:"M10",f:"Matte",h:"#e4e4e1"},
-    {n:"Smoke Gray",c:"M91",f:"Matte",h:"#3a414a"},
-    {n:"Matte Black",c:"M12",f:"Matte",h:"#191a1c"},
-    // COLOUR SHIFT
-    {n:"Flip Cosmic Dust",c:"GP288",f:"Colour Shift",h:"#94a39a",h2:"#5e7a72"},
-    {n:"Flip Winter Rose",c:"GP231",f:"Colour Shift",h:"#c98fa3",h2:"#a9885a"},
-    {n:"Flip Psychedelic",c:"GP261",f:"Colour Shift",h:"#b03a6a",h2:"#2a6ab0"}
+  const BRANDS=[
+    {id:"inozetek",label:"Inozetek",colors:[
+      // INOCOLOR GLOSS
+      {n:"Piano Black",c:"DPPF701",f:"Gloss",h:"#0b0b0d"},
+      {n:"Championship White",c:"DPPF702",f:"Gloss",h:"#f0f1ec"},
+      {n:"Cement Grey",c:"DPPF703",f:"Gloss",h:"#8d9091"},
+      {n:"Sand Dune",c:"DPPF704",f:"Gloss",h:"#c7b595"},
+      {n:"Petrol Blue",c:"DPPF705",f:"Gloss",h:"#1f5f6b"},
+      {n:"Shadow Green",c:"DPPF706",f:"Gloss",h:"#37473f"},
+      {n:"GT Silver",c:"DPPF709",f:"Gloss",h:"#b4b6b8"},
+      {n:"Sage Green",c:"DPPF710",f:"Gloss",h:"#8a9a80"},
+      {n:"Dragons Blood Red",c:"DPPF711",f:"Gloss",h:"#7c1c22"},
+      {n:"Royal Blue",c:"DPPF712",f:"Gloss",h:"#1f4ba6"},
+      {n:"Solar Flame",c:"DPPF713",f:"Gloss",h:"#f4501e"},
+      {n:"Pearl Yellow",c:"DPPF714",f:"Gloss",h:"#f5d76e"},
+      {n:"Midnight Purple",c:"DPPF901",f:"Gloss",h:"#2e1a47"},
+      {n:"Emerald Green",c:"DPPF902",f:"Gloss",h:"#0a6b47"},
+      {n:"Dolphin Grey",c:"DPPF904",f:"Gloss",h:"#828a8f"},
+      {n:"Perfect Black",c:"DPPF908",f:"Gloss",h:"#101113"},
+      {n:"Silver Bullet",c:"DPPF912",f:"Gloss",h:"#aeb2b5"},
+      {n:"Coastal Blue",c:"DPPF913",f:"Gloss",h:"#4a7ba6"},
+      {n:"Blue Raspberry",c:"DPPF914",f:"Gloss",h:"#2764c4"},
+      {n:"Black Cherry",c:"DPPF915",f:"Gloss",h:"#3b0f1e"},
+      {n:"Italia Red",c:"DPPF917",f:"Gloss",h:"#ce2029"},
+      {n:"Sunflower Yellow",c:"DPPF921",f:"Gloss",h:"#ffc512"},
+      {n:"Bronze",c:"DPPF928",f:"Gloss",h:"#8c6b3e"},
+      {n:"Tiffany Blue",c:"DPPF935",f:"Gloss",h:"#0abab5"},
+      // INOCOLOR SATIN
+      {n:"Satin Blackout",c:"DPPF819",f:"Satin",h:"#131416"},
+      {n:"Satin Pearl White",c:"DPPF807",f:"Satin",h:"#f1efe8"},
+      {n:"Satin Rock Grey",c:"DPPF802",f:"Satin",h:"#6e7073"},
+      {n:"Satin Silver Aluminum",c:"DPPF803",f:"Satin",h:"#adb1b4"},
+      {n:"Satin Midnight Moss",c:"DPPF804",f:"Satin",h:"#2e3a2e"},
+      {n:"Satin Blood Red",c:"DPPF806",f:"Satin",h:"#7e1420"},
+      {n:"Satin Azure Blue",c:"DPPF814",f:"Satin",h:"#2f6fb0"},
+      {n:"Satin Midnight Purple",c:"DPPF801",f:"Satin",h:"#32204c"},
+      // FROZEN MATTE
+      {n:"Frozen White",c:"DPPF816",f:"Frozen Matte",h:"#f0f0ea"},
+      {n:"Frozen Ultimate Grey",c:"DPPF809",f:"Frozen Matte",h:"#8c8f92"},
+      {n:"Frozen Shark Grey",c:"DPPF818",f:"Frozen Matte",h:"#7c8288"},
+      {n:"Frozen Sand",c:"DPPF815",f:"Frozen Matte",h:"#c6b491"},
+      {n:"Frozen Army Green",c:"DPPF810",f:"Frozen Matte",h:"#4c5430"},
+      // COLOUR SHIFT
+      {n:"Chameleon Vampire",c:"DPPF715",f:"Colour Shift",h:"#7a1f4d",h2:"#a06a2c"},
+      {n:"Chameleon",c:"DPPF717",f:"Colour Shift",h:"#4e7d7b",h2:"#5c4a86"}
+    ]},
+    {id:"3m",label:"3M",colors:[
+      // GLOSS
+      {n:"Crimson Red",c:"GP233",f:"Gloss",h:"#b81e26"},
+      {n:"Umbra Rosso",c:"GP263",f:"Gloss",h:"#5c1f24"},
+      {n:"Habanero Red",c:"G43",f:"Gloss",h:"#bf3a1b"},
+      {n:"Solar Flare",c:"G255",f:"Gloss",h:"#d98a18"},
+      {n:"Olive Green",c:"G76",f:"Gloss",h:"#3f4622"},
+      {n:"British Racing Green",c:"GP276",f:"Gloss",h:"#163826"},
+      {n:"Basilisk Blue",c:"G67",f:"Gloss",h:"#1f586d"},
+      {n:"Neptune Blue",c:"G97",f:"Gloss",h:"#1d4f88"},
+      {n:"Miami Blue",c:"G37",f:"Gloss",h:"#27a3c2"},
+      {n:"Frozen Blue Metallic",c:"G137",f:"Gloss",h:"#7c9eb6"},
+      {n:"Powder Blue",c:"G117",f:"Gloss",h:"#9cc1d4"},
+      {n:"Viola",c:"G248",f:"Gloss",h:"#54268a"},
+      {n:"Bone Gray",c:"G11",f:"Gloss",h:"#cdccc1"},
+      {n:"Nardo Gray",c:"G61",f:"Gloss",h:"#8a8e8e"},
+      {n:"Gloss White",c:"G10",f:"Gloss",h:"#eef0ef"},
+      {n:"Gloss Black",c:"G12",f:"Gloss",h:"#0c0d10"},
+      // MATTE
+      {n:"Moon Rock Blue",c:"M87",f:"Matte",h:"#39465a"},
+      {n:"Coyote Brown",c:"M99",f:"Matte",h:"#897856"},
+      {n:"Matte White",c:"M10",f:"Matte",h:"#e4e4e1"},
+      {n:"Smoke Gray",c:"M91",f:"Matte",h:"#3a414a"},
+      {n:"Matte Black",c:"M12",f:"Matte",h:"#191a1c"},
+      // COLOUR SHIFT
+      {n:"Flip Cosmic Dust",c:"GP288",f:"Colour Shift",h:"#94a39a",h2:"#5e7a72"},
+      {n:"Flip Winter Rose",c:"GP231",f:"Colour Shift",h:"#c98fa3",h2:"#a9885a"},
+      {n:"Flip Psychedelic",c:"GP261",f:"Colour Shift",h:"#b03a6a",h2:"#2a6ab0"}
+    ]}
   ];
-  const FINISHES=["All","Gloss","Matte","Colour Shift"];
+  const FX={"Gloss":"Gloss","Satin":"Satin","Matte":"Matte","Frozen Matte":"Matte","Colour Shift":"Colour Shift"};
 
   const track=document.getElementById('cfTrack');
+  const brandsEl=document.getElementById('colBrands');
   const filtersEl=document.getElementById('colFilters');
   const idxEl=document.getElementById('cfIndex');
   const totalEl=document.getElementById('cfTotal');
@@ -562,25 +614,36 @@
   const prev=document.getElementById('cfPrev');
   const next=document.getElementById('cfNext');
 
-  let activeFinish="All", list=[], active=0;
+  let activeBrand=BRANDS[0].id, activeFamily="All", list=[], active=0;
   function T(s){return (window.SERRES_I18N&&window.SERRES_I18N.t)?window.SERRES_I18N.t(s):s;}
+  function brand(){return BRANDS.find(b=>b.id===activeBrand);}
+  function families(){return [...new Set(brand().colors.map(c=>c.f))];}
 
   function skin(col){
-    if(col.f==="Colour Shift") return "linear-gradient(125deg,"+col.h+" 0%,"+col.h2+" 100%)";
+    if(FX[col.f]==="Colour Shift") return "linear-gradient(125deg,"+col.h+" 0%,"+col.h2+" 100%)";
     return col.h;
   }
+  function buildBrands(){
+    brandsEl.innerHTML=BRANDS.map(b=>
+      '<button class="chip'+(b.id===activeBrand?' active':'')+'" data-b="'+b.id+'">'+b.label+'<span class="ct">'+b.colors.length+'</span></button>'
+    ).join('');
+  }
   function buildFilters(){
-    filtersEl.innerHTML=FINISHES.map(f=>{
-      const count=f==="All"?FILMS.length:FILMS.filter(c=>c.f===f).length;
-      return '<button class="chip'+(f===activeFinish?' active':'')+'" data-f="'+f+'">'+T(f)+'<span class="ct">'+count+'</span></button>';
+    const b=brand();
+    const fams=["All",...families()];
+    filtersEl.innerHTML=fams.map(f=>{
+      const count=f==="All"?b.colors.length:b.colors.filter(c=>c.f===f).length;
+      return '<button class="chip'+(f===activeFamily?' active':'')+'" data-f="'+f+'">'+T(f)+'<span class="ct">'+count+'</span></button>';
     }).join('');
   }
   function render(){
-    list=FILMS.filter(c=>activeFinish==="All"||c.f===activeFinish);
+    const b=brand();
+    list=b.colors.filter(c=>activeFamily==="All"||c.f===activeFamily);
     track.innerHTML=list.map((col,i)=>
-      '<article class="film-card" data-finish="'+col.f+'" data-i="'+i+'">'+
+      '<article class="film-card" data-finish="'+FX[col.f]+'" data-i="'+i+'">'+
         '<div class="film-skin" style="--c:'+skin(col)+'"><span class="film-flag">'+T('Colour Shift')+'</span></div>'+
-        '<div class="film-meta"><span class="film-name">'+col.n+'</span><span class="film-code">'+col.c+'</span></div>'+
+        '<div class="film-meta"><span class="film-name">'+col.n+'</span><span class="film-code">'+b.label+' · '+col.c+'</span></div>'+
+        '<div class="film-fam">'+T(col.f)+'</div>'+
       '</article>').join('');
     totalEl.textContent=String(list.length).padStart(2,'0');
     active=0;
@@ -605,10 +668,16 @@
   }
   function go(d){ active=Math.max(0,Math.min(list.length-1,active+d)); layout(); }
 
+  brandsEl.addEventListener('click',e=>{
+    const b=e.target.closest('.chip'); if(!b) return;
+    activeBrand=b.dataset.b;
+    activeFamily="All";
+    buildBrands();buildFilters();render();
+  });
   filtersEl.addEventListener('click',e=>{
     const b=e.target.closest('.chip'); if(!b) return;
-    activeFinish=b.dataset.f;
-    [...filtersEl.children].forEach(c=>c.classList.toggle('active',c.dataset.f===activeFinish));
+    activeFamily=b.dataset.f;
+    [...filtersEl.children].forEach(c=>c.classList.toggle('active',c.dataset.f===activeFamily));
     render();
   });
   track.addEventListener('click',e=>{
@@ -635,9 +704,10 @@
     if(e.key==='ArrowLeft')go(-1); else if(e.key==='ArrowRight')go(1);
   });
 
+  buildBrands();
   buildFilters();
   render();
-  window.addEventListener('serres:langchange',function(){buildFilters();render();});
+  window.addEventListener('serres:langchange',function(){buildBrands();buildFilters();render();});
 })();
 </script>
 

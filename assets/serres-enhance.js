@@ -28,8 +28,8 @@
 
   var MENU = [
     { label: "Services",   href: homeLink("#services") },
-    { label: "Gallery",    href: base + "pages/gallery.html" },
-    { label: "Projects",   href: base + "pages/projects.html" },
+    { label: "Projects",   href: base + "pages/gallery.html" },
+    { label: "Exclusive",  href: base + "pages/projects.html", gold: true },
     { label: "Prices",     href: base + "pages/prices.html" },
     { label: "Why SERRES", href: base + "pages/why-serres.html" },
     { label: "Contact",    href: homeLink("#contact") }
@@ -98,6 +98,14 @@
   +   'letter-spacing:.16em;font-size:12.5px;color:var(--muted,#9a9aa3);text-align:right;line-height:1.7}'
   + '.srs-menu-contact a{color:var(--text,#f3f3f5)}'
 
+  /* gold identity for the Exclusivo entry */
+  + '.srs-gold{background:linear-gradient(105deg,#8a6d2f 0%,#c9a44f 20%,#f3e0ac 38%,#d4af5f 52%,#8a6d2f 70%,#e9d194 88%,#b28f41 100%);'
+  +   'background-size:220% 100%;background-position:0% 0;'
+  +   '-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;'
+  +   'transition:filter .35s var(--ease,ease),background-position .9s var(--ease,ease)}'
+  + 'a:hover .srs-gold,a:focus-visible .srs-gold{background-position:100% 0;'
+  +   'filter:drop-shadow(0 0 6px rgba(212,175,95,.5)) drop-shadow(0 0 18px rgba(212,175,95,.22))}'
+
   /* floating WhatsApp */
   + '.srs-wa-float{position:fixed;right:18px;bottom:18px;z-index:120;width:58px;height:58px;border-radius:50%;'
   +   'display:grid;place-items:center;background:#25d366;color:#fff;'
@@ -138,7 +146,8 @@
     menu.setAttribute('aria-hidden', 'true');
     var linksHTML = MENU.map(function(m, i){
       var n = String(i + 1).padStart(2, '0');
-      return '<a href="' + m.href + '"><span class="idx">' + n + '</span>' + m.label + '</a>';
+      var lbl = m.gold ? '<span class="srs-gold">' + m.label + '</span>' : m.label;
+      return '<a href="' + m.href + '"><span class="idx">' + n + '</span>' + lbl + '</a>';
     }).join('');
     menu.innerHTML =
       '<div class="srs-menu-bar">' +
