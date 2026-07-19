@@ -1349,7 +1349,7 @@
     var css =
       ".srs-lang{display:inline-flex;align-items:center;flex:none;border:1px solid var(--line-strong,rgba(255,255,255,.16));" +
         "border-radius:999px;overflow:hidden;background:rgba(255,255,255,.02)}" +
-      ".srs-lang button{font-family:'Barlow Condensed',sans-serif;font-weight:600;text-transform:uppercase;" +
+      ".srs-lang button{font-family:'Barlow Condensed',"Bahnschrift","Arial Narrow",sans-serif;font-weight:600;text-transform:uppercase;" +
         "letter-spacing:.12em;font-size:12.5px;line-height:1;color:var(--muted,#9a9aa3);background:transparent;" +
         "border:0;cursor:pointer;padding:8px 10px;transition:color .25s var(--ease,ease),background .25s var(--ease,ease)}" +
       ".srs-lang button+button{border-left:1px solid var(--line,rgba(255,255,255,.09))}" +
