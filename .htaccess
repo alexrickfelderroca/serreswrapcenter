@@ -32,3 +32,12 @@
 # 3) Keep validators on so unchanged files can return a fast 304 instead of
 #    re-downloading. (ETag + Last-Modified power the revalidation above.)
 FileETag MTime Size
+
+# 4) Correct MIME types for the self-hosted fonts. Most Apache builds already
+#    know woff2, but some Hostinger setups do not; declaring it guarantees the
+#    browser receives the fonts as fonts (not as octet-stream / html).
+<IfModule mod_mime.c>
+  AddType font/woff2 .woff2
+  AddType font/woff  .woff
+  AddType font/ttf   .ttf
+</IfModule>
