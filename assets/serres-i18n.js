@@ -199,6 +199,27 @@
     "A 1 Series taken from its factory colour to a satin grey Car Wrap — gloss black grille and contrasting roof, shot under the studio hex lights.":
       ["Un Serie 1 llevado del color de fábrica a un Car Wrap gris satinado — parrilla en negro brillo y techo en contraste, fotografiado bajo las luces hexagonales del estudio.",
        "Un Sèrie 1 portat del color de fàbrica a un Car Wrap gris setinat — graella en negre brillant i sostre en contrast, fotografiat sota les llums hexagonals de l'estudi."],
+    /* gallery — Porsche Cayenne (09) */
+    "E-Hybrid · Satin Black Wrap": ["E-Hybrid · Car Wrap negro satinado", "E-Hybrid · Car Wrap negre setinat"],
+    "A new-generation Cayenne E-Hybrid transformed with a satin black Car Wrap — blacked-out trim, gloss-black wheels and the acid-green calipers left as the only flash of colour.":
+      ["Un Cayenne E-Hybrid de nueva generación transformado con Car Wrap negro satinado — molduras en negro, llantas negro brillo y las pinzas verde ácido como único toque de color.",
+       "Un Cayenne E-Hybrid de nova generació transformat amb Car Wrap negre setinat — motllures en negre, llandes negre brillant i les pinces verd àcid com a únic toc de color."],
+    "Head-on · Studio lights": ["De frente · Luces del estudio", "De front · Llums de l'estudi"],
+    "Front quarter · Acid-green calipers": ["Cuarto delantero · Pinzas verde ácido", "Quart davanter · Pinces verd àcid"],
+    "Acid-green calipers": ["Pinzas verde ácido", "Pinces verd àcid"],
+    "Porsche crest · Satin black bonnet": ["Escudo Porsche · Capó negro satinado", "Escut Porsche · Capó negre setinat"],
+    "The crest": ["El escudo", "L'escut"],
+    /* gallery — Porsche 911 Carrera GTS (10) */
+    "992 · Satin Sand Wrap": ["992 · Car Wrap arena satinado", "992 · Car Wrap sorra setinat"],
+    "A 992 Carrera GTS in a full colour change to a satin sand Car Wrap — gloss-black roof, black wheels, red calipers and the PORSCHE side script kept in black.":
+      ["Un 992 Carrera GTS con cambio de color completo a Car Wrap arena satinado — techo negro brillo, llantas negras, pinzas rojas y el lateral PORSCHE en negro.",
+       "Un 992 Carrera GTS amb canvi de color complet a Car Wrap sorra setinat — sostre negre brillant, llandes negres, pinces vermelles i el lateral PORSCHE en negre."],
+    "Satin Sand": ["Arena satinada", "Sorra setinada"],
+    "Head-on · Satin sand finish": ["De frente · Acabado arena satinada", "De front · Acabat sorra setinada"],
+    "Rear three-quarter · The green wall": ["Tres cuartos trasero · La pared verde", "Tres quarts posterior · La paret verda"],
+    "The green wall": ["La pared verde", "La paret verda"],
+    "Light bar · GTS badge": ["Barra de luz · Emblema GTS", "Barra de llum · Emblema GTS"],
+    "Light bar": ["Barra de luz", "Barra de llum"],
 
     /* ---------- PRICES (static chrome only; tiers handled in-page) ---------- */
     "SERRES — Prices": ["Precios — PPF, Car Wrap, Ceramic Coating y Detailing | SERRES", "Preus — PPF, Car Wrap, Ceramic Coating i Detailing | SERRES"],
@@ -1349,7 +1370,7 @@
     var css =
       ".srs-lang{display:inline-flex;align-items:center;flex:none;border:1px solid var(--line-strong,rgba(255,255,255,.16));" +
         "border-radius:999px;overflow:hidden;background:rgba(255,255,255,.02)}" +
-      ".srs-lang button{font-family:'Barlow Condensed',"Bahnschrift","Arial Narrow",sans-serif;font-weight:600;text-transform:uppercase;" +
+      ".srs-lang button{font-family:'Barlow Condensed','Bahnschrift','Arial Narrow',sans-serif;font-weight:600;text-transform:uppercase;" +
         "letter-spacing:.12em;font-size:12.5px;line-height:1;color:var(--muted,#9a9aa3);background:transparent;" +
         "border:0;cursor:pointer;padding:8px 10px;transition:color .25s var(--ease,ease),background .25s var(--ease,ease)}" +
       ".srs-lang button+button{border-left:1px solid var(--line,rgba(255,255,255,.09))}" +
