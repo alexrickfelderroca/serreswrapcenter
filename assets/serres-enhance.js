@@ -68,8 +68,8 @@
   + '.srs-menu.open{opacity:1;visibility:visible}'
   + '.srs-menu-bar{display:flex;align-items:center;justify-content:space-between;'
   +   'padding:max(60px,calc(env(safe-area-inset-top) + 20px)) 22px 20px;border-bottom:1px solid var(--line,rgba(255,255,255,.09))}'
-  + '.srs-menu-logo{font-family:"Barlow Condensed","Bahnschrift","Arial Narrow",sans-serif;font-style:italic;font-weight:700;'
-  +   'font-size:26px;letter-spacing:.16em;text-transform:uppercase;padding:0 .28em 0 .04em}'
+  + '.srs-menu-logo{display:inline-flex;align-items:center;padding:0;font-size:0;line-height:0}'
+  + '.srs-menu-logo img{display:block;width:150px;height:auto;aspect-ratio:600/55}'
   + '.srs-close{width:46px;height:46px;display:grid;place-items:center;cursor:pointer;'
   +   'border:1px solid var(--line-strong,rgba(255,255,255,.16));background:rgba(255,255,255,.02);'
   +   'color:var(--text,#f3f3f5);transition:border-color .25s var(--ease,ease),transform .25s var(--ease,ease)}'
@@ -152,7 +152,7 @@
     }).join('');
     menu.innerHTML =
       '<div class="srs-menu-bar">' +
-        '<span class="srs-menu-logo chrome-text">SERRES</span>' +
+        '<span class="srs-menu-logo"><img src="/assets/serres-logo.png" alt="SERRES" width="600" height="55"></span>' +
         '<button class="srs-close" aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 5l14 14M19 5L5 19"/></svg></button>' +
       '</div>' +
       '<div class="srs-links">' + linksHTML + '</div>' +
