@@ -11,12 +11,12 @@
   "use strict";
 
   /* ---- contact constants ---- */
-  var WA_DIGITS = "34621244469";                 // +34 621 24 44 69
+  var WA_DIGITS = "34649663380";                 // +34 649 66 33 80
   var WA_TEXT   = encodeURIComponent("Hola SERRES, quería pedir presupuesto para mi coche.");
   var WA_URL    = "https://wa.me/" + WA_DIGITS + "?text=" + WA_TEXT;
   var IG_URL    = "https://www.instagram.com/serres.wrap.center/";
   var TEL_HREF  = "tel:+" + WA_DIGITS;
-  var TEL_TEXT  = "+34 621 24 44 69";
+  var TEL_TEXT  = "+34 649 66 33 80";
 
   /* ---- relative-path base (root vs services/ & pages/) ---- */
   var path = location.pathname;
